@@ -23,7 +23,7 @@ La opción inicial consulta la ejecución distribuida y sus salidas guardadas. C
 
 ## Obtener los archivos e instalar el entorno
 
-El código y la configuración se distribuyen en Git. **Todos los datos se entregan por release**, mediante `datos_bronze.zip`, `datos_silver.zip` y `datos_gold.zip`. `codigo_y_documentacion.zip` ofrece una copia alternativa del código de la misma entrega. Se extraen en una sola raíz: las rutas internas colocan cada archivo bajo su capa, sin repartirlo manualmente. Se comprueban las huellas de `SHA256SUMS` y `manifiesto_paquetes.json` antes de ejecutar.
+El código y la configuración se distribuyen en Git. **Todos los datos se entregan por release**, mediante `datos_bronze.zip`, `datos_silver.zip` y `datos_gold.zip`. Se extraen en una sola raíz: las rutas internas colocan cada archivo bajo su capa, sin repartirlo manualmente. Se comprueban las huellas de `SHA256SUMS` y `manifiesto_paquetes.json` antes de ejecutar.
 
 ```bash
 uv sync --locked
@@ -44,7 +44,7 @@ La [trazabilidad](docs/trazabilidad.md) vincula 16 productos anuales, 33 anexos 
 
 La entrega reúne los archivos necesarios para el cálculo y mantiene sus fuentes y condiciones en la [guía de fuentes](docs/distribucion_fuentes.md). Seis apoyos bibliográficos se citan mediante [referencias y enlaces](manifiestos/referencias_documentales.csv); sus copias completas no son necesarias para ejecutar los cuadernos.
 
-Las [releases](https://github.com/bererei/movilidad-teide-ahorro-energetico-innovae-2026/releases) agrupan los cuatro ZIP y sus controles: `manifiesto_paquetes.json`, `SHA256SUMS` y `ACEPTACION_PAQUETES.json`. La [guía de entrega](docs/entrega_publica.md) explica qué contiene cada paquete y qué acredita su comprobación.
+Las [releases](https://github.com/bererei/movilidad-teide-ahorro-energetico-innovae-2026/releases) agrupan los tres ZIP de datos y sus controles: `manifiesto_paquetes.json`, `SHA256SUMS` y `ACEPTACION_PAQUETES.json`. La [guía de entrega](docs/entrega_publica.md) explica qué contiene cada paquete y qué acredita su comprobación.
 
 El [informe original](docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16.pdf) y la [copia firmada](docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16_firmado.pdf) se identifican por separado mediante sus rutas y huellas en el [registro documental](manifiestos/firma_informe.json). La [guía de documentos](docs/disponibilidad_documental.md) localiza el informe, sus fuentes y los anexos.
 

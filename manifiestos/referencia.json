@@ -201,11 +201,15 @@
   "codigo_commit_base": "51bcd43903b487dc0fa657e1d38dfb4de6ab2a4e",
   "alcance_commit_base": "Commit previo al cierre documental de paquetes; la identidad exacta de los archivos la determina el inventario de esta entrega.",
   "referencia_paquetes": {
-    "identificador": "20261117_v028_documentacion_publica",
+    "identificador": "20261117_v028_solo_datos",
     "aceptacion": "ACEPTACION_PAQUETES.json, junto a los ZIP y al manifiesto de paquetes",
     "control_integridad": "SHA256SUMS y manifiesto_paquetes.json",
     "condiciones_fuentes_pendientes": 0,
-    "politica_documental": ".gitignore"
+    "politica_documental": ".gitignore",
+    "canal_codigo": "Repositorio Git",
+    "canal_datos": "Release: tres ZIP y tres controles",
+    "referencia_git_propuesta": "v1.0.1",
+    "estado_referencia_git": "Cambios locales pendientes de commit y publicación; v1.0.0 publicada se conserva intacta."
   },
   "informe_firmado": {
     "ruta": "docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16_firmado.pdf",

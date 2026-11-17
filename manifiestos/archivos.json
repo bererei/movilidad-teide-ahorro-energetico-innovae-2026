@@ -1,5 +1,5 @@
 {
-  "version": "2.8.7",
+  "version": "2.8.8",
   "arquitectura": "Medallion común",
   "visitas_sin_y_con": 2500000,
   "informe": "v0.28",
@@ -61,8 +61,8 @@
     },
     {
       "ruta": "README.md",
-      "bytes": 7302,
-      "sha256": "4b18c78764c667c9a3c0626ca8241f2bd3cbc11dc7c1dd956980cfcba039ac76",
+      "bytes": 7218,
+      "sha256": "1ae57aa6ce89f9bfc6f09e042694e0eef17ffddb6434565cb3825f4ce4349991",
       "capa": "codigo_documentacion"
     },
     {
@@ -64909,8 +64909,8 @@
     },
     {
       "ruta": "docs/entrega_publica.md",
-      "bytes": 3268,
-      "sha256": "b52167d318e73d42958dd800dcf61642a1b33efc3ec6fc8b2b6434f697dab465",
+      "bytes": 4719,
+      "sha256": "adaebc85eda10d60d0897b8da0628757d126db4f757af4a32a235f9fcb94f804",
       "capa": "codigo_documentacion"
     },
     {
@@ -64951,8 +64951,8 @@
     },
     {
       "ruta": "docs/reproduccion.md",
-      "bytes": 17723,
-      "sha256": "3e0711ca969c49e9b6ecb605af63652d40946698625d3d54f31764cc54690b13",
+      "bytes": 17541,
+      "sha256": "01b2307db0803c228cc9de0481bfda19c8effa9c0db70a6f8a48554de5535573",
       "capa": "codigo_documentacion"
     },
     {
@@ -64987,8 +64987,8 @@
     },
     {
       "ruta": "manifiestos/atribuciones_por_archivo.csv",
-      "bytes": 18415279,
-      "sha256": "7bebc738e012350d92a77aae497d34ed853ac54b27161761fbf359540304a503",
+      "bytes": 18415992,
+      "sha256": "9941dc55a0e5d3f54dc4c393f6e316f03687c0df29674485c068dbf9460faf6e",
       "capa": "codigo_documentacion"
     },
     {
@@ -65239,8 +65239,8 @@
     },
     {
       "ruta": "manifiestos/referencia.json",
-      "bytes": 7215,
-      "sha256": "ff1c413ba3a8a31340f2c96bdbed11ff4b5ce7c39026a983e86695bf9c9b6f37",
+      "bytes": 7465,
+      "sha256": "fec2acdcd977729dac0b8d069376f1e825584c395e3e1e1e44bd07a70d256df1",
       "capa": "codigo_documentacion"
     },
     {
@@ -65257,8 +65257,8 @@
     },
     {
       "ruta": "manifiestos/seleccion_entrega_publica.csv",
-      "bytes": 9006908,
-      "sha256": "57ccf044b892f6774070549c345b03f3c1438a9faa8377d83f73fc54db16278c",
+      "bytes": 8994573,
+      "sha256": "cb9dcb2c125ebd1fa5406e5bff3e9a3ab3ca17c178e6dc40fa05b9b4eb9edea6",
       "capa": "codigo_documentacion"
     },
     {
@@ -65335,8 +65335,8 @@
     },
     {
       "ruta": "manifiestos/uso_y_vigencia.csv",
-      "bytes": 4709818,
-      "sha256": "e2dc9d302d862561f9bb6038e135c1d22c6b722ae38366d199ce6a0e0acc59c8",
+      "bytes": 4710255,
+      "sha256": "e5c7ab3cf11154a9eec65f0993185afb5c12f9cd7fdea68f6cdba19bda3113e1",
       "capa": "codigo_documentacion"
     },
     {
@@ -65392,6 +65392,12 @@
       "bytes": 1168,
       "sha256": "fd1fe6e7164c59f8aa78b69ee74fb99cbf79cd9a0921ac727f609ab9924a76ea",
       "capa": "codigo_documentacion"
+    },
+    {
+      "ruta": "preparar_release_datos.py",
+      "capa": "codigo_documentacion",
+      "bytes": 6713,
+      "sha256": "3b3bc76be895198c598338204d90e6c106254d188fe0b6d14e4aaae1eadf1f7e"
     },
     {
       "ruta": "pyproject.toml",
@@ -67224,6 +67230,12 @@
       "capa": "codigo_documentacion"
     },
     {
+      "ruta": "tests/test_release_solo_datos.py",
+      "capa": "codigo_documentacion",
+      "bytes": 4946,
+      "sha256": "5196ab14459428208cacb2d7fe5a4fe65e5b3b26c481e878ebdbbf33821723ab"
+    },
+    {
       "ruta": "tests/test_reserva_documental.py",
       "bytes": 6931,
       "sha256": "aae5725a1def549b3e02c823305ff714479daa355d1ea6cd2de92549695b45e7",
@@ -67293,6 +67305,8 @@
   "cierre_criterios_fuentes": "2026-11-17",
   "corte_paquetes_finales": "2026-11-17",
   "actualizacion_documental": "2026-11-17",
+  "release_solo_datos": true,
+  "actualizacion_distribucion": "2026-11-17",
   "documentos_no_distribuidos": [
     {
       "ruta": "data/gold/ANEXOS_ENERGETICOS_2028_v0.28.zip",

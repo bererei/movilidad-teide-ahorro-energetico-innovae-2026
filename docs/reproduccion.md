@@ -8,9 +8,9 @@ El [mapa del recorrido por cuadernos](recorrido_notebooks.md) sitúa el servicio
 
 La entrega se identifica por `manifiesto_paquetes.json`, `SHA256SUMS` y el acta `ACEPTACION_PAQUETES.json` que acompaña a los ZIP. Se utilizan siempre código y datos del mismo corte; el [manifiesto de referencia](../manifiestos/referencia.json) identifica el informe v0.28, su huella y el libro de hipótesis. La [revisión de fuentes](distribucion_fuentes.md) recoge sus criterios y atribuciones, sin una licencia global sobre los materiales ajenos. La [guía de entrega](entrega_publica.md) explica el contenido de los paquetes y el alcance de su aceptación.
 
-1. Obtener el código del repositorio o extraer `codigo_y_documentacion.zip` en una carpeta vacía.
+1. Obtener el código de la etiqueta indicada en la release, mediante Git o la descarga del repositorio.
 2. Obtener los tres paquetes de datos de esa misma entrega y sus archivos `manifiesto_paquetes.json` y `SHA256SUMS`.
-3. Comprobar los ZIP descargados desde la carpeta que los contiene. Si se dispone de los cuatro, usar `sha256sum -c SHA256SUMS`; si solo se descargan los tres ZIP de datos, usar `sha256sum --ignore-missing -c SHA256SUMS` y comprobar que aparecen los tres correctamente. La opción que omite ausentes no sustituye la comprobación de que se han obtenido todas las capas necesarias.
+3. Comprobar los tres ZIP descargados desde la carpeta que los contiene con `sha256sum -c SHA256SUMS`. Deben aparecer Bronze, Silver y Gold correctamente; no se omiten archivos ausentes.
 4. Extraer los datos en la raíz que contiene `README.md`, `config/` y `scripts/`. Los ZIP ya incluyen `data/bronze/`, `data/silver/` y `data/gold/` en sus rutas internas.
 
 Por ejemplo, en Ubuntu/WSL, con los ZIP descargados en la raíz:
@@ -165,6 +165,6 @@ Cada comprobación identifica los paquetes, código, libro, entorno y datos real
 
 ## Documentos y contenido de los paquetes
 
-La [guía de entrega](entrega_publica.md) identifica los cuatro paquetes y sus controles. La [guía documental](disponibilidad_documental.md) localiza el informe, su copia firmada y los anexos. El inventario de la entrega distingue los archivos incluidos de los documentos no distribuidos; la generación documental requiere disponer de sus fuentes y recursos.
+La [guía de entrega](entrega_publica.md) identifica los tres paquetes de datos y sus controles. La [guía documental](disponibilidad_documental.md) localiza el informe, su copia firmada y los anexos. El inventario de la entrega distingue los archivos incluidos de los documentos no distribuidos; la generación documental requiere disponer de sus fuentes y recursos.
 
 La compilación del informe utiliza XeLaTeX y el paquete `fvextra` de TeX Live para mostrar comandos con sus espacios y continuaciones de línea. Se incluye en `texlive-latex-extra`.
