@@ -1,0 +1,66 @@
+{
+  "fecha": "2026-11-17",
+  "funcion": "Índice descriptivo de documentación de la referencia; distingue copias distribuidas de referencias y enlaces. No es entrada numérica ni reemplaza el metadato original de adquisición.",
+  "captura_original": {
+    "ruta": "data/bronze/documentacion/montana_turismos/ficha_publica_pendiente/metadatos.json",
+    "sha256": "cc3e73c1dab66e1535e394945a8c5a77007cbb8f602e3cea220a62c5932bb992",
+    "alcance": "Metadato de adquisición íntegro; incluye una consulta no seleccionada para esta entrega. El inventario actual define lo distribuido."
+  },
+  "documentos_vigentes": [
+    {
+      "id": "F144",
+      "archivo": "epa_pere_2005.pdf",
+      "url": "https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1001D6I.pdf",
+      "titulo": "Nam y Giannelli, Fuel Consumption Modeling ... PERE, EPA420-P-05-001",
+      "version": "February2005, Draft",
+      "localizador": "pp.9–10 figura2: eficiencia indicada gasolina0,40 y diferencia respecto a media; pp.14–15 tabla1 transmisión; p.24 diésel ligero0,48",
+      "limite": "Referencia técnica histórica, no simulador ejecutado, coeficiente calibrado Teide o garantía de flota Euro4/6.",
+      "ruta": "data/bronze/documentacion/montana_turismos/ficha_publica_pendiente/epa_pere_2005.pdf",
+      "sha256": "0c7444bf293b4ddc1e4a7abe7879351eb2113c06a50e49795f5b876652d26b82"
+    },
+    {
+      "id": "F146",
+      "archivo": "epa_moves5_energia_2024.pdf",
+      "url": "https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P101CULT.pdf",
+      "consulta": "2026-11-01",
+      "sha256": "8b48368a75274abb6cd51eb8d4f07443191f133eaa18bc4cdc9d1d48fd1fbe08",
+      "alcance": "EPA-420-R-24-018, noviembre2024; apéndiceA p37 y referencia45 p49. Sigue citando EPA420-P-05-001 de2005; no reemplaza ni valida sus coeficientes para Teide.",
+      "ruta": "data/bronze/documentacion/montana_turismos/ficha_publica_pendiente/epa_moves5_energia_2024.pdf"
+    },
+    {
+      "id": "F147",
+      "archivo": "idae_estilo_conduccion_20261101.html",
+      "url": "https://coches.idae.es/estilo-de-conduccion",
+      "consulta": "2026-11-01",
+      "sha256": "c9ae270c085645b49487d1a141201898f3d66d3c2d91ecb938edc339082cdfae",
+      "alcance": "Puntos6–10 y recordatorio final: retención con marcha engranada, sin acelerador y régimen suficiente. Justifica posibilidad de corte, no su duración real en cada ruta.",
+      "ruta_original_identificada": "data/bronze/documentacion/montana_turismos/ficha_publica_pendiente/idae_estilo_conduccion_20261101.html",
+      "distribucion": "Referencia y enlace; copia íntegra archivada en desarrollo",
+      "registro_referencia": "manifiestos/referencias_documentales.csv"
+    }
+  ],
+  "aforos": {
+    "proveedor_series_originales": "Parque Nacional del Teide",
+    "evidencia": "Beatriz comunica el17/11/2026 la respuesta de Luis Gutiérrez Valido, Director de Proyectos y Programas de Movilidad Sostenible del Parque Nacional del Teide: los datos de aforos son del propio Parque Nacional, dentro del área de Medio Ambiente del Cabildo. Nombre y cargo aportados por Beatriz. La respuesta acredita en este registro la titularidad institucional comunicada; no se presenta como una autorización escrita de redistribución.",
+    "alcance": "Proveedor de las series originales; distinguir preparaciones propias y no deducir permiso de difusión del suministro",
+    "preparacion_2025": "Archivo AforosTeideCorregidos_2025_BGD.csv: preparación del estudio; conservar correcciones documentadas",
+    "libro_preparacion": "Libro de trabajo del estudio y procedencia propios, derivados de las series; no presentarlo como original recibido del Parque",
+    "titular_institucional_comunicado": "Parque Nacional del Teide, área de Medio Ambiente del Cabildo de Tenerife",
+    "confirmacion_titularidad": {
+      "nombre": "Luis Gutiérrez Valido",
+      "cargo": "Director de Proyectos y Programas de Movilidad Sostenible del Parque Nacional del Teide",
+      "comunicada_por": "Beatriz",
+      "fecha": "2026-11-17",
+      "alcance": "Titularidad institucional; no autorización escrita de redistribución"
+    },
+    "criterio_inclusion": "Se adopta la inclusión de las series en la reproducción del estudio bajo el régimen general de reutilización del Cabildo, artículos49–52 de su Reglamento, con la titularidad pública comunicada y sin una restricción específica identificada. Conservar fuente, fechas, sentido de los datos y separación de series recibidas y correcciones del estudio. No asignar CC0 global ni una licencia propia a materiales ajenos.",
+    "fuente_regimen_general": "https://www.gobiernodecanarias.org/boc/2022/047/011.html"
+  },
+  "siglas": {
+    "JRC": "Centro Común de Investigación de la Comisión Europea (JRC, por las siglas en inglés de Joint Research Centre)",
+    "FTA": "Federal Transit Administration, Administración Federal de Transporte de Estados Unidos",
+    "IDAE": "Instituto para la Diversificación y Ahorro de la Energía"
+  },
+  "motor_o_balance_recalculados": false,
+  "referencias_sin_copia": "manifiestos/referencias_documentales.csv"
+}

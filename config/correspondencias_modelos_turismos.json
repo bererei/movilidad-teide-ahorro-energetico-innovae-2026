@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "estado": "Propuesta no adoptada para escenarios",
+  "fuente_id": "F123",
+  "documentacion": "data/bronze/documentacion/segmentos_turismos/20261029/metadatos.json",
+  "documentacion_sha256": "fdd9f9709a0cd6d958f1a49ff25ac0680495d9f6892d76fe171bc529084c1cad",
+  "criterio": "Marca exacta normalizada y familia de modelo con límites de palabra, fuentes y exclusiones. No aproximación por similitud. Los tamaños no se eligen automáticamente en el balance.",
+  "reglas": [
+    {
+      "id": "polo",
+      "marcas": [
+        "VOLKSWAGEN"
+      ],
+      "modelo_regex": "^(?:VOLKSWAGEN )?POLO(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:CROSS|CLASSIC|SEDAN)\\b",
+      "segmento_fuente": "Pequeño",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "polo",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "ibiza",
+      "marcas": [
+        "SEAT"
+      ],
+      "modelo_regex": "^(?:SEAT )?IBIZA(?=$|[ .,/\\-])",
+      "excluir_regex": "(?!)",
+      "segmento_fuente": "Pequeño",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "seat",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "leon",
+      "marcas": [
+        "SEAT"
+      ],
+      "modelo_regex": "^(?:SEAT )?LEON(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:SPORTSTOURER|ST|CROSS)\\b",
+      "segmento_fuente": "Compacto",
+      "segmento_copert_propuesto": "Medium",
+      "fuente_modelo": "seat",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "arona",
+      "marcas": [
+        "SEAT"
+      ],
+      "modelo_regex": "^(?:SEAT )?ARONA(?=$|[ .,/\\-])",
+      "excluir_regex": "(?!)",
+      "segmento_fuente": "SUV urbano",
+      "segmento_copert_propuesto": "Large-SUV-Executive",
+      "fuente_modelo": "seat",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "yaris",
+      "marcas": [
+        "TOYOTA"
+      ],
+      "modelo_regex": "^(?:TOYOTA )?YARIS(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:CROSS|VERSO|GR)\\b",
+      "segmento_fuente": "B",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "toyota",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "corsa",
+      "marcas": [
+        "OPEL"
+      ],
+      "modelo_regex": "^(?:OPEL )?CORSA(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:COMBO|VAN)\\b",
+      "segmento_fuente": "B",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "stellantis",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "208",
+      "marcas": [
+        "PEUGEOT"
+      ],
+      "modelo_regex": "^(?:PEUGEOT )?(?:E[- ]?)?208(?=$|[ .,/\\-])",
+      "excluir_regex": "(?!)",
+      "segmento_fuente": "B",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "stellantis",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "astra",
+      "marcas": [
+        "OPEL"
+      ],
+      "modelo_regex": "^(?:OPEL )?ASTRA(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:SPORTS|TOURER|CARAVAN|VAN)\\b",
+      "segmento_fuente": "C",
+      "segmento_copert_propuesto": "Medium",
+      "fuente_modelo": "astra",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "500",
+      "marcas": [
+        "FIAT"
+      ],
+      "modelo_regex": "^(?:FIAT )?500(?=$|[ .,/])",
+      "excluir_regex": "\\b(?:500L|500X|500E|GIARDINIERA)\\b",
+      "segmento_fuente": "A",
+      "segmento_copert_propuesto": "Mini",
+      "fuente_modelo": "fiat",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "clio",
+      "marcas": [
+        "RENAULT"
+      ],
+      "modelo_regex": "^(?:RENAULT )?CLIO(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:SYMBOL|GRANDTOUR|ESTATE|VAN)\\b",
+      "segmento_fuente": "B",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "comision",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "punto",
+      "marcas": [
+        "FIAT"
+      ],
+      "modelo_regex": "^(?:FIAT )?(?:GRANDE )?PUNTO(?=$|[ .,/\\-])",
+      "excluir_regex": "(?!)",
+      "segmento_fuente": "B",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "comision",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "206",
+      "marcas": [
+        "PEUGEOT"
+      ],
+      "modelo_regex": "^(?:PEUGEOT )?206(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:SW|CC|PLUS)\\b",
+      "segmento_fuente": "B",
+      "segmento_copert_propuesto": "Small",
+      "fuente_modelo": "comision",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "golf",
+      "marcas": [
+        "VOLKSWAGEN"
+      ],
+      "modelo_regex": "^(?:VOLKSWAGEN )?GOLF(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:PLUS|SPORTSVAN|VARIANT|CABRIO|CABRIOLET|CROSS)\\b",
+      "segmento_fuente": "C",
+      "segmento_copert_propuesto": "Medium",
+      "fuente_modelo": "comision",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "focus",
+      "marcas": [
+        "FORD"
+      ],
+      "modelo_regex": "^(?:FORD )?FOCUS(?=$|[ .,/\\-])",
+      "excluir_regex": "\\b(?:C[- ]?MAX|ACTIVE|TURNIER|ESTATE|WAGON|CABRIO|CC)\\b",
+      "segmento_fuente": "C",
+      "segmento_copert_propuesto": "Medium",
+      "fuente_modelo": "comision",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "107",
+      "marcas": [
+        "PEUGEOT"
+      ],
+      "modelo_regex": "^(?:PEUGEOT )?107(?=$|[ .,/\\-])",
+      "excluir_regex": "(?!)",
+      "segmento_fuente": "A",
+      "segmento_copert_propuesto": "Mini",
+      "fuente_modelo": "comision",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    },
+    {
+      "id": "fortwo",
+      "marcas": [
+        "SMART"
+      ],
+      "modelo_regex": "^(?:SMART )?FOR[- ]?TWO(?=$|[ .,/\\-])",
+      "excluir_regex": "(?!)",
+      "segmento_fuente": "A",
+      "segmento_copert_propuesto": "Mini",
+      "fuente_modelo": "comision",
+      "fuente_puente": "aimsun",
+      "alcance": "Propuesta por familia comercial; generación no identificada. Sin adopción de tamaños, flota o pesos."
+    }
+  ]
+}

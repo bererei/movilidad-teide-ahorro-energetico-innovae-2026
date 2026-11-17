@@ -1,0 +1,28 @@
+{
+  "fecha": "2026-11-12",
+  "commit_de_partida": "701de68bc6616d537c36572e0dc21e7b72355357",
+  "codigo_del_bloque_sin_commit": true,
+  "visitas_sin_y_con": 2500000,
+  "parametros_efectivos_conservados": 31,
+  "excel_sha256": "3fa4e97d5644410f5c97445f297711034d3dde8e7ba3a62501e1de6174451e8d",
+  "indice_anterior_sha256": "a2600b3bdcb5cf323b966edd7d32a0d8ddef9fc17b8dde002932191995ef0070",
+  "indice_actual_sha256": "bf2eb134fb78bb178c0e1e5463332ca5dcf086eeb8933eaa4700f3ee385a1a05",
+  "materializar_rutas_anteriores": false,
+  "gold_inalterado": 55,
+  "informe_y_anexos_modificados": false,
+  "excursiones": {
+    "transformacion": "Proyección de las cinco columnas unitarias utilizadas por la referencia actual; sin cantidades o balances de otra actividad anual",
+    "filas_origen": 17784,
+    "filas_unitarias": 312,
+    "columnas": [
+      "origen_id",
+      "colectivo",
+      "sentido",
+      "longitud_referencia_sentido_km",
+      "factor_hot_referencia_mj_km"
+    ],
+    "valores_unitarios_identicos": true,
+    "origen_anterior": "data/silver/energia/referencias_unitarias/detalle_guaguas_comunes.csv",
+    "fuente_completa_conservada_en_captura": true
+  }
+}

@@ -1,0 +1,2128 @@
+{
+  "version": "1.0",
+  "referencia": "Informe v0.25; recorridos y perfiles de la ordenación vigente",
+  "visitas_sin_y_con": 2500000,
+  "fuentes_sha256": {
+    "config/actividad_corredor_norte.json": "78d61af39266c573a550f8b2bfa7454cc1da519f9922a7f76062ebd850166ea4",
+    "config/asignacion_demanda.json": "f067a78acddf1739cdf7176057697bf642beee5fbfdc77a89dc5ca846bc8a301",
+    "config/correspondencias_modelos_turismos.json": "3d13e69ff609153551cb4b02ef2b480985cb42bdfdbc41763a661afefbe60f33",
+    "config/dependencias_publicacion.json": "6b3ba170ea00f0f4a518308382c4df9eee0b1606a332feddb9f1a2174210d78e",
+    "config/itinerarios.json": "5be52cb4a30a611bc5d818e4325f0c505c677e957b14cec863b0b0797dc41c8b",
+    "config/parametros_modelo.xlsx": "3fa4e97d5644410f5c97445f297711034d3dde8e7ba3a62501e1de6174451e8d",
+    "config/perfil_altimetrico.json": "8ab569bf53dcc74857f2ddb544e4fa41ee9a387646d5473c8e29255327cf842f",
+    "config/referencia_ordenacion_2028.json": "1e2b21737b8b38d234779966efdec54b892171f1e04722b12427051f03881675",
+    "config/rutas_datos.json": "b792ca7276fc81c172932214008a384320472705a9e68b67b9fbc11e899820af",
+    "data/bronze/demanda/odviewer/20261016T101617Z/zonificaciones/zonificaciones_odviewer.zip": "5b1ca7d16c8a747cc60ac9b555b25238095b73287e83064d49570d23aebd23ae",
+    "data/bronze/documentacion/cabeceras/20261022_chio/metadata.json": "290ee374f1f6e96c8a6623e6ad8679b66ae1a5787e5ce45616230ac2066059b0",
+    "data/bronze/documentacion/cabeceras/20261022_chio/referencia_pk33_tf82.png": "59271c12be661fa3edcdaa7d3ccc13ee71d2520b31335ef1d7f632bdc87e44a0",
+    "data/bronze/documentacion/cabeceras/20261024_luis/aportacion.json": "5a65c7676efa27c1c8aa92e1ceda92a7c4a26d69b344617fc56cd1ea17a69a31",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.dbf": "575f92fa61966b2615d1c14aaf7043310eb97e83baf831bac008375e436d2590",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.prj": "1e83db42048b80d0cd642ef4fbfd55853a5d1c7530c84cd76e59cf3e84202fcf",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.sbn": "cfd7a82b54d8c3118463219ffedb848f0d8e5f281d377c5fa8a926f229e3046e",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.sbx": "2d54c4bec3dbcdf03aab7d695363104e1d73339d1232f2c4800c9b87a9601923",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.shp": "b9176b5464bea632fe4f27de04cce5f2e3e59fb84332c17a3d34ca0ca948c625",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.shp.xml": "8e85e97995f2136d3a13971e0bd7bf650ae2d5379e54d4e4fa1b18c802e1b1f4",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/Limite_Teide.shx": "b19458b1e95a4608a8a6cb07ac3c920e024dbadcdfd847c4a01f2de40db16e07",
+    "data/bronze/documentacion/contexto_informe/cartografia_parque/PN_Teide/Limites/PN del Teide.kml": "7e079f0989ac8aa7869628c1faca8e3e8f9fb8a527c261f67cbd1e4b1f533941",
+    "data/bronze/documentacion/diseno_interior/20261024_confirmacion_luis/aportacion.json": "0360564a6fe98bc187b1b4a19d59144a5eff6ca252e426cc920b4e237790a647",
+    "data/bronze/documentacion/diseno_interior/20261025_carretera_principal/aportacion.json": "e6967229756c08cd9cb2f18bcfd0b8594d97407fa1b3072b90365aec952a5feb",
+    "data/bronze/documentacion/visor_teide/20261016T154507Z_a35edd7a/coeficientes_servicio_teide.js": "74403d3aca08c25d819fcb2792f9a9d4e576e0140abecf5a66ad6aa11664e938",
+    "data/bronze/documentacion/visor_teide/20261016T154507Z_a35edd7a/heatmap_od_data.js": "1c5624d4a900489de33731b5ec18ddd1d545420a0e937fbfe0b224295ee68020",
+    "data/bronze/documentacion/visor_teide/20261016T154507Z_a35edd7a/index.html": "0f6e9afc0168cc7d7dea04c38dddbc6ded6534c5fb5d52e721139abdb14fe482",
+    "data/bronze/documentacion/visor_teide/20261016T154507Z_a35edd7a/metadata.json": "76cd1b02c4d1b3d1362565e628c707e4efa7e0da9a315ba724246cfb80fef5b5",
+    "data/bronze/documentacion/visor_teide/20261016T154507Z_a35edd7a/turismo_general_residencia_heatmap_data.js": "516e751c442923482f2490147bbb24087c97b0ea18c3ea5b51b811474c30dc5f",
+    "data/bronze/documentacion/visor_teide/20261022_mapas_medianias/31_mapa_acceso_dominante_origen_medianias.png": "6fb04a4941c01976e12a6dd77ae53ffde4fe873a1a97f0515845f20e34d20673",
+    "data/bronze/documentacion/visor_teide/20261022_mapas_medianias/metadata.json": "39cefeb6237a7a27673056435d40426046baf7edd0d6ccac0cea6987c2694bd6",
+    "data/bronze/geografia/carreteras/diccionario-de-datos-de-puntos-kilometricos-del-cabildo-insular-de-tenerife.json": "4b3d8ad0af9915c90c2dde9c6ae41865a1504fced51ed3b48b08779e101008d2",
+    "data/bronze/geografia/carreteras/diccionario-de-datos-de-vias-competencia-del-cabildo-de-tenerife.json": "a67e12a2e0224567e60ac4d91710853efce638ace658b3b4e0d0b1c842f5f36c",
+    "data/bronze/geografia/carreteras/metadata.txt": "bdd24b3c716c3a180419d5e2fbac72802d9b24649337b12189c5ad6ef8d0a26f",
+    "data/bronze/geografia/carreteras/puntos-kilometricos.gpkg": "019b77e7e29bde41597d37fb5b14219deffa16adb922966221b6a3fd44aeb80e",
+    "data/bronze/geografia/carreteras/vias-competencia-del-cabildo-de-tenerife.gpkg": "28fab8a59b3952e0064098460915d22b0c36cf64db2ce59e4c6983fd92693f80",
+    "data/bronze/geografia/mdt05/20261110_titsa_342_348/mdt05_titsa_342.multipart": "d7e56f5c82efeaca498e4953090cf46d7d41941869d5c12721d6a56d59c6c3c5",
+    "data/bronze/geografia/mdt05/20261110_titsa_342_348/mdt05_titsa_348.multipart": "0e0b039b6c492424a565d0fc9e76de8f9f85c2b137dcaebec48c23e91ad58985",
+    "data/bronze/geografia/mdt05/20261110_titsa_342_348/metadatos.json": "7b1b7a9d2c2534dcda2681b893ef4b04a3025a71f812e8682727b4afb171f6bf",
+    "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/fuentes.json": "7f7a769519c0d18cf292c2b0316d9455e74dd832c50c900005cdc1eef6c71982",
+    "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/fuentes_soporte.json": "1e4dcc7e8015be81cc09e6fc1e9bf21d3771b14d2088e6756a77dd07ce7576b7",
+    "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/norte.multipart": "23912a52d086ff524497aee270e8c8fb472d2dda69c58985c55a553e96cab144",
+    "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/norte_soporte.multipart": "da983412d77fc94e9abae0f2a3c015b140f803b015b5425a66f5faa943655ec2",
+    "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/sur.multipart": "af59fb416c45ec2a18eaca2165d6f56f998f50f4c6f342dd848d63673caf3ca2",
+    "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/sur_soporte.multipart": "0b8ba9d32013b727e6d074474605fb676e3cd257348b308d240318249493b0bf",
+    "data/bronze/geografia/mdt05/cobertura_1/PNOA_MDT05_REGCAN95_HU28_1092_LID.tif": "680c04e71667cf00fe0b42a4641546ac628596979d98d4e099356d08b2636f8d",
+    "data/bronze/geografia/mdt05/cobertura_1/PNOA_MDT05_REGCAN95_HU28_1092_LID.tif.aux.xml": "670b0e4d5a5d4500f6705c04e0c6003f1ecb3216e4fd56845026be2e860ac5b7",
+    "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/fuentes.json": "e5075177f442dadf8a7aae5c4ffd5f51b3a9074b6076aed07fa2b6905a5f8780",
+    "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_0.multipart": "dc448f302bdf30dc8ec0a406ebb7e7ba21040c5d22217719e28e8a14d0be3e0c",
+    "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_1.multipart": "e8295aff8971bee75bc775365a96d03447f42d154bde70ec09bf9459f401102f",
+    "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_2.multipart": "24c9ca99beea8b4690258f63a643774cc445a85ead5a22310d34bb833794ccba",
+    "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_3.multipart": "29e5550b5dcf6280039afc624355fc2d4080b547fe9601cfd0be3dd885d11abb",
+    "data/bronze/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_extension.multipart": "f077b10350929b853ff11b3daa14ef2b73089a8d969e82977e42984d6f944f3a",
+    "data/bronze/geografia/mdt05/wcs_4083_5_abona_20261026/metadata.json": "f3debdb29d7303570aab256fb16e51be536d7093b6c49d3ea4dae4adf5c6c274",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acceso_este_20261025/mdt05_laguna_la_esperanza.multipart": "ee81af96695ac5dbed98ab5d4b25fb15bd2fcfb2bae9337d029443d7a78088da",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acceso_este_20261025/metadata.json": "d6839fa25ab16f96b548092ecb9ca241bce39370fda7d83037a9021594bea7c4",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acceso_oeste_20261025/mdt05_alcala_chio_boca_tauce.multipart": "3e121a7a531de641f6e59b5f127ec08e703b074637f61b6274d765177d5c4f2d",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acceso_oeste_20261025/metadata.json": "ff41d4e1b119d1388ae42b001d648944db42fa6dc50da9ca8c91b36894d2270b",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acceso_sur_20261025/mdt05_adeje_vilaflor_boca_tauce.multipart": "608c56b8960ae7765030b7f45db8ce0f2758b138d0c7494e6046ddcd5cf48a4f",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acceso_sur_20261025/metadata.json": "fe7105008dd778fa26f2671363ae583c884c4b3357b62ed0e86269053e82f5aa",
+    "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/DescribeCoverage.xml": "dfef22e30623ea98d0d17b15badb0695d1490aa5e3ef790fbf45d5463c735ce6",
+    "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/GetCapabilities.xml": "30c95575991611cd15924369d2a3ad5066aa9a81ff68f8e549c71bdc6c638d3f",
+    "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_la_esperanza_el_portillo.multipart": "96288aacb16a728b41f451f1f1445546671ef7468936534f4ba5504201641522",
+    "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_vilaflor_boca_tauce.multipart": "55d5066cb7c6ed2a57d3684bf7688de278ee7e885cb223e50899a0450cde8e92",
+    "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/metadata.json": "fb71ad3d63263305d268c5be15660a25e6d650d7e7ac1179b27061c91c8a46ee",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_extension.multipart": "70074e56ccef155b96b731731cddd5db4f6b03937fa5b68b37198949ace5d4c0",
+    "data/bronze/geografia/mdt05/wcs_4083_5_acentejo_20261026/metadata.json": "b425a023ef5dff36df2a64f018e4a8c049122d8ad6702464f9e6daff039df2c8",
+    "data/bronze/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_extension.multipart": "60470dfdb722e691e42fa370879b884b9f4d15a1a573777fc6ad5abd1f93d2a4",
+    "data/bronze/geografia/mdt05/wcs_4083_5_arico_20261026/metadata.json": "20a96d03862b79b8e127adaca7f2f7d7b21f15d4e2c9fa186849081eb1de91dc",
+    "data/bronze/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_extension.multipart": "7986a3d1b51e92ceb6ce08c1a90fba7d5ec57cae107961bce9ab8b2b53ad735f",
+    "data/bronze/geografia/mdt05/wcs_4083_5_candelaria_20261026/metadata.json": "2cadd85c7b713fa96837a1041040278001031679e5e5d2c256fc67860ecb31a3",
+    "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/DescribeCoverage.xml": "dfef22e30623ea98d0d17b15badb0695d1490aa5e3ef790fbf45d5463c735ce6",
+    "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/GetCapabilities.xml": "30c95575991611cd15924369d2a3ad5066aa9a81ff68f8e549c71bdc6c638d3f",
+    "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/control_1092.multipart": "235a32e5bea18bb8f551c5753766ae548fba5ae97a581e4386ed10a30796ccbf",
+    "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/mdt05_chio_boca_tauce.multipart": "822f8173e8532ecd4df83de79f99e2b0a41bc4bc10d99ada68f34a73b1de9666",
+    "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/metadata.json": "a1b2edb8586431c28c91b05c10bbf385b6728a02c5e8108943123a49190ccc21",
+    "data/bronze/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_extension.multipart": "2e6c62b91113d3c47add42295ce0da82a5b50f6b5e46d94e3004fa10bcf11155",
+    "data/bronze/geografia/mdt05/wcs_4083_5_columbus_20261025/metadata.json": "4d98b5a4fe0ebd4ddf6ef2fa30c7b8b315facc5c9d5353d732bb39f22b513922",
+    "data/bronze/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_extension.multipart": "7af29bcde709eab30fb18d99f8bb8d949fac90659f7df9b66094a072474ee71e",
+    "data/bronze/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/metadata.json": "001f02c9a9bfc0eef667f4404f2cf2858cad75009de3041aa6257aebea292462",
+    "data/bronze/geografia/mdt05/wcs_4083_5_extension_observatorio_20261024/mdt05_interior_portillo_observatorio.multipart": "d6c48f75eeac49683aa3ad8153c55c3a01847b0f0fc2af5a131c80077df23ac1",
+    "data/bronze/geografia/mdt05/wcs_4083_5_extension_observatorio_20261024/metadata.json": "f140d5ddbe17991b730de4b60091ba6aedcbcd97f1919bde1c170b9c18b04c87",
+    "data/bronze/geografia/mdt05/wcs_4083_5_guancha_20261027/mdt05_guancha_aguamansa.multipart": "27e93ca5bb9186f5a598d4aa6b7630fd470bb9924efd2d6a80a15ddfd278f5ed",
+    "data/bronze/geografia/mdt05/wcs_4083_5_guancha_20261027/metadata.json": "b12e394c6636fbc0d1fe2bf81e9f6d75cb1db8d2db32a9c8dec5d5715934fada",
+    "data/bronze/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_extension.multipart": "76f85f542f934a7191c2cf7d0e27dbf1312bc35ef249e87a74e237860f3cf664",
+    "data/bronze/geografia/mdt05/wcs_4083_5_icod_20261026/metadata.json": "a6328ff2735292208befa47b1b9fbd74ee8156ae35a43dad7c24c8c2503e8731",
+    "data/bronze/geografia/mdt05/wcs_4083_5_interior_20261024/mdt05_interior_boca_tauce_el_portillo.multipart": "a5db75dee4b2802e2504f4123acbbf50ae724badcf902c9d8ff713e941577a28",
+    "data/bronze/geografia/mdt05/wcs_4083_5_interior_20261024/metadata.json": "a1504789b5dd8d5e3ab6cf2c84bb5e1c8f013cedd79c3ef6dbee851f550bb4d5",
+    "data/bronze/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_extension.multipart": "7afaf7173ba6b4a97ae2aec62096351a841c22b8ede8114003777020a1a6fc98",
+    "data/bronze/geografia/mdt05/wcs_4083_5_masca_20261026/metadata.json": "9057addc01cac80958b7cd10483ff0e9659445c046aa3fc9780714f2f97e0cfd",
+    "data/bronze/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_extension.multipart": "4507033796ec37b589533d8f75e065e09a190d0a738cbe5f4f8f4772f38975c0",
+    "data/bronze/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/metadata.json": "2923d773039f6af34431cd4710b2b3901b869706080fab8978d01132e92b108a",
+    "data/bronze/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_extension.multipart": "2f904bbbddbefc346dae80ae14defec67528a79fef1ff843b6c1c2a65b00c490",
+    "data/bronze/geografia/mdt05/wcs_4083_5_metropolitana_20261027/metadata.json": "35a2099434167e113ca0630a2b682d2325173d7f194dd720a0426cd86648419c",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/metadata.json": "7a03b6c6a1da030d53775763315a6822db22a4a4ba307e23d945f6203ad1e357",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_1204.multipart": "373e11137e908644eb46ad3c004898657e3f1726d4436d9024a97fd4d20e9321",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_1256.multipart": "b126a2b94d688066ce2b753584d22d586f930c8f60e2898c687299275aeb33cd",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_1780.multipart": "c0d383db8cb4d7e5c61b6076d9c4566eba3567d35b251bad24012169981dda01",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_2057.multipart": "170d337a33a4e1b0b4d5565c6c4c84292fac065d72f7407df62bb113ab0f4cba",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_2493.multipart": "264e77328d47eef6368821947d9431c10a343fc1e603ce03e484d11935b56c0d",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_2596.multipart": "3af1aabe56bfcd24d639a2c9c0d5413ad05dd5449cfb68b25f63e1856e1ece42",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_2728.multipart": "e6e216a27123420148db256f874a14dc102e8374bd4cecfb3d5704a1a5e37c95",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4009.multipart": "6f060f0bb9045d524424182a5089ddab2719a2ff244d875660c12c92fbd31d56",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4017.multipart": "6f98463e4949677f0b90f6c09bc218ca5aace61c657ebacaa76b5bfcae485b07",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4023.multipart": "26ac21d2f2a55f505c37fe3d6c3ff16b3e6e737a4931a267da7136f5b546adee",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4035.multipart": "4aba375e987ae054936c06e6329f42b2a7dcb6f24b95183419179745587f56ec",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4187.multipart": "6ee511c02eca8885ce884933d53f8d66fa7df5123132d854f7f7f54a8b4187af",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4357.multipart": "156eb5a0bf6d919d19fd48595ea663b157fce519525dee47736bbf37c91fd3bd",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4416.multipart": "e9653dd91614e4ab96e2c3fc1860297dc76d15c841c3bcf73a6317334f191d80",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4469.multipart": "8b02a137e5e90faa4903f4d1de1c45343863e0d5ef690c1aa0768fedcfa5ea4c",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4491.multipart": "92898b55ac39771b09cb93b82f67b68915412e959f33646967f315cc4875d32b",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4558.multipart": "5b6f51cfb61ece5f011f95cde6805dc8514ecd04257290583abca945ae4ccdd9",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4705.multipart": "800b59b86defb164c33b7d7c9c89d5ffe6a1589e223aa3902f799fa2d75c1806",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4715.multipart": "2877d827e1506cb660224fa1365877483032f0d823e1301cd6a7ebcaae03d881",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_4729.multipart": "e16d1a55dea2ebf6a672fc2463da1597052aacc5cae1e3d5e65620c525146df5",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_5274.multipart": "f1202665f83feb8f0ab2c8550ff123169b1231139cf2f8c5a8932b77ab98922d",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7054.multipart": "38b8d565cc1fe65cecf3079ced600ae847515779d58469f1337e25e2cb5a3423",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7073.multipart": "7a8bde6d20ef601b1a8a51af4406465c0188f2b4f6e9b70548999e77cc933e77",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7108.multipart": "b99f3109ce40ae791c41ef7a7ef03a38af84d4ffa7fa139795b3b31c5d43dead",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7165.multipart": "b85d14681fb56cf9ad72147674295d5666f727a41422d7ce33a85d0db4e00217",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7172.multipart": "51b3b8410d9a085785476402aa847de6726283d67f23320bd8f9711a7eae254b",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7228.multipart": "9a3f85de3b5467ca8206e4cae44ed3edbcfc5a6f98c1b4094f504ac622788d55",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7282.multipart": "06ccbb59aed18343d688955903bc8f9bd3cbbdfc5e1fbfee7c26471d7978ea24",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7344.multipart": "cfab17d13093f5407b4e33a578d59eaaf9b01aa55381f5774372f85ac5129d6a",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7546.multipart": "60c329eb03a13b7ed74e1552377001fcfc3beb8976dcffe4cfa819d50e2cba50",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_7895.multipart": "e1608c6541321f76ac8ff1ec5d91de9115f5b51727916adc7b0aac29d4e9a208",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_8007.multipart": "fa89ad028efb0023d953e6a9db992cd099eb707d405a00f0f63dc7a7d60e9db2",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_8028.multipart": "f46c5d7268bd747accdfbeebd2a07ea1cdb62bbf7c51398d47fa1635ffae9dc0",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_8167.multipart": "3e46e3024e4f48bf746eb6f0dcc6a56b0b9763e5100d9db4eac664715730a91e",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_8318.multipart": "c3e5bdd26cbaee78ce9d7912dbc2c9730368588cff77c7003cc82853b5963f94",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_8334.multipart": "459e38a0df5160d3cc631682a4076171bf3fcc412b23758cced00afa696a00e2",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_8362.multipart": "33be16775ed254bb314d008c6f680463caf16d2461cdcf3cbf04534493fa3474",
+    "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/stop_9359.multipart": "c40eb283d6496523a510e97b528b858c4eeeb90de0361ee2380899f4bd4111ca",
+    "data/bronze/geografia/mdt05/wcs_4083_5_san_miguel_20261027/mdt05_san_miguel_vilaflor.multipart": "8d801546aa1dc0021f5e665bb218dac2613a91829851f1d0b1d1a59c601f4169",
+    "data/bronze/geografia/mdt05/wcs_4083_5_san_miguel_20261027/metadata.json": "c8580c6d3811ddad917cbbf135fa5d1f6b955beb10f0be2efbbda25fb8f890b7",
+    "data/bronze/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_extension.multipart": "50f1268a544fcc7f4fba0188b7ebe697aec8cbfa9d6d36074af9ea329135d396",
+    "data/bronze/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/metadata.json": "ab34f68706d11347b27217d3e1773003ae42797c9761b6df244f47ad41d4a774",
+    "data/bronze/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_extension.multipart": "990c3a4a6705ae0e9112e19c41691c7614fef4f71831e155f06865e65efd7334",
+    "data/bronze/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/metadata.json": "5c3281d9629df654675e52eada1dd88c0d9409f8e827ad233ca06c8ed6221022",
+    "data/bronze/geografia/mdt05/wcs_4083_5_valle_norte_20261027/mdt05_valle_norte_aguamansa.multipart": "8ca5fe9ebb56552a36a7a982446b2299b4855fae63629c023af1d5a9885a4a79",
+    "data/bronze/geografia/mdt05/wcs_4083_5_valle_norte_20261027/metadata.json": "26857ec2acee17e1b2fddda5165d91136b0536b5766b52db2fb22b6b1764d447",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/adeje.osm": "d9ba474e8a22992f0d6cc8a6c1578495c84988a8bdf3038901fa20eb2e0312cf",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/adeje_regreso.osm": "192ce96254109a5b352775348a29fffb23a1b930f7d43fb339d25451750e3068",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/arona.osm": "c15a39694e0cb20199b84ffdabeb3bdacf3d9e05f822a1dc519640efc435a33c",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/cristianos.osm": "474eb3c2ec2ee7b20f77e0079f044f54e798ecc2460947db267bd70dce469aa1",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/metadata.json": "04fb7039ce39498d15a70927ea227e652ea4619854f327c743c6f1d6c1077c4d",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/puerto.osm": "24f7eec8b13c8f67aa062b8740fbd385dd69263134cbab5d25ecb68e8b22335e",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/puerto_enlace.osm": "3477ea2cfb8ab9471b72d5455d255463e981224a9e46a9d1b2d59a60375a3577",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/tf1_enlace.osm": "71f78d2cdc43afd6cceefe79a85596dce63c62ab3b824d6bab7388db3df59fd6",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/tf21_sur.osm": "ed67c02b1b364161cb3238fa5d7bbc61ef824752f1b09d8bb74ce9c246a7c04b",
+    "data/bronze/geografia/osm/20261025_accesos_prioritarios/vilaflor.osm": "4be728b6d4691f0d17cc1d57f283f05da1715364b126f5f8582fd6ce8e21bfa9",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/alcala.osm": "6f00ccc10897d51de8316fe5b9f38b8a4402facd3e34496f05d84071c39f1b21",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/chio.osm": "3c1252bc04937f3209c2bdc8dda7dfcd2fbfce860f7ff38f448ea46be3c46f68",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/guia.osm": "f637198967e2206df26bce795062dfde4c62857fc44bb9fd41dc3d9d0ff89c54",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/metadata.json": "8253e1df6a47ad72b49ef0bfa9382c3bea3c8635fa255251fcbce3cc30f06fc1",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/playa_san_juan.osm": "82588af944605b1fc67020d5dfd2e6112159e43ab5a8bf327c71320c2e6b3564",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/tf38.osm": "43270a8956f1d8cb2f9d19b1a6afd1dde6c37040f097ced455c6aefcff919c70",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/tf38_curva.osm": "501d407f83e91e1ca96519873c9ea6d98808ac5bde8be44de220318f72544fc1",
+    "data/bronze/geografia/osm/20261025_alcala_chio_boca_tauce/tf38_curva_sur.osm": "dc25af42c8c8e37a3eda11ec88fea6b629f775eef7bfb57e6f78d500ec9b3dc3",
+    "data/bronze/geografia/osm/20261025_boca_portillo/mapa_original.osm": "6115f15e848ae20274138a121ac30414dd6cd7634438086f9a29dc60687c4086",
+    "data/bronze/geografia/osm/20261025_boca_portillo/metadata.json": "cf8def23d140338b199aaa0df7c941712aba1f5bc30f9219f61c252f98d9f8e6",
+    "data/bronze/geografia/osm/20261025_columbus_vilaflor/columbus.osm": "b8cf0106f078f6f67e54914459ff297e7a000088c5c2234003f51719c63a822f",
+    "data/bronze/geografia/osm/20261025_columbus_vilaflor/metadata.json": "b29b151126596d4156e9ec1cbf8dd085d928143f4f1810c08c8fad8eda0e9a2d",
+    "data/bronze/geografia/osm/20261025_laguna_esperanza_portillo/esperanza.osm": "5f7f2fefba9ed82388d4307ecfb4f0ae3b0f09f800d38e290fe914b8f4f22939",
+    "data/bronze/geografia/osm/20261025_laguna_esperanza_portillo/laguna.osm": "5d59197112fe8a6c059e068637f57f2f8d2409e2342108e9765b3a3c48de3ef4",
+    "data/bronze/geografia/osm/20261025_laguna_esperanza_portillo/metadata.json": "451cce2ec27b5bee96c2afd57bbd6330de9f5ba1f412fa75462b3138d0fc9796",
+    "data/bronze/geografia/osm/20261025_laguna_esperanza_portillo/tf24_enlace.osm": "3a33e86712e0bdf07bc2f7824433467c7f9eeeae421ffb2974578abd09e694e7",
+    "data/bronze/geografia/osm/20261025_laguna_esperanza_portillo/tf24_montana_1.osm": "b23181252d687eb796f809af66576ab4df49af1cfd468a4f9f948ad7e2bd5cf2",
+    "data/bronze/geografia/osm/20261025_laguna_esperanza_portillo/tf24_montana_2.osm": "7573996ce26effcf42eeaee89d2993893d489deb1c3ab057fc5734ece5d0dbb9",
+    "data/bronze/geografia/osm/20261025_laguna_esperanza_portillo/tf24_montana_3.osm": "75e2dd99627c1f2ee94dc9ff9f291cd55460a451745840895c7882e6da085b57",
+    "data/bronze/geografia/osm/20261025_orotava_portillo/curva.osm": "cb0f81a9ed80f8929f3ee7ef3023524bbf372d4c60a0b08f42d74fcdb86268c6",
+    "data/bronze/geografia/osm/20261025_orotava_portillo/metadata.json": "0102055142dcfd0d73488fbfd37984ff737ad514e3e6ea5d6ac17f8b3644c935",
+    "data/bronze/geografia/osm/20261025_orotava_portillo/montana.osm": "e18a78d99ca2fac9e97bcbf47098e1f92023ed84429936f58dfb08ac763072bc",
+    "data/bronze/geografia/osm/20261025_orotava_portillo/norte.osm": "d49885ec8e824bc58930f23949ea60eb1a09fef6c4bd57242b99939777377caf",
+    "data/bronze/geografia/osm/20261025_realejos_aguamansa_portillo/metadata.json": "a81ec19a037b561b24c5bbb3545fa6f14af26a75f9ccc3548dde7edef5c8c08d",
+    "data/bronze/geografia/osm/20261025_realejos_aguamansa_portillo/realejos_enlace.osm": "b3fb953c9974cec45257094bf3ad0304848ccf33e473b8abba1c6c06aeed31c6",
+    "data/bronze/geografia/osm/20261025_realejos_aguamansa_portillo/realejos_oeste.osm": "1537d7383ef2fd7dbc349d0b1ba7456eec85f58c60f17ea6e776c42ec0facedd",
+    "data/bronze/geografia/osm/20261026_abona_vilaflor_boca_tauce/abona_medianias.osm": "4bb64226a6efc6a6c2dad4770567ca1d952365dec67f7f9992445123a4759fdb",
+    "data/bronze/geografia/osm/20261026_abona_vilaflor_boca_tauce/los_abrigos.osm": "532d49f936d1002585907664db21ac32ca3b9bcbe1a0e0fa49fc92861cda03bf",
+    "data/bronze/geografia/osm/20261026_abona_vilaflor_boca_tauce/metadata.json": "35fb84806aa6946d2245eaf3f3ddbd067fbbcbea44246ff7358ce8847d0f07f5",
+    "data/bronze/geografia/osm/20261026_abona_vilaflor_boca_tauce/tf65_litoral.osm": "8edcd0339d7ef493fd5b838360c5eeb883a96af82094ca64936b10f033bc960d",
+    "data/bronze/geografia/osm/20261026_abona_vilaflor_boca_tauce/tf65_san_miguel.osm": "dae9653fdc4a704e83337d061869885a13bdaeea603f656a0d79f7fed5f6e1c9",
+    "data/bronze/geografia/osm/20261026_acentejo_esperanza_portillo/acentejo_origen.osm": "41ab7a588c3308a4a5c77998914e214a9168ba0ace6463c1c9cbc5091e40dbef",
+    "data/bronze/geografia/osm/20261026_acentejo_esperanza_portillo/metadata.json": "bef89034c701ffde6af7eb1657be39cb53bb002ede8289aca1095965e599fcc2",
+    "data/bronze/geografia/osm/20261026_acentejo_esperanza_portillo/tf5_rodeos.osm": "1faba83b8bb2f88881bc80fdb0f62ea3ce94287328fdedef80b490d502e07580",
+    "data/bronze/geografia/osm/20261026_acentejo_esperanza_portillo/tf5_san_benito.osm": "c810b9e2751d32ee2fdb8aac5af2b3733961212793bd25e56c92b71f79a9f10c",
+    "data/bronze/geografia/osm/20261026_acentejo_esperanza_portillo/tf5_tacoronte.osm": "35cf517466a19fdf06fc054a3a78c5a817eb610bb6a3368afb9eb7ecbef48099",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/las_eras.osm": "4c229bf3d74b10ae9b19faf0ddf1c928dcc364a762a79c71499c5f0511a90661",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/metadata.json": "8ad71183a4e1af6e9b9f0b55bcc0594578d0f669336c93eca4ad7a8f6862ce7c",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/san_isidro_tf64.osm": "44c591f11e4e2f19cc411f740612fff2b3fa46b99d585eb4a9bda7fb38303ad3",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/tf1_abades.osm": "026183f36d28b84670dbcdce17e1085670d3aa7a5ba122dd36cdd8bdcd25e293",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/tf1_chimiche.osm": "28ce4a173e77455421ad5632a02a91e1cf2057ef4ead623f1946739dc802f104",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/tf1_porís.osm": "316ff1147ecfb3b70a78aee05f50cbc3ca9179687d576861391de5521cb5e25e",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/tf1_union_abades.osm": "6586991908064dfbbd29ef9b673287e18398f5cb5967d83b8ca432d762e78ac0",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/tf1_union_chimiche.osm": "48ad30d87b893910bcf4cf139dbde77ba1ee10e251cbbf076d4e0a114528e93d",
+    "data/bronze/geografia/osm/20261026_arico_vilaflor_boca_tauce/tf21_granadilla_vilaflor.osm": "1aed25e78c781d97e056a3146663ed6034fdb04a222ed7f95c093df9c5939ea7",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/candelaria_enlace.osm": "9f244341777fcb3ab58537751cf966a08a2dcd120e8347d41a4ae998a7c3f74e",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/candelaria_origen.osm": "6765a29059f911926656b5260929e634cf1675608626b14c9073a887931edd60",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/metadata.json": "c7758d13bb1f5ae7d55e96ef7d6eff838250860145ec90cf1d5c91972842be33",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/tf1_acoran.osm": "3ebe10ad5d78c47d11bd101cb0355bcb66f82b7fb89065d195a05b25edfb1272",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/tf1_radazul.osm": "b56b1263736650d578436dce949a13fece55ba9d3169c3f2b50d1101abcbb0ad",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/tf1_union_anaza.osm": "f922f4a2a5e5f738a9fcc79383b46b6644607925239483d16ab5b2af52cc7b9d",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/tf2_santa_maria_norte.osm": "1dd0b793f71a325ae5bbce6238c01d44984a3af5ebc6d2e3368f14e78d4e7e17",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/tf2_santa_maria_sur.osm": "0d7b9a7204bfd8ee3bb970684dd4aee71e56742a0292297b0078329a469fa690",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/tf2_taco_norte.osm": "771f38b416855a52c4b9c93e13ca07c625063c2548c173f94e2245658ad96975",
+    "data/bronze/geografia/osm/20261026_candelaria_esperanza_portillo/tf2_taco_sur.osm": "d48ada623946aa500d280e155436942f064e1dd0706a0cc4d901562777dc231a",
+    "data/bronze/geografia/osm/20261026_icod_chio_boca_tauce/icod_origen.osm": "97c38a120a1a7586391fb07e4d69bf99b7621ba94ef4bd5472f60a35ff33d678",
+    "data/bronze/geografia/osm/20261026_icod_chio_boca_tauce/metadata.json": "a59d87cc63faf2eac1e57bc49c79c8ba123f6d45f5e70fb85b747eb074c0fde1",
+    "data/bronze/geografia/osm/20261026_icod_chio_boca_tauce/tf5_icod_oeste.osm": "5a20ef2b5c60e758df274ebb23c7c486fc6eea79aeb5eb270027a68a9e3c4ed4",
+    "data/bronze/geografia/osm/20261026_icod_chio_boca_tauce/tf5_tanque_este.osm": "67d722e7c897756baa728d090da44315203ca0cb60e3c84d2602f532df8f067e",
+    "data/bronze/geografia/osm/20261026_icod_chio_boca_tauce/tf5_tanque_oeste.osm": "11bad98a332e8fb61fec370e6ad78b9d842ed2b403e77fe798a27a67a5499184",
+    "data/bronze/geografia/osm/20261026_icod_chio_boca_tauce/tf82_erjos_norte.osm": "e44197d85a9aa06aed557cb02af4ab6f221306e4728a4710f0e5935c804859d2",
+    "data/bronze/geografia/osm/20261026_masca_chio_boca_tauce/masca_tf436.osm": "2a6a368f2a63eb80e63e5a3d96d6c54927f3505a1911ac68320d22cf32588a32",
+    "data/bronze/geografia/osm/20261026_masca_chio_boca_tauce/metadata.json": "61719ed77837553ada9d5e31a06c48426ab4d570731ea5bde017df82e770091f",
+    "data/bronze/geografia/osm/20261026_masca_chio_boca_tauce/santiago_valle.osm": "900cced6f537e30520a2eff6eb7911886cc38fa5d7930a79d3a775436a6f153f",
+    "data/bronze/geografia/osm/20261026_masca_chio_boca_tauce/tamaimo_tf82.osm": "9f9bc18c3ffc97d69793be846d3e8e73f13c6cfe6b2cd4a01f91da4d1a1599ea",
+    "data/bronze/geografia/osm/20261026_santa_cruz_esperanza_portillo/metadata.json": "0f44ea3212e4c995dc41d855c6fb19fd011640e9ee523018d144955a8927d844",
+    "data/bronze/geografia/osm/20261026_santa_cruz_esperanza_portillo/santa_cruz_centro.osm": "9971800d3f2f97df3d67d735d9414ae127868549a38680cff513236bcf0501aa",
+    "data/bronze/geografia/osm/20261026_santa_cruz_esperanza_portillo/santa_cruz_salida.osm": "2595735ad68673bbcfbb99683a40cc1bf5ada3105d0280814bcecd9dd88c4c7b",
+    "data/bronze/geografia/osm/20261026_santa_cruz_esperanza_portillo/tf5_alto.osm": "374b2188a1de001ea3a4e545c5211d24b491defe63cff36ee8ddf4433e15ae89",
+    "data/bronze/geografia/osm/20261026_santa_cruz_esperanza_portillo/tf5_bajo.osm": "8df2c8c0d8304e2ef21ba382fe0a45d5a9de8361fcd808811ce04f736cdbd5ee",
+    "data/bronze/geografia/osm/20261026_santa_cruz_esperanza_portillo/tf5_cuesta.osm": "653e752b37af1f47f82a02b44eb022dce5b535d6ed2ea093e8e2f0bf47681a7e",
+    "data/bronze/geografia/osm/20261026_santa_cruz_esperanza_portillo/tf5_curva.osm": "c1b7cd42f338c447e4e2f560a971881518dda9398aa0c25920691d119562e1a4",
+    "data/bronze/geografia/osm/20261027_costa_chio/el_aljibe.osm": "4584e5616ac7276007c41c5c2e84b1c5d5b089590d749f8517637dd8d640b98c",
+    "data/bronze/geografia/osm/20261027_costa_chio/los_gigantes.osm": "09474e18f1ca2aa5b19dbb1578ee7c130df34c5003dcdb866e8538fe3a429edb",
+    "data/bronze/geografia/osm/20261027_costa_chio/metadata.json": "8bed0d5bdd5af7f263d99e75ac4930ae5d8417a197d03e023e3a1812e498d499",
+    "data/bronze/geografia/osm/20261027_costa_chio/tejina_tf47.osm": "69be94d9f2d38c0f2b95d009132a1e6346b0b0a2d1369da04e8c189d68dcf3cd",
+    "data/bronze/geografia/osm/20261027_costa_chio/tf47_abanera.osm": "db1e8fdbda29a1749aa3681f83e8c9c4d446c73e98ac039e9a3d95c3af2693aa",
+    "data/bronze/geografia/osm/20261027_guancha_aguamansa_portillo/guancha_origen.osm": "4533af4dbc81462c1dd9dc4b90ddb1d5851663593b829bab1e26d6740b2f104d",
+    "data/bronze/geografia/osm/20261027_guancha_aguamansa_portillo/metadata.json": "db80787e95996a0217839cd6ac545157f8d5e6c0c09156d7aa7a9ccd17caa146",
+    "data/bronze/geografia/osm/20261027_guancha_aguamansa_portillo/san_juan_enlace.osm": "b96cfd2049f506c777cf14ffeb9f583182b997a073b353efae874016528bba0d",
+    "data/bronze/geografia/osm/20261027_guancha_aguamansa_portillo/tf352_tf5.osm": "3e6043c363bd43a6d8122749939f2af6a9972730467b8710513e8cd0a72512a3",
+    "data/bronze/geografia/osm/20261027_guancha_aguamansa_portillo/tf5_rambla.osm": "aedc6297a0676f31ac143c7954f690484bedcc01c7f56759a6e56a86725ec489",
+    "data/bronze/geografia/osm/20261027_metropolitana_esperanza/el_piche.osm": "b3dbcaba76a844ce06b3defa36e651d25bef99d2efbd5e7a57bde1ce90ecb5f2",
+    "data/bronze/geografia/osm/20261027_metropolitana_esperanza/laguna_norte.osm": "0dc06f74a8f137b332b3eb7ede54312af68a99870d44a21cf29003182eae2f0b",
+    "data/bronze/geografia/osm/20261027_metropolitana_esperanza/llano_moro.osm": "9d91bad1c24c8871cc619369764e8cda0f4548607a0f4b689cca77e2d8971a08",
+    "data/bronze/geografia/osm/20261027_metropolitana_esperanza/metadata.json": "7165bf25e96f4bea5e3819565b3304ab5e787b3506a8dd4db72cafe41dfa4c32",
+    "data/bronze/geografia/osm/20261027_metropolitana_esperanza/valle_molina.osm": "58af9048f15e7677edb6613b4c37abca3e0e1fa9c8b1f7310e9190ed59890fc4",
+    "data/bronze/geografia/osm/20261027_valle_abona/la_victoria.osm": "4565f753ad287eaed5d061ab6f3f08f32834d768403c10e488fd57308b7cd834",
+    "data/bronze/geografia/osm/20261027_valle_abona/metadata.json": "25b0f2b8cb548636a21964b978b5fd5a2d4b9af8fff9447544d795c3c392a188",
+    "data/bronze/geografia/osm/20261027_valle_abona/san_miguel_costa.osm": "526ce4a0fd7ac6685c64a8788d80eb000253b4328b5407a8533e58020d3aeb6e",
+    "data/bronze/geografia/osm/20261027_valle_abona/santa_ursula.osm": "c76576fb53411835ff18aea8677d76942e716c720d303b32f4afb233b627bbb7",
+    "data/bronze/geografia/osm/20261028_medianias_arico_fasnia/fasnia_tf28.osm": "abca7896f7d0c45c1da4a61b12298c76f865269a0547e6007e052f7a3b11f68b",
+    "data/bronze/geografia/osm/20261028_medianias_arico_fasnia/metadata.json": "636e4c3259bbe2e88b089ef3f10ab17853a8d62d152c66b7fc59f4fafa7dfe9c",
+    "data/bronze/geografia/osm/20261028_medianias_arico_fasnia/tf28_relacion.osm": "3ae51e2497ff940b92e844f21127f621632a1f4542510ca2f8c170865d1399d0",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/arafo_casco.osm": "b2f579a7f02ff82b85a548896bf460eb6664a1d039d7e4bae45bab6e4dacd30d",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/arafo_centro.osm": "9bd9011c8ede8e5bedf4779d24ddf5b794f1ac6bd9e5690cde8c858c11a3d5c5",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/guimar_bajada.osm": "0d35f84ef543d1c0cfacd89529a284507061874fead9574d323f836687ac351c",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/guimar_centro.osm": "a16dc7fd87a2edf6f7bbc0ddefa72f617500f71a2d7247ce9a04c130d0bca6d6",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/metadata.json": "d85c2a9b4c4c5dbeeb40193fc2caab9a2cfa4ef1765ebe4bd984af6a0d456320",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/tf1_sur.osm": "20d43180de3918faac859e008bec34577177967a243e6ca20a77cd1bc048520f",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/tf61_tf1.osm": "dc8ce5fc4fd32ebcb565242aed16878df7544f505f137907a95112533de2f7d8",
+    "data/bronze/geografia/osm/20261028_valle_guimar_costa/valle_enlace.osm": "b5c3dd57a745ae7332b7db79dd1c568c744befecdb0f68beefdd49606585acff",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/abona_vilaflor_ida.json": "4e9b4f9996170c5d598d04985f3d40338beee1045571f4a998ebaa906bda8222",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/abona_vilaflor_ida_consulta.json": "876e1a77bb7fc672f8e97900a4d80a71a9177d7251016559536b65d2f9715f5e",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/abona_vilaflor_vuelta.json": "bc17b3f9c6f720953928f39d7aa73ad74a3afbae6d702bfd861dc1d2a2794fb8",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/abona_vilaflor_vuelta_consulta.json": "bf039a55cb7987ed6a152b53cd3d3fbbba0dc4f3d3e0202542e114e53c0e6c72",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/acentejo_esperanza_ida.json": "2a6b611db0b62798b0c105914d791d684e4e97a660cebf4fbba7bf31ac6cae11",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/acentejo_esperanza_ida_consulta.json": "04a419b230835f3bb0ba6afb62973360243255637c0f3a16cd36faca91d42dee",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/acentejo_esperanza_vuelta.json": "fcfd4b43b5eec1c9303d93aec11b1fdf9703a978bd74da6051d23d76aefb14ab",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/acentejo_esperanza_vuelta_consulta.json": "d269fbef64d02f8cb35aa510d916f73aa2922eff7b2e7015068142875fa32c09",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_oeste_chio_ida.json": "681ae76372e680fe1dc369399cc81a9cbd5240f2897d92c7c5abc1f4c6127b6c",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_oeste_chio_ida_consulta.json": "4a7a3e57b6e02314a9ada82604bb7498fb5db101cdaac78a2ac9c0fbd5a83b19",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_oeste_chio_vuelta.json": "a699800a6c1af181c505cd26900c4a738401e3cd3cee2f6fbd669c3609e03abb",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_oeste_chio_vuelta_consulta.json": "edf6549f690a145010d86f188ecc1951682bc79677fe98c5260c69e173071969",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_vilaflor_ida.json": "27dc901a4a0756db1f1396425884324761e7f608181cb7b83e7a92b36dc276e5",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_vilaflor_ida_consulta.json": "1d70373a7fb1f1569f3f6057729274384aacf7af1cc6d6165592238ec2f5e2e7",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_vilaflor_vuelta.json": "bdce244ec43f5bd31f8c376bd2e50768f05cfefd8ac414b1ba73f501c469b9cc",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/adeje_vilaflor_vuelta_consulta.json": "686bedd095880dfaa8816dc61de08ac41a9dea1c00f878cad8f108a5b3f18550",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/alcala_chio_ida.json": "9699567a34e42c458f0656233cdc3b02ac48d92bb72207904a2a78e68a72c769",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/alcala_chio_ida_consulta.json": "e317f95bc0c12e26bc011becf57001647332d2e268f84ef9b87f17aafe7a99e1",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/alcala_chio_vuelta.json": "9f4688a32e2245324180142bc4201247926b6d0133bec20601e1b4170ec875e7",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/alcala_chio_vuelta_consulta.json": "fa87e0233d58301aff1f25d130b7232ba867c89411fd1165c51287f04b88aa4b",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/arico_vilaflor_ida.json": "5c45dc26ea6eeee7e60186a37407defd698998f2d7de6e4258005eb68c05d94b",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/arico_vilaflor_ida_consulta.json": "ca1d95a5a504f8784e94562bdc652023d82cc4ba1341e149f4ef49f7faebee54",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/arico_vilaflor_vuelta.json": "8d16d59c8c7dfdc508b30877bfca4b54a0597a912bcf50b24ffb88418c809a42",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/arico_vilaflor_vuelta_consulta.json": "d8ce9b6a3accd9a38c69b06f65eed95a7d8aeca77b4fb266f1bd707d48b0c863",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/candelaria_esperanza_ida.json": "806a198b131e76cd881ac90412bf209306129575da4234dd2282e3298a1751e0",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/candelaria_esperanza_ida_consulta.json": "6816e84b2ad7bd1e53bda118494679228d00eacaebafcebab368a5b1e7bf8430",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/candelaria_esperanza_vuelta.json": "0d9c96bb5c4eb98aede2f5c070d06d51f1d89ccb9c33396d4eb7f207cfebd400",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/candelaria_esperanza_vuelta_consulta.json": "4e24196cb13ed83b8fbe0665281b4fbc91fb7b66ec880b2f1ef7fe3d0fe6e380",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/catalogo.csv": "5fe1abd1b3e17cdb10d76f163ff08d0af54ed49460131acb8778c981afa7cfe8",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/columbus_vilaflor_ida.json": "2516023c8daeedb8461f226596231fd39d923b80591eb21c8c978ad4049228bc",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/columbus_vilaflor_ida_consulta.json": "5246d783f85d2262d7878eefcc238f10fc2871e0481e36db2efbacfb7fe0117e",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/columbus_vilaflor_vuelta.json": "337d7401a7ad955712c5a30e76b2d6e7e23dfff04a7aed4891776d197a5a88bc",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/columbus_vilaflor_vuelta_consulta.json": "0481534a97b79500ed5b675e7d1f4808fbab6306c83383ad6e7f01b25d793602",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/garachico_chio_ida.json": "d2cd62a15a1b15aada0c48169a110cb34012bceea22aa459011ea13ed6935552",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/garachico_chio_ida_consulta.json": "3d26641254d4eb2e81faf4e9703ecb0aac857d3cb9d53e09baf1b06500adb831",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/garachico_chio_vuelta.json": "0550395ff323063c9a8b96c146910103c30ddc25ac9acda288e8d91a93c08657",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/garachico_chio_vuelta_consulta.json": "cff9bc8cb68c2fe865d226baa3bce3dbef76528945af7d25bb49a6cc0d36c600",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/gigantes_chio_ida.json": "96d4f9d52a1f1f9433aa95e71436152a25561fb8f24fd9d5ca60dd1a3ede0d5c",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/gigantes_chio_ida_consulta.json": "3246ca486ed19f763f5c58e57894d86d5fe04f0dc7ed312be2d027fb123e257f",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/gigantes_chio_vuelta.json": "8cc9953d8159aa8678a28c980f78783367188d9e0db1a3083ea92eb10d41243e",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/gigantes_chio_vuelta_consulta.json": "503c50866d44c9f09f8711c59fa02d3ba7418dd8d1792b3765501b8170c50ab9",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/guancha_aguamansa_ida.json": "125638d91ab94479f26352dea05164e6fdcd4a783f9c1d546113a730cbaddc37",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/guancha_aguamansa_ida_consulta.json": "5e0e83cd827d14765edec99a3839b8033407f482c4bf045acaf8598fa191fef0",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/guancha_aguamansa_vuelta.json": "2bd0b08d332be9473904968ce651e1ff5f7cc61d77e59eebc8611a4e254a6fae",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/guancha_aguamansa_vuelta_consulta.json": "63a4d1bf6d35425f5ad03f40cee8618e4e45385de1552ae2374e1e3ba247ab10",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/icod_chio_ida.json": "52b510b1030d7deefb785cdeaa57974a70a0c708031b307678abf023aaf813a1",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/icod_chio_ida_consulta.json": "61f871936d8bed8ce9f72317da4005c5777f2f9534500466f3e951cc5202c4d5",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/icod_chio_vuelta.json": "6c635fdd72dec9146b09407db2c746cbc708c8128a41141cf60ced7e701a7847",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/icod_chio_vuelta_consulta.json": "51aa43cdc3db9e5b8c38cfac136f470daec591d0b3ad184cc43d63b1254e1652",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/la_orotava_aguamansa_ida.json": "f92a0ebe93ee7fa3da5b614b0182c31e25e6caa5a40c29a73335df5c96fb86e5",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/la_orotava_aguamansa_ida_consulta.json": "2e9ace56d2c7706b1aad86ae9e8e5464ec97be6fa1685e16047fca842e7cc5b1",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/la_orotava_aguamansa_vuelta.json": "4933cd20fdca5636006affb61c7dd8920836be3ef0b6604155d9de80b3e53444",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/la_orotava_aguamansa_vuelta_consulta.json": "95c6b4766fc817237db48dcec065f481664538524fe85bcc676ae0df02d6ab3d",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_esperanza_ida.json": "5657505fb7fa90bd0e6ba52ce66e68fda1a93e3ad6c3e17714f1209f9224f70b",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_esperanza_ida_consulta.json": "bfd6916c034722d98f505961e412c11f0cabd6b25d7e4d8039324ea62dd9f224",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_esperanza_vuelta.json": "3f533d5e1acc289abb43dd48f34a6f6c52bfe961aaccecabab669f63a9bcb820",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_esperanza_vuelta_consulta.json": "6ccea071d029f0ebe9b171b2c7918b9eae27fc7f7ecd51d3f3f63e9db9c5660c",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_norte_esperanza_ida.json": "21800c024160f4a2d398da967c9b38e638c6234de92acdb39322b56bbc4625c8",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_norte_esperanza_ida_consulta.json": "cb5f5a7e7a8551708d62affabd0b6aef5487cd103226685dd3db5507e6fdc3bd",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_norte_esperanza_vuelta.json": "521eec47699b9ce5386b9cc7186040b766fe4dca4839806559046ec43609ebf7",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/laguna_norte_esperanza_vuelta_consulta.json": "c522d182816950296de5cbd28e23577e31d5a892694667d7ca87893ba9d2e5a2",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/masca_chio_ida.json": "c26e5568093622d850763d4817703860c38071466dd3ae24d617b33f3652b854",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/masca_chio_ida_consulta.json": "3c3d5323b7cf56bf4da0c7632a5e8214bd1213c6fbe038c9c65b17cf58381ad0",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/masca_chio_vuelta.json": "1d44f978b28041162392cdc15f4894df8391e7d4944a956c6e18bc8ce75dd703",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/masca_chio_vuelta_consulta.json": "f67f708ba50e668fcabf222d0ea2f62988d84e52979cc7b4247b24d0d49eb4bc",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/piche_esperanza_ida.json": "e9f8cb133982cdac6e4a736fe83efb211c81c172a43c4f73877145f7062534db",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/piche_esperanza_ida_consulta.json": "56618099cc046d16780def3b4ea9dd9029c1dead18fc660b89a07777a625eacf",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/piche_esperanza_vuelta.json": "6607e269cde150322090b8119a7fcb426ec573ccaebf8249995b3393012ebe0b",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/piche_esperanza_vuelta_consulta.json": "3313c9c1e8e9767d5b4ed15667b9c726a546dbeaeb18e0ac18953b07009cc1a0",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/puerto_aguamansa_ida.json": "c77c51f924981c7dff6aa63b3c2d773696fff4e85287c7364c5e15bbf1ee4689",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/puerto_aguamansa_ida_consulta.json": "d4c21098e1a3bec5aa6b7124cafbf5704b2698ee8fa7abd021fb4ebd60cf2b1f",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/puerto_aguamansa_vuelta.json": "2c55d64b72db145cebb932c3dd8d66a5563971d208bd1e04734a6f6ab7a501e3",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/puerto_aguamansa_vuelta_consulta.json": "88f5a109f4836023c6b5fc05001c210b041295bc4e2ebd7471e2650d1015c5c1",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/realejos_aguamansa_ida.json": "b95843dece03b4d178a24a64a94326d4912558d25f53b4aeee23e9a6fe73d4ca",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/realejos_aguamansa_ida_consulta.json": "ce92e16a5a13d765cf886c5b5335366b3a01bf32b3669f4ef3a9d782ac011526",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/realejos_aguamansa_vuelta.json": "bb17c7a8de0a6c6884e94e24b510a2ea883c74a4c2f2ef3ff95a4ba26e907488",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/realejos_aguamansa_vuelta_consulta.json": "e6577ea0fb51dd56fef1b7604f91e4045d9cc762ae35ad5b5ee3db5b37b78497",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/rosario_esperanza_ida.json": "f0902bcb248780fa13a3877ce3fe7a13d8b56764a0702451f92c8b684ee5459f",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/rosario_esperanza_ida_consulta.json": "c9e981f8292bfd878d744c65975970ce95c917084d791d5080a9558da2e490b0",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/rosario_esperanza_vuelta.json": "2129da5dbd0bae2b8c506794278ed9cdb80cfdf435869b4297993387e6dbc531",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/rosario_esperanza_vuelta_consulta.json": "9733d9950208c4d2c6a8d2e93c77b40c65b9ade3cdd74fa1eceb6af46f262f77",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/san_miguel_vilaflor_ida.json": "958169dedb5c73f93d0fff00ccbb95070085e0fc7d6c30894351124dbb9683cc",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/san_miguel_vilaflor_ida_consulta.json": "7b91578fc0c36697009dc00ea0cb9b9a1c4eee57ffef4601ee706c3bfe4512b9",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/san_miguel_vilaflor_vuelta.json": "fd88e0fa30387531cb5747df6f975728b0d0f01be9976d43042e65e71070fa14",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/san_miguel_vilaflor_vuelta_consulta.json": "a027a227e2b975e20400d3010960d61c2c7705ea0db6de3f18a3f08ae801fe55",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/santa_cruz_esperanza_ida.json": "0b4c2b65cea19f3d0ef176cee7c80cf8b418c2c840dbadaf3010f8c9bfafb8ec",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/santa_cruz_esperanza_ida_consulta.json": "8e28ad84c5889d4cb29cbd62f7dc876368aefc75238ce37971fe48a60691c78a",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/santa_cruz_esperanza_vuelta.json": "01982d171b685aec3b762f0c724fafd8910a273c110816dd6744133a8a02201a",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/santa_cruz_esperanza_vuelta_consulta.json": "5ad97eea48b5e998eaf64d30344cb89f1ff4cf28f2657c582a5091bdbd2392ff",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tanque_chio_ida.json": "ea02c18a556219afd0ef493afd11526fb8b3cd556f2927b63c455bd530f03e98",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tanque_chio_ida_consulta.json": "77b8f0c55db4e1328b226966c68b6e00f3438a8bb72c5381b96c4448ad322b62",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tanque_chio_vuelta.json": "bf52d48fb360bb3843efa22cca606128f976c107ba9b2c2d3684ecb475f7e757",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tanque_chio_vuelta_consulta.json": "34782ebf215091aaaef6566885adbc195b8359c382dc14ab704ae7a28a9554a8",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tegueste_esperanza_ida.json": "96d91349d15b0f5e785d704db495eea2affdaeb2d4baff8230bc89667391c19b",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tegueste_esperanza_ida_consulta.json": "2c645c48cb618b2c9d0f28eede707cb3ca44be0549232c0b2b1216858672edd4",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tegueste_esperanza_vuelta.json": "ff1a6a41c5a2d1fcdf94a8cf935afba7e02a1730c1f6dfc335511a9dd26cd960",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/tegueste_esperanza_vuelta_consulta.json": "7c93c0493e1b13172f26d62414df695cbd14e381ee0a81267d0c8fc2223d7ab9",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/ursula_aguamansa_ida.json": "89af549c00a2b98855252987ad1884cd9f6695ad30a069fecc11e96f54d6899e",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/ursula_aguamansa_ida_consulta.json": "92064759022fb5faebe057a6abc74a844f3e87cf3b9cc539b62014a72d3b7d97",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/ursula_aguamansa_vuelta.json": "d238e793e758717c1008c991074afc3e8db097b8c69bf66b914620898889f7e6",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/ursula_aguamansa_vuelta_consulta.json": "7a1e2f5bdbe5f9228d131b720ded5f029821fe745bb8d2cd336e3548206581ef",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/victoria_aguamansa_ida.json": "c21c426c54ac4bd24f1cc6869d88411e397115dd022a47dceb83e88baba87779",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/victoria_aguamansa_ida_consulta.json": "adc280714be7334c7fcb01ea94a77691d9ca264f19631353fb29e910d5657fc1",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/victoria_aguamansa_vuelta.json": "6fa4ac96114febf0dffbd7cc22abc26175ff6584fa03cacec2880fab2e882f70",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/victoria_aguamansa_vuelta_consulta.json": "b28621613da1ea3fcab1071f135c7d0e2d641e4c5fa8e4415ed7e5b4c36f20f7",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/vilaflor_local_ida.json": "09879bcc7d2b45fed4ff42c0eaffac2c9834e7d3f5e350f1385b12dc66372d91",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/vilaflor_local_ida_consulta.json": "ad3f54f8b0184f3ec774ff29035b046465dca6dfe9bc5e2a27ad4bbbf1ee6a92",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/vilaflor_local_vuelta.json": "ec5cf7ff3e8796656d783773e09fecd911f165424637f81b31ac9535436ef464",
+    "data/bronze/geografia/rutas_cabeceras/20261108_osrm/vilaflor_local_vuelta_consulta.json": "a8f0e2de473c63005bfabdc9b2706c9df98a558311799fb4953ad0065f43e0f0",
+    "data/bronze/transporte_publico/gtfs/20261016T093551Z_2d6681e8/001_fichero_zip_de_google_tr_9f291323.zip": "2046a7cff27746853275bab3de4367d0404ebcd1144479ecd2a91aa6e0a02cbb"
+  },
+  "cabeceras": {
+    "ordinarias": [
+      "adeje_vilaflor_ida.json",
+      "adeje_vilaflor_vuelta.json",
+      "laguna_esperanza_ida.json",
+      "laguna_esperanza_vuelta.json",
+      "acentejo_esperanza_ida.json",
+      "acentejo_esperanza_vuelta.json",
+      "tegueste_esperanza_ida.json",
+      "tegueste_esperanza_vuelta.json"
+    ],
+    "refuerzos": [
+      "puerto_aguamansa_ida.json",
+      "puerto_aguamansa_vuelta.json",
+      "alcala_chio_ida.json",
+      "alcala_chio_vuelta.json",
+      "realejos_aguamansa_ida.json",
+      "realejos_aguamansa_vuelta.json",
+      "santa_cruz_esperanza_ida.json",
+      "santa_cruz_esperanza_vuelta.json",
+      "adeje_oeste_chio_ida.json",
+      "adeje_oeste_chio_vuelta.json",
+      "gigantes_chio_ida.json",
+      "gigantes_chio_vuelta.json",
+      "laguna_norte_esperanza_ida.json",
+      "laguna_norte_esperanza_vuelta.json",
+      "ursula_aguamansa_ida.json",
+      "ursula_aguamansa_vuelta.json",
+      "victoria_aguamansa_ida.json",
+      "victoria_aguamansa_vuelta.json"
+    ]
+  },
+  "comparaciones": [
+    {
+      "producto": "cabeceras/catalogo_longitudes",
+      "referencia": "data/bronze/geografia/rutas_cabeceras/20261108_osrm/catalogo.csv",
+      "sha256_referencia": "5fe1abd1b3e17cdb10d76f163ff08d0af54ed49460131acb8778c981afa7cfe8",
+      "claves": [
+        "archivo"
+      ],
+      "columnas": [
+        "archivo",
+        "km",
+        "minutos",
+        "km_geometria",
+        "sha256"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Bronze"
+    },
+    {
+      "producto": "cabeceras/ordinarias/perfiles",
+      "referencia": "data/silver/energia/lanzaderas/referencias_por_servicio/perfiles_alimentadores_nuevos.parquet",
+      "sha256_referencia": "4ef09feefabb7e4e735f44b1fc54865e586cde9a9dfc598a8b3b5ee44909327f",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "cabeceras/refuerzos/perfiles",
+      "referencia": "data/silver/energia/coche_hasta_cabeceras/reasignaciones/perfiles_alimentadores_excepciones.parquet",
+      "sha256_referencia": "19b88f5a9eba38075579d0aff45ba8e039d48dcf781ea967ac7cebfb72cc0306",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "costa/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/contraste_costero_valle/comparacion_recorridos.csv",
+      "sha256_referencia": "64accd7a298efb5b89cc596f3c74d2919126fcc107c49c61a3fddf0b6ac9601e",
+      "claves": [
+        "caso",
+        "sentido"
+      ],
+      "columnas": [
+        "caso",
+        "sentido",
+        "directa_tf523_km",
+        "alimentador_costero_km",
+        "montana_km",
+        "cadena_costera_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "costa/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/contraste_costero_valle/perfiles.parquet",
+      "sha256_referencia": "5d69f8e5779374bef2b68382e3670b2b7935fcef3ffb7df86ceeb7e2d609981d",
+      "claves": [
+        "caso",
+        "sentido",
+        "alternativa",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "costa/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/contraste_costero_valle/segmentos.parquet",
+      "sha256_referencia": "d004856ed87eafbd9e509a02fdf236a44b113f5bfb3a014530a0653b3a9b944e",
+      "claves": [
+        "caso",
+        "sentido",
+        "alternativa",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/aguamansa_el_portillo/perfil_aguamansa_portillo_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/aguamansa_el_portillo/perfil_aguamansa_portillo_ida_propuesta.parquet",
+      "sha256_referencia": "12eb8bc2680a103b33697d6b474b5c6c3ff00a10520a93c0bddbf706b0fac81d",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/aguamansa_el_portillo/perfil_aguamansa_portillo_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/aguamansa_el_portillo/perfil_aguamansa_portillo_vuelta_propuesta.parquet",
+      "sha256_referencia": "a1c8a1345c8705d9b6a4a78d2dbfad74e19964cd23a652fc719c11b31e9977b2",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/aguamansa_el_portillo/tramos_aguamansa_portillo_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/aguamansa_el_portillo/tramos_aguamansa_portillo_ida_propuesta.parquet",
+      "sha256_referencia": "8fafdc381eefca9888837dbbd3697bbaedc91041de13f326abaa980ccbf50106",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/aguamansa_el_portillo/tramos_aguamansa_portillo_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/aguamansa_el_portillo/tramos_aguamansa_portillo_vuelta_propuesta.parquet",
+      "sha256_referencia": "66f47229258379c53cbc1df6032ac53cef3e9285c316c27c545841de223af0fd",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/chio_boca_tauce/perfil_chio_boca_tauce_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/chio_boca_tauce/perfil_chio_boca_tauce_ida_propuesta.parquet",
+      "sha256_referencia": "fb5374f274697e77e497170786b52395008248be36a1d913ad6a12fea617cb61",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/chio_boca_tauce/perfil_chio_boca_tauce_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/chio_boca_tauce/perfil_chio_boca_tauce_vuelta_propuesta.parquet",
+      "sha256_referencia": "da4e676c52d207e1b726fe3333d9081a26dc6d12bfb2cccb1def7f158570ecd3",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/chio_boca_tauce/tramos_chio_boca_tauce_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/chio_boca_tauce/tramos_chio_boca_tauce_ida_propuesta.parquet",
+      "sha256_referencia": "59117cc8c6412cfe364763d66f258ab3c5af5f96a4e83477948f459549375b45",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/chio_boca_tauce/tramos_chio_boca_tauce_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/chio_boca_tauce/tramos_chio_boca_tauce_vuelta_propuesta.parquet",
+      "sha256_referencia": "79c95fd85b1c882825855f7059e434040c4b69468def174da8f980596821e4d8",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/interior_boca_tauce_el_portillo/perfil_interior_boca_tauce_el_portillo_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/interior_boca_tauce_el_portillo/perfil_interior_boca_tauce_el_portillo_ida_propuesta.parquet",
+      "sha256_referencia": "cc79033de97699e980aa9636013fa049be67bbc678ce9e9a4fa0957eeaf61a89",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/interior_boca_tauce_el_portillo/perfil_interior_boca_tauce_el_portillo_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/interior_boca_tauce_el_portillo/perfil_interior_boca_tauce_el_portillo_vuelta_propuesta.parquet",
+      "sha256_referencia": "0e091c6a3252a2b57e6252d4e4ac6e88e62c5a8d00015f7920eeb456972791fa",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/interior_boca_tauce_el_portillo/tramos_interior_boca_tauce_el_portillo_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/interior_boca_tauce_el_portillo/tramos_interior_boca_tauce_el_portillo_ida_propuesta.parquet",
+      "sha256_referencia": "9a9d91adaabccffa5c180dd028056972b5a53100b7fe4020f493a3dfc47d74eb",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/interior_boca_tauce_el_portillo/tramos_interior_boca_tauce_el_portillo_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/interior_boca_tauce_el_portillo/tramos_interior_boca_tauce_el_portillo_vuelta_propuesta.parquet",
+      "sha256_referencia": "33e2428eb7f356602114f1e8539abf4c09ce964586c9edc0318224c34a519c24",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/la_esperanza_el_portillo/perfil_la_esperanza_el_portillo_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/la_esperanza_el_portillo/perfil_la_esperanza_el_portillo_ida_propuesta.parquet",
+      "sha256_referencia": "5abff5b4570f42039bf2d645e1067601969a20726d67f7a2c6a22b32c86c60bf",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/la_esperanza_el_portillo/perfil_la_esperanza_el_portillo_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/la_esperanza_el_portillo/perfil_la_esperanza_el_portillo_vuelta_propuesta.parquet",
+      "sha256_referencia": "bd40734e60448a9ade7aa56b123e307fd33e9c65eb6f364bc2bfc5952d958b0e",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/la_esperanza_el_portillo/tramos_la_esperanza_el_portillo_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/la_esperanza_el_portillo/tramos_la_esperanza_el_portillo_ida_propuesta.parquet",
+      "sha256_referencia": "9e9fa32ba03a9fbed44115b9f5c37cc73f73e9670d41da45b4b6fa8a41e32789",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/la_esperanza_el_portillo/tramos_la_esperanza_el_portillo_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/la_esperanza_el_portillo/tramos_la_esperanza_el_portillo_vuelta_propuesta.parquet",
+      "sha256_referencia": "0c7e0792e3cb80c47e03c38557c8bf373f45bf818b2abb407f4261147271bd90",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/vilaflor_boca_tauce/perfil_vilaflor_boca_tauce_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/vilaflor_boca_tauce/perfil_vilaflor_boca_tauce_ida_propuesta.parquet",
+      "sha256_referencia": "f318c8d6d09c75b3be979407bcc0bdbc110d7d004ce68291e811c0bf61b5ac8c",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/vilaflor_boca_tauce/perfil_vilaflor_boca_tauce_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/vilaflor_boca_tauce/perfil_vilaflor_boca_tauce_vuelta_propuesta.parquet",
+      "sha256_referencia": "21d007b1d8e8655ede0216c4e92b7a6103479ad7cfba53f7e29a83973974450c",
+      "claves": [
+        "itinerary_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/vilaflor_boca_tauce/tramos_vilaflor_boca_tauce_ida_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/vilaflor_boca_tauce/tramos_vilaflor_boca_tauce_ida_propuesta.parquet",
+      "sha256_referencia": "b79ed0f944db3751499f41745e356c74a4c5b815d559b02ee8d8e6cd5a3e5ea7",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "operativos/vilaflor_boca_tauce/tramos_vilaflor_boca_tauce_vuelta_propuesta",
+      "referencia": "data/silver/geografia/perfiles_altimetricos/vilaflor_boca_tauce/tramos_vilaflor_boca_tauce_vuelta_propuesta.parquet",
+      "sha256_referencia": "ab6c50d68996a5c98a1c3d5b78a02d2a1349d534de5091bae8713b2487a32f5c",
+      "claves": [
+        "itinerary_id",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/abona_vilaflor/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/abona_vilaflor/comparacion_recorridos.csv",
+      "sha256_referencia": "3b635adb2aa2e819ffea2e6c7f8e61dd78772c18e7a997396bf212bf31d75eb0",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/abona_vilaflor/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/abona_vilaflor/perfiles.parquet",
+      "sha256_referencia": "861bc7ee4ddcaa345366fe6c5afb172bdf7047e1f9b97687bdc22808ebb60615",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/abona_vilaflor/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/abona_vilaflor/segmentos.parquet",
+      "sha256_referencia": "5fee1c5c51f08fd04294f84034ffc0acdf690db0fd8c80e9e711956ee9d4424b",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/acentejo_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/acentejo_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "3f056cf42cd75115bcaf6af971ecbe6eb183652c63f55862a9b694c75b98fbfc",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/acentejo_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/acentejo_esperanza/perfiles.parquet",
+      "sha256_referencia": "c9f594ca75aabdf35f51fea9eb073aff4e4c2778fee1c221185d18a9dd84f888",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/acentejo_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/acentejo_esperanza/segmentos.parquet",
+      "sha256_referencia": "8cb994a6614f2a6cd1654ad36231214df57d8fe12ce3807faa7eb345a90380a1",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/adeje_oeste_chio/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/adeje_oeste_chio/comparacion_recorridos.csv",
+      "sha256_referencia": "8663860b32abc57014514716d6a4afc1a1ef3ec64eb592aa7b5dcb622c2519e4",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/adeje_oeste_chio/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/adeje_oeste_chio/perfiles.parquet",
+      "sha256_referencia": "0da058dec29c007ad4dfac694a5fcfafaf38bc63bbb705f9127430cf979df67b",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/adeje_oeste_chio/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/adeje_oeste_chio/segmentos.parquet",
+      "sha256_referencia": "f11af76af0eb82190193cc0d42cd4d7fc69b4a82085a6d535dfd12eee52d3437",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/adeje_vilaflor/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/adeje_vilaflor/comparacion_recorridos.csv",
+      "sha256_referencia": "932bddb198505b9edc918779e79ea7ce6f899ebac22dbc0f7fe22b5c7bada251",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/adeje_vilaflor/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/adeje_vilaflor/perfiles.parquet",
+      "sha256_referencia": "c28c1a19bf110c2942683c9b17677cbac0ad5779f9478de9d94e049110b044e7",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/adeje_vilaflor/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/adeje_vilaflor/segmentos.parquet",
+      "sha256_referencia": "63724fb5d31ffe00a9781a729d980ef5d1774b732d8cd2bd8a63f713c64db2ad",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/alcala_chio/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/alcala_chio/comparacion_recorridos.csv",
+      "sha256_referencia": "76a7c2602cb8362d78af32612cf097e8b79b7339cbe34438aba1683522c41635",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/alcala_chio/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/alcala_chio/perfiles.parquet",
+      "sha256_referencia": "f70be4947a3e62eacde979ce572a83f8ee6d0dbf66e225d15c27439938a234f9",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/alcala_chio/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/alcala_chio/segmentos.parquet",
+      "sha256_referencia": "1b1c0fddb9bde7e8f064fe8674b8f9f34f83844dcba010b3405ae897e1cba220",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/arico_medianias_vilaflor/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/arico_medianias_vilaflor/comparacion_recorridos.csv",
+      "sha256_referencia": "fb7bdd5f214a3eef68c714c1bf7c207fa46598f7bdb1ef2744aba948e298dce7",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/arico_medianias_vilaflor/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/arico_medianias_vilaflor/perfiles.parquet",
+      "sha256_referencia": "8d3428228fc5c1ae104c0a68564c630ef5ba67daeb5bcf890ba868c00b35d50b",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/arico_medianias_vilaflor/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/arico_medianias_vilaflor/segmentos.parquet",
+      "sha256_referencia": "9201ec5c317cc3abbb865c1d699555a6a5e27abbe1ff7589b03e6191092e396e",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/arico_vilaflor/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/arico_vilaflor/comparacion_recorridos.csv",
+      "sha256_referencia": "463d8f1f1cd0d4eac8000a19c139dbe55970baae62b61ace445ad0343ba19769",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/arico_vilaflor/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/arico_vilaflor/perfiles.parquet",
+      "sha256_referencia": "ec158bb21d73fbc0b8ff30c2bd4607651df4ca5b043a6fef368608fafa2f3525",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/arico_vilaflor/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/arico_vilaflor/segmentos.parquet",
+      "sha256_referencia": "08a488a3959d64e55bfce795501b2a2b8d541238fa8e605837e0d5aed03e700f",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/candelaria_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/candelaria_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "5c9a4f8734c5078f3f490734174abffeb12c5eeee64b6f713040d7114e758024",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/candelaria_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/candelaria_esperanza/perfiles.parquet",
+      "sha256_referencia": "f7660c5ac9f123abc0f1abc47224076c8621d487acc4438e8863ddd07d23c40e",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/candelaria_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/candelaria_esperanza/segmentos.parquet",
+      "sha256_referencia": "3ea6158b766710e14dd7bb32b184dcfd23425482e11af48dafbef0bfdadda448",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/columbus_vilaflor/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/columbus_vilaflor/comparacion_recorridos.csv",
+      "sha256_referencia": "4e6aef9af33fdfea6119b0fba71c64f1bc3bac87ef2df35842aacb3e1e30a263",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/columbus_vilaflor/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/columbus_vilaflor/perfiles.parquet",
+      "sha256_referencia": "ed3a015e547a081c43cbc21a72d256f7f202645510970d8d95b49aca53fdf283",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/columbus_vilaflor/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/columbus_vilaflor/segmentos.parquet",
+      "sha256_referencia": "666cea6f1bb52ef81110e78a5d8cb66ae6f2ec00022935157740c6614013fe98",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/fasnia_vilaflor/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/fasnia_vilaflor/comparacion_recorridos.csv",
+      "sha256_referencia": "665aa27cde031433427606a27098d3f6ac2cfe73a2b053cf5b052bcca1b1e0b0",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/fasnia_vilaflor/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/fasnia_vilaflor/perfiles.parquet",
+      "sha256_referencia": "0d3d081f93d872e475da238103a2fe320a3a473c2659a5468443a73d20e4e741",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/fasnia_vilaflor/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/fasnia_vilaflor/segmentos.parquet",
+      "sha256_referencia": "d94220432765c067c4ba16fd306b7bd8b846a78001136abce9c9661d79abba51",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/garachico_chio/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/garachico_chio/comparacion_recorridos.csv",
+      "sha256_referencia": "48be3284cc35c0459370e7c2b29eb11316d21ac1b6d460dbb2d284e59d088b2c",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km",
+        "recorrido_encadenado_hasta_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/garachico_chio/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/garachico_chio/perfiles.parquet",
+      "sha256_referencia": "fc4c4e59ea44e40531b5377c4aab622d85f26749693ae4e169938fc11ddd2c8d",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/garachico_chio/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/garachico_chio/segmentos.parquet",
+      "sha256_referencia": "3f655f73d93b246f15a26be83be469e7d03abd72f098a2c641275672446b493a",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/gigantes_chio/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/gigantes_chio/comparacion_recorridos.csv",
+      "sha256_referencia": "8b18b84bb485f6f296dc82c28d5fdc9292bcb526fa009e17b3abef081188fc21",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km",
+        "recorrido_encadenado_hasta_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/gigantes_chio/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/gigantes_chio/perfiles.parquet",
+      "sha256_referencia": "6b5b09cfc2900183a2bdc47adb630fc7c3401e1cffdec53dd5fc08239f5ad16c",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/gigantes_chio/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/gigantes_chio/segmentos.parquet",
+      "sha256_referencia": "f62f1385f8feb73deeda512307f09b2951d4070969890fb58e90d5fda8e408b7",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/guancha_aguamansa/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/guancha_aguamansa/comparacion_recorridos.csv",
+      "sha256_referencia": "26fcaaae2e11e307f2747bb0da97c965bd8d452ac7b1004afecd8bbba01dae53",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/guancha_aguamansa/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/guancha_aguamansa/perfiles.parquet",
+      "sha256_referencia": "64348ffa911c1075c8fd6ee9d641b277206e7be1412ebdb53d97d439aaeee489",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/guancha_aguamansa/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/guancha_aguamansa/segmentos.parquet",
+      "sha256_referencia": "49af39c9e1375dd8b9cfe9a1da88310bc8eacb4435d59cd99406e4fc6262153c",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/icod_chio/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/icod_chio/comparacion_recorridos.csv",
+      "sha256_referencia": "cb173a9c50b7875de4380e99ccbef78068c585fdf1824c4bc5fe546c648c73ee",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km",
+        "recorrido_encadenado_hasta_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/icod_chio/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/icod_chio/perfiles.parquet",
+      "sha256_referencia": "96553e19af2b6670c6f49091e1514ae4d73e8000773d45b22ee2a50d32bd34ad",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/icod_chio/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/icod_chio/segmentos.parquet",
+      "sha256_referencia": "b6e15ef4a279c32727140c9c6fb826b29ca3e0708e993ddb2068e6c01068b3da",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/la_orotava_aguamansa/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/la_orotava_aguamansa/comparacion_recorridos.csv",
+      "sha256_referencia": "9b7281032c61e534dd9413e8301a5836e5216bfc024f4f2118bb087732a9ce95",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/la_orotava_aguamansa/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/la_orotava_aguamansa/perfiles.parquet",
+      "sha256_referencia": "9ae9c863248db329947677976947d7afa00b17e37adaa68a365607cfc53930ee",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/la_orotava_aguamansa/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/la_orotava_aguamansa/segmentos.parquet",
+      "sha256_referencia": "912ba639146de4c3cecc5f2bf94416907a1c806acf933a5572ce523cf71f7f0d",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/laguna_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/laguna_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "f8e460836dc6cfeee962958653fceb5426718f1ac7c0452804099f71980e6a9a",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/laguna_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/laguna_esperanza/perfiles.parquet",
+      "sha256_referencia": "88e1985d4f063e514e8a59c0c5e76125128703b01e7d21e169ac438a86271bf2",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/laguna_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/laguna_esperanza/segmentos.parquet",
+      "sha256_referencia": "c18c3d549883a772e822dc2430d918aaf00f274967083420f51cc90d195a154a",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/laguna_norte_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/laguna_norte_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "eee01d83b599f4d8595b9ba8c5ab36f750145ad77b7089ea21b59c514439bfa1",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/laguna_norte_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/laguna_norte_esperanza/perfiles.parquet",
+      "sha256_referencia": "f96ae4b2de7039e0889a7179b3bdbf0a45d3cfe2ea8d5ca20b3249ff8b1250b4",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/laguna_norte_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/laguna_norte_esperanza/segmentos.parquet",
+      "sha256_referencia": "59d6518191629ffec829d27c5966abdf9092a38eea783f6fc6f85dfc72e42d49",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/masca_chio/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/masca_chio/comparacion_recorridos.csv",
+      "sha256_referencia": "256ba6b43b67b2e68923c3787ef6826b58598150dee8e8d24a8a52aa9d309603",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km",
+        "recorrido_encadenado_hasta_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/masca_chio/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/masca_chio/perfiles.parquet",
+      "sha256_referencia": "cc5446541cfa78441b8177738245be65b0d33b356ea0b0b18b943aa3c21d0a04",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/masca_chio/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/masca_chio/segmentos.parquet",
+      "sha256_referencia": "e02de8010046dde68c4945f56ea2dbefa4daf69d13ce7555010ef4de978d1efc",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/piche_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/piche_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "e73fceb26521efe00f202770f23ddb851122a22414fe5c7d41d525648f6375ac",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/piche_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/piche_esperanza/perfiles.parquet",
+      "sha256_referencia": "1f1a56420de927e1b00c435831896b3b0a6bc8b115eeb37be88db0d3690ffbb0",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/piche_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/piche_esperanza/segmentos.parquet",
+      "sha256_referencia": "9069b0c8cd259b03da2c1cbcadfe224cc9f278e7e74f01eb66722899e6877e94",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/puerto_aguamansa/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/puerto_aguamansa/comparacion_recorridos.csv",
+      "sha256_referencia": "74baf4f29302c485fb7cc7fea88112ed194a7df2540b3052f4e421042b00a939",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/puerto_aguamansa/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/puerto_aguamansa/perfiles.parquet",
+      "sha256_referencia": "56420fb2befd851ad5bfaacda0c6574d385340f1cfca6cd72d9e8f56ae201c22",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/puerto_aguamansa/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/puerto_aguamansa/segmentos.parquet",
+      "sha256_referencia": "5491ad79d98ccd9762d6b49d8cb6d9657bf19822638dd94f2697592c5a6931c4",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/realejos_aguamansa/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/realejos_aguamansa/comparacion_recorridos.csv",
+      "sha256_referencia": "769394c52233ebf584780713eb275353246392b81ac71835b3604a7ee8239d32",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/realejos_aguamansa/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/realejos_aguamansa/perfiles.parquet",
+      "sha256_referencia": "8914473610f08701cee57b8d42180a3607a9827304774e73bf86130178bcdbfd",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/realejos_aguamansa/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/realejos_aguamansa/segmentos.parquet",
+      "sha256_referencia": "55800ce043f162423cc8265ef6399bace044e4ec522c5fa9db2b6f967fb3c076",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/rosario_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/rosario_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "216630c959fdb4479ab147f3f2290e54c8dacb00197d033e174f3f8a2c02993e",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/rosario_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/rosario_esperanza/perfiles.parquet",
+      "sha256_referencia": "0b81656ba9cbcf218a1de3a6cd6d19bb15625fdbeb1e5369f2da2a282a969b25",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/rosario_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/rosario_esperanza/segmentos.parquet",
+      "sha256_referencia": "0737bc985968748a081e27efccf40c676968c5710180e276513d0dfa08c1a348",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/san_miguel_vilaflor/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/san_miguel_vilaflor/comparacion_recorridos.csv",
+      "sha256_referencia": "4f1cc36ef0a0c39a32fd8d5772a35abd7d8e5a9a85f19b5cf1bf03147c1194e3",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/san_miguel_vilaflor/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/san_miguel_vilaflor/perfiles.parquet",
+      "sha256_referencia": "3c71b150e84913ccca1ecd79f2386df3a3c7c81cdd139fddce2a029deb514490",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/san_miguel_vilaflor/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/san_miguel_vilaflor/segmentos.parquet",
+      "sha256_referencia": "967a4734ae5cb28ec7b41af15c487c9a6694ae5aceb9e91412bf133aeae62ee3",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/santa_cruz_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/santa_cruz_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "31465222a7f6b1996688daca7a0cc3f763c999eb5e9098fbb66ff7cccf0c8262",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/santa_cruz_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/santa_cruz_esperanza/perfiles.parquet",
+      "sha256_referencia": "c5e6b26a2f3146fb741612dc3790fae118c006df019e39d0efceba307ab69f64",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/santa_cruz_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/santa_cruz_esperanza/segmentos.parquet",
+      "sha256_referencia": "2d19bb7e82ca66c4e27784eb26ec174b5c26914044e07826ebd94482d598457d",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/tanque_chio/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/tanque_chio/comparacion_recorridos.csv",
+      "sha256_referencia": "15c98d41036823ce01861dd284dc78d3b3b5ea2e3956546ed00b430af5146fdb",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km",
+        "recorrido_encadenado_hasta_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/tanque_chio/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/tanque_chio/perfiles.parquet",
+      "sha256_referencia": "e3449bd5f26684d5712bfc303e848d26d396f61b0caa29f8ddb17b9902a1fa26",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/tanque_chio/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/tanque_chio/segmentos.parquet",
+      "sha256_referencia": "71b48ccaa5acab14182b47f039d58155254dabb94b7a3950c215ab112e6e7309",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/tegueste_esperanza/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/tegueste_esperanza/comparacion_recorridos.csv",
+      "sha256_referencia": "1677c3638546be3e3a3fb6114e42ae9a187f6e8134b695528b37098c15feafb1",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/tegueste_esperanza/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/tegueste_esperanza/perfiles.parquet",
+      "sha256_referencia": "5e6f07058b4ea05b3495118b4b4e3ee1840d34ed3484c3dc1f10ca74ec2a2862",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/tegueste_esperanza/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/tegueste_esperanza/segmentos.parquet",
+      "sha256_referencia": "6f149bd727d456e9f639eb9e116589a53d11c27dc4386d85b6e6880434f16c02",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/ursula_aguamansa/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/ursula_aguamansa/comparacion_recorridos.csv",
+      "sha256_referencia": "c3c338ccf35ef2f9ca59c66b01b667a8e17b512de1cb40fb6a23758da77ece7b",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/ursula_aguamansa/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/ursula_aguamansa/perfiles.parquet",
+      "sha256_referencia": "2395ebb293d38125a50c48d1f200d04a1df27f804bf890442f250051bc10bf79",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/ursula_aguamansa/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/ursula_aguamansa/segmentos.parquet",
+      "sha256_referencia": "d3f60a5fbf1510b5de74c8ea56f071111c19944c6fa7630280bd62a2bb4c80d9",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/victoria_aguamansa/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/victoria_aguamansa/comparacion_recorridos.csv",
+      "sha256_referencia": "5419977452d9c5ef3a74f2c5e84ef05b3b87b70f7f4b7f55a1ee6449775d98ab",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/victoria_aguamansa/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/victoria_aguamansa/perfiles.parquet",
+      "sha256_referencia": "054221459b52fa7e90f04887499f1b75477512a6d6ccd33e27cfb3a0b0b61b10",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/victoria_aguamansa/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/victoria_aguamansa/segmentos.parquet",
+      "sha256_referencia": "07606ea86b9a6b261b56bdf00e6ca34242d3fcf000b71cdff7dd76791a5e0250",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/vilaflor_local/longitudes",
+      "referencia": "data/silver/geografia/accesos_origenes/vilaflor_local/comparacion_recorridos.csv",
+      "sha256_referencia": "600c312fad20aa3cc62b45bccb737b1bc3e8ced217690e1f14eaa751c697a329",
+      "claves": [
+        "itinerary_id"
+      ],
+      "columnas": [
+        "origen_id",
+        "itinerary_id",
+        "sentido",
+        "referencia_coche_hasta_terminal_km",
+        "acceso_cabecera_en_coche_si_se_elige_km",
+        "tramo_cabecera_terminal_km",
+        "recorrido_encadenado_hasta_terminal_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/vilaflor_local/perfiles",
+      "referencia": "data/silver/geografia/accesos_origenes/vilaflor_local/perfiles.parquet",
+      "sha256_referencia": "542365db8f0c0453e9ecb26200bb867d5ff3487a7851287fd38ea609e9e13c12",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "origenes/vilaflor_local/segmentos",
+      "referencia": "data/silver/geografia/accesos_origenes/vilaflor_local/segmentos.parquet",
+      "sha256_referencia": "6705e6b6b83dde45a5e326d47933a864373318fee63097d8675c880ac2babd0a",
+      "claves": [
+        "itinerary_id",
+        "componente",
+        "segment_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "referencias/recorridos_referencia_calculo",
+      "referencia": "data/silver/demanda/asignacion/recorridos_referencia_calculo.csv",
+      "sha256_referencia": "48d43c8ad24afa4024e9500de35f3134f41a763c158bc9f3dbb66ea3e0bee00d",
+      "claves": [
+        "origen_id",
+        "sentido"
+      ],
+      "columnas": [
+        "origen_id",
+        "comparacion_calculo_id",
+        "sentido",
+        "coleccion_catalogo",
+        "itinerario_referencia_id",
+        "itinerario_cadena_id",
+        "itinerario_montana_referencia_id",
+        "itinerario_alimentador_id",
+        "origen_eje_anchor_id",
+        "cabecera_eje_anchor_id",
+        "terminal_eje_anchor_id",
+        "directa_km",
+        "alimentador_km",
+        "montana_km",
+        "cadena_km",
+        "desvio_cadena_menos_directa_km"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "titsa/perfiles",
+      "referencia": "data/silver/energia/titsa/perfiles.parquet",
+      "sha256_referencia": "ccb1795f5ebd8021ea218a8c630fec8748d8daf5bbc2861a724d809637751e8d",
+      "claves": [
+        "linea",
+        "shape_id",
+        "sample_id"
+      ],
+      "columnas": null,
+      "alcance": "Todas las columnas y filas",
+      "capa_referencia": "Silver"
+    },
+    {
+      "producto": "titsa/segmentos_fisicos",
+      "referencia": "data/silver/energia/titsa/segmentos.parquet",
+      "sha256_referencia": "da18b147255240d457d666fa70f97d5e990e7ced1bb9d08d52d46a9b60de7d4a",
+      "claves": [
+        "linea",
+        "shape_id",
+        "segment_id"
+      ],
+      "columnas": [
+        "segment_id",
+        "distance_start_m",
+        "distance_end_m",
+        "length_m",
+        "elevation_start_m",
+        "elevation_end_m",
+        "elevation_change_m",
+        "slope_pct",
+        "linea",
+        "shape_id"
+      ],
+      "alcance": "Columnas físicas e identificadores enumerados; atributos adicionales fuera de esta comparación",
+      "capa_referencia": "Silver"
+    }
+  ],
+  "procedencia_mdt": {
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/balance_D251_650_20261109/mdt_extensiones/sur.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/sur.tif",
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/balance_D251_650_20261109/mdt_extensiones/sur_soporte.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/sur_soporte.tif",
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/balance_D251_650_20261109/mdt_extensiones/norte_soporte.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/norte_soporte.tif",
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/balance_D251_650_20261109/mdt_extensiones/norte.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/norte.tif",
+    "data/silver/energia/lanzaderas/referencias_por_servicio/mdt_extensiones/norte.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/norte.tif",
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/excepciones_D251_20261109/mdt_excepciones/parche_3.tif": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_3.tif",
+    "data/silver/energia/lanzaderas/referencias_por_servicio/mdt_extensiones/norte_soporte.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/norte_soporte.tif",
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/excepciones_D251_20261109/mdt_excepciones/parche_0.tif": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_0.tif",
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/excepciones_D251_20261109/mdt_excepciones/parche_1.tif": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_1.tif",
+    "data/silver/energia/lanzaderas/referencias_por_servicio/mdt_extensiones/sur_soporte.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/sur_soporte.tif",
+    "/mnt/c/users/aguit/.codex/.chatgpt-projects/g-p-6ab69aa12b888191b5ae534266692214/excepciones_D251_20261109/mdt_excepciones/parche_2.tif": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_2.tif",
+    "data/silver/energia/lanzaderas/referencias_por_servicio/mdt_extensiones/sur.tif": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/sur.tif"
+  },
+  "normalizacion_de_procedencia": "Traducción solo de cadenas de archivo; no crea rutas anteriores ni consulta archivos privados.",
+  "criterios_conservados": {
+    "intervalo_m": 200,
+    "cabeceras_y_titsa": "Orden por área del recorte y nombre; primer soporte bilineal completo; sin rellenar NoData.",
+    "sistemas_de_referencia": "Mantener CRS nativos y la interpretación provisional declarada del terreno norte; no reproyectar MDT.",
+    "extensiones": "Misma malla y cotas nativas; prioridad de base. Representación NoData compatible comprobando identidad de celdas y máscaras.",
+    "geometria_y_perfil": "Cada sentido conserva su traza y fase del catálogo, sus puntos y pendientes físicas sin limitar.",
+    "tolerancia_numerica_absoluta": 1e-08,
+    "tolerancia_reproduccion_coordenadas_m": 1e-08
+  },
+  "fuentes_auxiliares_gtfs": "Derivadas en memoria desde el ZIP original; no leer los tres auxiliares preparados del catálogo.",
+  "no_incluye": "No recalcula energía ni clasificación vial, busca otra ruta o certifica rasante o circulación real.",
+  "actualizacion_documental_20261115": {
+    "alcance": "Huellas de código o índice tras alineación documental; datos, hipótesis, comparaciones y tolerancias conservados",
+    "archivos": [
+      "config/referencia_ordenacion_2028.json"
+    ]
+  },
+  "conciliacion_editorial_20261116": {
+    "alcance": "Solo huellas documentales; datos, hipótesis, comparaciones y tolerancias intactos",
+    "archivos": [
+      "config/referencia_ordenacion_2028.json"
+    ]
+  },
+  "lectura_final_7_3_20261116": {
+    "alcance": "Solo huellas documentales; datos,hipótesis,comparaciones y tolerancias conservados",
+    "archivos": [
+      {
+        "ruta": "config/referencia_ordenacion_2028.json",
+        "sha256_anterior": "9a098056a655fd6ac6275c445e15b904d5ee33a3fdd0e6131e42eef837b1b17c",
+        "sha256_actual": "1e2b21737b8b38d234779966efdec54b892171f1e04722b12427051f03881675"
+      }
+    ]
+  }
+}

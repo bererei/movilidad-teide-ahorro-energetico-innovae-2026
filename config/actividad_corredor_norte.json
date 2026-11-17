@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "anio_base": 2025,
+  "anio_objetivo": 2028,
+  "puntos_aforo": [
+    "CHIO",
+    "LAGUNA",
+    "OROTAVA",
+    "VILAFLOR"
+  ],
+  "punto_norte": "OROTAVA",
+  "tendencia": {
+    "metodo_central": "ajuste_log_lineal_sin_2020_2021",
+    "anios_excluidos_periodo": [
+      2020,
+      2021
+    ],
+    "metodos_comparacion": [
+      "cagr_2019_2025",
+      "cagr_2023_2025"
+    ],
+    "serie_para_tasa_comun": "ambos_sentidos",
+    "criterio_calendario": "perfil_medio_por_mes_y_dia_semana",
+    "estado": "H033 — propuesta técnica provisional: crecimiento según aforos, con exclusión temporal y de calidad; no estimación causal de COVID"
+  },
+  "cupo": {
+    "coches_privados_dia": 500,
+    "ambito": "conjunto_del_Parque",
+    "incluye": [
+      "trabajadores",
+      "turistas",
+      "otros"
+    ],
+    "reserva_obligatoria": true,
+    "permanencia_acotada": true,
+    "duracion_permanencia_minutos": null,
+    "franjas_reserva": null,
+    "asignacion_teorica": "proporcional_a_entradas_diarias_proyectadas_por_acceso",
+    "estado": "H034 — cupo global y reserva/permanencia adoptados; H036 — reparto proporcional como hipótesis técnica, no regla operativa aprobada"
+  },
+  "lanzadera_acceso": {
+    "calendario": "todos_los_dias_del_anio_objetivo",
+    "oferta_diaria": "fila_publicada_Aguamansa_El_Portillo",
+    "fuente": "F035 — Visor Teide, diseño publicado de Medianías",
+    "estado": "H035 — oferta constante durante el año para primera prueba; capacidad y operación completas pendientes"
+  },
+  "titsa": {
+    "referencia": "H032 — continuidad de oferta 341, 342 y 348; pasajeros y consumos separados"
+  },
+  "limites": [
+    "Aforos son pasos, no coches únicos, visitantes ni personas; posible tránsito y localización por validar.",
+    "La proyección es una hipótesis y mantiene las limitaciones de corrección de la fuente.",
+    "El cupo no es simultaneidad de aparcamiento ni 500 por acceso; no asignar franjas o duración sin dato.",
+    "El exceso diario no equivale a transferencia a lanzaderas, coches retirados o visitas canceladas.",
+    "No asigno automáticamente las salidas al acceso de entrada ni reparto consumo interior entre corredores."
+  ]
+}

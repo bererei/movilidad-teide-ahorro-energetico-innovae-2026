@@ -1,0 +1,216 @@
+{
+  "estado": "Referencia reproducible del informe v0.28; entrega identificada por sus controles",
+  "fecha": "2026-11-17",
+  "informe": "v0.28, edición de 16/11/2026",
+  "informe_sha256": "dadd4be5d2b1a64012c027958ed5571a657b4fed6907d432a722877b6194c0af",
+  "visitas_sin_y_con": 2500000,
+  "parametros_efectivos": {
+    "visitas_anio": {
+      "grupo": "Demanda",
+      "nombre": "Visitas-persona sin y con intervención",
+      "unidad": "visitas-persona/año",
+      "valor_sellado": 2500000
+    },
+    "cupo_ordinario": {
+      "grupo": "Coches",
+      "nombre": "Máximo global ordinario",
+      "unidad": "coches/día",
+      "valor_sellado": 650
+    },
+    "cupo_punta_1": {
+      "grupo": "Coches",
+      "nombre": "Primer cupo puntual ensayado",
+      "unidad": "coches/día",
+      "valor_sellado": 700
+    },
+    "cupo_punta_2": {
+      "grupo": "Coches",
+      "nombre": "Segundo cupo puntual ensayado",
+      "unidad": "coches/día",
+      "valor_sellado": 750
+    },
+    "incremento_excursiones": {
+      "grupo": "Modos",
+      "nombre": "Incremento principal de excursiones frente a sin proyecto",
+      "unidad": "fracción",
+      "valor_sellado": 0.0
+    },
+    "sensibilidad_excursiones_1": {
+      "grupo": "Sensibilidad",
+      "nombre": "Primer incremento de visitas en excursión",
+      "unidad": "fracción sobre sin",
+      "valor_sellado": 0.1
+    },
+    "sensibilidad_excursiones_2": {
+      "grupo": "Sensibilidad",
+      "nombre": "Segundo incremento de visitas en excursión",
+      "unidad": "fracción sobre sin",
+      "valor_sellado": 0.25
+    },
+    "captacion_extranjero": {
+      "grupo": "Modos",
+      "nombre": "Captación desde otros colectivos: extranjero",
+      "unidad": "fracción",
+      "valor_sellado": 0.0
+    },
+    "captacion_nacional": {
+      "grupo": "Modos",
+      "nombre": "Captación desde otros colectivos: nacional",
+      "unidad": "fracción",
+      "valor_sellado": 0.0
+    },
+    "captacion_local": {
+      "grupo": "Modos",
+      "nombre": "Captación desde otros colectivos: local",
+      "unidad": "fracción",
+      "valor_sellado": 0.0
+    },
+    "captacion_frecuente": {
+      "grupo": "Modos",
+      "nombre": "Captación desde otros colectivos: frecuente",
+      "unidad": "fracción",
+      "valor_sellado": 0.0
+    },
+    "propias": {
+      "grupo": "Vehículos",
+      "nombre": "Unidades propias disponibles",
+      "unidad": "vehículos físicos",
+      "valor_sellado": 30
+    },
+    "max_programadas_ordinaria": {
+      "grupo": "Vehículos",
+      "nombre": "Máximo propio programado ordinario",
+      "unidad": "vehículos/día",
+      "valor_sellado": 27
+    },
+    "max_programadas_punta_propia": {
+      "grupo": "Vehículos",
+      "nombre": "Máximo de punta sin apoyo externo",
+      "unidad": "vehículos/día",
+      "valor_sellado": 28
+    },
+    "max_programadas_punta": {
+      "grupo": "Vehículos",
+      "nombre": "Máximo programado en punta con apoyo",
+      "unidad": "vehículos/día",
+      "valor_sellado": 30
+    },
+    "sustitutas_ordinaria": {
+      "grupo": "Vehículos",
+      "nombre": "Mínimo sin programar en ordinaria",
+      "unidad": "vehículos/día",
+      "valor_sellado": 3
+    },
+    "sustitutas_punta": {
+      "grupo": "Vehículos",
+      "nombre": "Mínimo sin programar en punta",
+      "unidad": "vehículos/día",
+      "valor_sellado": 2
+    },
+    "externas_con_30": {
+      "grupo": "Vehículos",
+      "nombre": "Unidades externas disponibles si se programan treinta propias",
+      "unidad": "vehículos/día",
+      "valor_sellado": 2
+    },
+    "plazas_diseno": {
+      "grupo": "Operación",
+      "nombre": "Plazas de diseño por expedición",
+      "unidad": "plazas",
+      "valor_sellado": 46
+    },
+    "intervalo_min": {
+      "grupo": "Operación",
+      "nombre": "Separación mínima por acceso y sentido",
+      "unidad": "minutos",
+      "valor_sellado": 15
+    },
+    "hora_inicio_acceso": {
+      "grupo": "Operación",
+      "nombre": "Primera salida de acceso",
+      "unidad": "hora local canaria",
+      "valor_sellado": 7.0
+    },
+    "estancia_min": {
+      "grupo": "Operación",
+      "nombre": "Estancia desde entrada al Parque",
+      "unidad": "minutos",
+      "valor_sellado": 120
+    },
+    "regulacion_min": {
+      "grupo": "Operación",
+      "nombre": "Regulación entre movimientos",
+      "unidad": "minutos",
+      "valor_sellado": 10
+    },
+    "fin_bases_verano_min": {
+      "grupo": "Operación",
+      "nombre": "Límite en bases de mayo a agosto",
+      "unidad": "minutos desde medianoche",
+      "valor_sellado": 1290
+    },
+    "fin_bases_resto_min": {
+      "grupo": "Operación",
+      "nombre": "Límite en bases en los otros meses",
+      "unidad": "minutos desde medianoche",
+      "valor_sellado": 1200
+    },
+    "margen_ocaso_min": {
+      "grupo": "Operación",
+      "nombre": "Antelación de llegada comercial a cabecera frente a ocaso de referencia",
+      "unidad": "minutos",
+      "valor_sellado": 30
+    },
+    "ocupacion_coche": {
+      "grupo": "Conversión",
+      "nombre": "Ocupación agregada de turismos",
+      "unidad": "personas/coche",
+      "valor_sellado": 3.2
+    },
+    "ocupacion_guagua_aforo": {
+      "grupo": "Conversión",
+      "nombre": "Personas por autocar equivalente de excursión",
+      "unidad": "personas/equivalente",
+      "valor_sellado": 35.99
+    },
+    "mwh_por_tep": {
+      "grupo": "Energía",
+      "nombre": "Conversión de energía final",
+      "unidad": "MWh/tep",
+      "valor_sellado": 11.63
+    },
+    "perdida_rendimiento_fta": {
+      "grupo": "Sensibilidad",
+      "nombre": "Pérdida externa de km por unidad de combustible",
+      "unidad": "fracción",
+      "valor_sellado": 0.1
+    },
+    "posicionamiento_km": {
+      "grupo": "Sensibilidad",
+      "nombre": "Distancia total por unidad externa disponible y activación en presentación principal",
+      "unidad": "km/unidad y activación",
+      "valor_sellado": 100
+    }
+  },
+  "excel_sha256": "3fa4e97d5644410f5c97445f297711034d3dde8e7ba3a62501e1de6174451e8d",
+  "indice_sha256": "1e2b21737b8b38d234779966efdec54b892171f1e04722b12427051f03881675",
+  "mismas_rutas_desarrollo_publicacion": true,
+  "publicado": false,
+  "informe_ruta": "docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16.pdf",
+  "registro_cientifico": "data/silver/ejecuciones/referencia_2028_final_20261116",
+  "codigo_commit_base": "51bcd43903b487dc0fa657e1d38dfb4de6ab2a4e",
+  "alcance_commit_base": "Commit previo al cierre documental de paquetes; la identidad exacta de los archivos la determina el inventario de esta entrega.",
+  "referencia_paquetes": {
+    "identificador": "20261117_v028_documentacion_publica",
+    "aceptacion": "ACEPTACION_PAQUETES.json, junto a los ZIP y al manifiesto de paquetes",
+    "control_integridad": "SHA256SUMS y manifiesto_paquetes.json",
+    "condiciones_fuentes_pendientes": 0,
+    "politica_documental": ".gitignore"
+  },
+  "informe_firmado": {
+    "ruta": "docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16_firmado.pdf",
+    "sha256": "f3f785e4115e61650c9fe08d140367f517436f677e6c769ce8df8a2a248060d4",
+    "bytes": 1834243,
+    "registro": "manifiestos/firma_informe.json"
+  }
+}

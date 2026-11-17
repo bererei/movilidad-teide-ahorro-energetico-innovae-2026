@@ -1,0 +1,57 @@
+{
+  "bloque": "8.2",
+  "fecha": "2026-11-16",
+  "estado": "Selección y reproducción verificadas; instalación independiente comprobada; difusión pendiente de condiciones",
+  "edicion_documental": "0.28",
+  "visitas_sin_y_con": 2500000,
+  "condiciones": 31,
+  "registro_vigente": "data/silver/ejecuciones/referencia_2028_final_20261116",
+  "informe_y_anexos_modificados": false,
+  "motor_copert_nuevo": false,
+  "casos_externos_pendientes": 7,
+  "apta_para_difusion": false,
+  "publicacion_realizada": false,
+  "archivo_de_comprobaciones_anteriores": "Conservado en desarrollo; la entrega utiliza evidencia actual",
+  "reproduccion_nueva_pendiente": false,
+  "identificador_ejecucion": "referencia_2028_paquetes_20261116",
+  "interfaces": 170,
+  "productos_anuales": 16,
+  "factores_copert_comparados": 5294,
+  "pruebas_por_raiz": 1128,
+  "sesiones_cuadernos": 16,
+  "datos_e_hipotesis_modificados": false,
+  "archivo_de_evidencias_sustituidas": 26,
+  "politica_documental": ".gitignore",
+  "evidencia_prueba_paquetes": "ACEPTACION_PAQUETES.json, junto a manifiesto_paquetes.json",
+  "alcance": "La equivalencia informática y la selección local no acreditan condiciones de difusión, operación real o disponibilidad contractual.",
+  "instalacion_nueva_desde_zip_comprobada": true,
+  "python": "3.14.6",
+  "dependencias_instaladas": 112,
+  "pruebas_instalacion": 1128,
+  "cuadernos_instalacion": 8,
+  "interfaces_instalacion": 170,
+  "productos_anuales_instalacion": 16,
+  "entrada_ausente_y_alterada_rechazadas": true,
+  "preparacion_para_difusion_pendiente_rechazada": true,
+  "documentos_reincorporados_al_comentar_reglas": 304,
+  "paquetes_usados_para_reconstruccion": [
+    {
+      "archivo": "codigo_y_documentacion.zip",
+      "sha256": "62ee2d8202699f72a2e691af7a74acf9770776820d8d7ade53c3efed4f692e1f"
+    },
+    {
+      "archivo": "datos_bronze.zip",
+      "sha256": "522626d1d81e5f4be4154feae896789a145f8da6a708736d09fe77658056cd5e"
+    },
+    {
+      "archivo": "datos_silver.zip",
+      "sha256": "b065fa5cd362b522b8971355c62069dc0b3702e8cb9aa2469e9024f20fcd0c68"
+    },
+    {
+      "archivo": "datos_gold.zip",
+      "sha256": "15316c75122070322e197c11a1ee240ae9420014dd154a26daaf217db54a872b"
+    }
+  ],
+  "cambios_posteriores_al_calculo": "Solo documentación y controles de aceptación. El código ejecutable, el libro y todos los archivos de datos se contrastan con los paquetes del ensayo antes de cerrar los ZIP.",
+  "condiciones_de_difusion_resueltas": false
+}

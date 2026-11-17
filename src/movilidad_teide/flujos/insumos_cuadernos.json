@@ -1,0 +1,240 @@
+{
+  "descarga_datos_tenerife": [
+    {
+      "nombre": "captura_titsa",
+      "ruta": "data/bronze/transporte_publico/pasajeros_titsa/2025/20261022T171917Z_f6db4cae/metadatos.json",
+      "descripcion": "Captura mensual de pasajeros TITSA y sus metadatos",
+      "sha256": "20fe1f021f66926291552a9757b08ea74494c01270e385b2f555553a182b56e0",
+      "separador": null
+    },
+    {
+      "nombre": "cobertura",
+      "ruta": "data/silver/demanda/asignacion/cobertura_titsa_2025.csv",
+      "descripcion": "Cobertura temporal y documental de los pasajeros publicados",
+      "sha256": "7fda73f3b25678fc2c586af9e855cc11634129ce8755c228b5e5fbb7249a8bd6",
+      "separador": ";"
+    }
+  ],
+  "consulta_odviewer": [
+    {
+      "nombre": "consultas",
+      "ruta": "data/silver/demanda/odviewer/20261016T141505Z_42b8fffa/resumen_consultas.csv",
+      "descripcion": "Consultas seleccionadas y sus ámbitos",
+      "sha256": "f7417706a9ba04725d46f02560b221f4f48df11b4cc408cdea6571d2e1a41e94",
+      "separador": ";"
+    },
+    {
+      "nombre": "perfiles",
+      "ruta": "data/silver/demanda/odviewer/20261016T141505Z_42b8fffa/perfiles_zonas_externas_2025.csv",
+      "descripcion": "Perfiles de las relaciones con zonas externas",
+      "sha256": "db37899a18b861a137504e0d2d34ffdd69b5858cf2bcedcf1557076f92463174",
+      "separador": ";"
+    }
+  ],
+  "identificacion_zonas_odviewer": [
+    {
+      "nombre": "referencias",
+      "ruta": "data/silver/demanda/odviewer/cartografia/20261016T142742Z_6e2eee61/referencias_zonas_2025.csv",
+      "descripcion": "Correspondencias de las zonas de 2025",
+      "sha256": "627e8eb1e4800dc8ebba816fa41f25a46c336248d410665406238cae18424606",
+      "separador": ";"
+    },
+    {
+      "nombre": "municipios",
+      "ruta": "data/silver/demanda/odviewer/cartografia/20261016T142742Z_6e2eee61/zonas_municipios_superficies.csv",
+      "descripcion": "Intersecciones con municipios",
+      "sha256": "9ae0ae5b1dd652e998ccf8a6a1cd5ed9966f13253f582e60eb64ca43582130a6",
+      "separador": ";"
+    },
+    {
+      "nombre": "controles",
+      "ruta": "data/silver/demanda/odviewer/cartografia/20261016T142742Z_6e2eee61/controles.csv",
+      "descripcion": "Comprobaciones de la identificación cartográfica",
+      "sha256": "2959179869783453cc146c0c75497c3f44f9adcae8c845cb116e467d2855971d",
+      "separador": ";"
+    }
+  ],
+  "incorporacion_visor_teide": [
+    {
+      "nombre": "inventario",
+      "ruta": "data/silver/demanda/visor_teide/20261016T154509Z_f7cda5fc/inventario_tablas.csv",
+      "descripcion": "Inventario de tablas publicadas",
+      "sha256": "cebc5ec8ef0db4219f5be666c78798aaa99aa75c223e243a18437a7b3b27c1cd",
+      "separador": ";"
+    },
+    {
+      "nombre": "rutas",
+      "ruta": "data/silver/demanda/visor_teide/20261016T154509Z_f7cda5fc/rutas_modelo_publicado.csv",
+      "descripcion": "Distancias y recorridos del modelo publicado",
+      "sha256": "2413dded2f298d1e0958015f859bddcc5768eb022a51a7d46565823cdb637d07",
+      "separador": ";"
+    },
+    {
+      "nombre": "controles",
+      "ruta": "data/silver/demanda/visor_teide/20261016T154509Z_f7cda5fc/controles.csv",
+      "descripcion": "Controles de incorporación",
+      "sha256": "968172b7d77ab54daa38083be276bc8b00a4b83bb36cc78de4fd681717db74be",
+      "separador": ";"
+    }
+  ],
+  "integracion_aforos_teide": [
+    {
+      "nombre": "anual",
+      "ruta": "data/silver/demanda/aforos/resumen_anual.csv",
+      "descripcion": "Resumen anual de los conteos",
+      "sha256": "25c730a91acf96b289451492eec94711895d1c3f9b37b6994afe46b6e842acbc",
+      "separador": ";"
+    },
+    {
+      "nombre": "tendencias",
+      "ruta": "data/silver/demanda/aforos/comparacion_tendencias.csv",
+      "descripcion": "Contraste de tendencias de tráfico",
+      "sha256": "0d4a11e3e2c9296bc89bd1d8809dc6d568878772a7a0af5fdb82fad0bb28f93f",
+      "separador": ";"
+    },
+    {
+      "nombre": "reparto",
+      "ruta": "data/silver/demanda/aforos/reparto_personas_aforos_conjunto.csv",
+      "descripcion": "Reparto condicionado con las ocupaciones del estudio",
+      "sha256": "b4410c91d743b396b36d61c5fcf49e2fd45980f22b7e004e5715fb28a0a02fd6",
+      "separador": ";"
+    }
+  ],
+  "asignacion_demanda_teide": [
+    {
+      "nombre": "demanda",
+      "ruta": "data/silver/demanda/asignacion/demanda_referencia_calculo.csv",
+      "descripcion": "Demanda de referencia por origen, colectivo y sentido",
+      "sha256": "f4d9ee129ce135cf0315070254f2f3bb57245ac567cd4608a44190b5e17c0ceb",
+      "separador": ";"
+    },
+    {
+      "nombre": "recorridos",
+      "ruta": "data/silver/demanda/asignacion/recorridos_referencia_calculo.csv",
+      "descripcion": "Correspondencia con los recorridos de cálculo",
+      "sha256": "48d43c8ad24afa4024e9500de35f3134f41a763c158bc9f3dbb66ea3e0bee00d",
+      "separador": ";"
+    },
+    {
+      "nombre": "cobertura",
+      "ruta": "data/silver/demanda/asignacion/cobertura_referencias_calculo.csv",
+      "descripcion": "Cobertura de perfiles propios, aproximaciones y ausencias",
+      "sha256": "e04fb9f1933760fd6dfa484ea4a3adbc2fb02948aabaa1a3ad79678d44e77b5f",
+      "separador": ";"
+    },
+    {
+      "nombre": "titsa",
+      "ruta": "data/silver/demanda/asignacion/pasajeros_titsa_resumen.csv",
+      "descripcion": "Pasajeros TITSA como evidencia de contraste",
+      "sha256": "d3e8349d8413f00ba094bc1738bcd9f19d46f9c107e80bffa8a352028e9f06c0",
+      "separador": ";"
+    }
+  ],
+  "actividad_corredor_norte": [
+    {
+      "nombre": "referencia",
+      "ruta": "data/silver/demanda/actividad_y_proyeccion_fuente/corredor_norte/demanda_anual_referencia_visor.csv",
+      "descripcion": "Anualización de las observaciones fuente",
+      "sha256": "e63c73a28b07ab02c7010a20341ab506fecff9a23f2223a54bed1b1a73a0e871",
+      "separador": ";"
+    },
+    {
+      "nombre": "tendencias",
+      "ruta": "data/silver/demanda/actividad_y_proyeccion_fuente/corredor_norte/tendencias_personas_visor.csv",
+      "descripcion": "Tasas comparables de personas",
+      "sha256": "f60c18db0656450a286067e2f69430bd36f61527e067295d9a469cdf0780ef5c",
+      "separador": ";"
+    },
+    {
+      "nombre": "calendario",
+      "ruta": "data/silver/demanda/actividad_y_proyeccion_fuente/corredor_norte/calendario_anualizacion.csv",
+      "descripcion": "Pesos del calendario de 2028",
+      "sha256": "ee349c0fe80ef2f86a11ea571392952c27081ffc5910f6a9126678c2480f194a",
+      "separador": ";"
+    }
+  ],
+  "recorridos_operativos_teide": [
+    {
+      "nombre": "longitudes",
+      "ruta": "data/silver/demanda/asignacion/longitudes_servicios_fuente.csv",
+      "descripcion": "Longitudes y procedencia de los servicios",
+      "sha256": "101fb26fb68199594ceb5712715f5b5f0c24ad4a41f1603d6f0dd9c2f6db534a",
+      "separador": ";"
+    },
+    {
+      "nombre": "recorridos",
+      "ruta": "data/silver/demanda/asignacion/recorridos_referencia_calculo.csv",
+      "descripcion": "Directos y alimentadores por origen y sentido",
+      "sha256": "48d43c8ad24afa4024e9500de35f3134f41a763c158bc9f3dbb66ea3e0bee00d",
+      "separador": ";"
+    },
+    {
+      "nombre": "cobertura",
+      "ruta": "data/silver/demanda/asignacion/cobertura_referencias_calculo.csv",
+      "descripcion": "Cobertura de la representación geográfica",
+      "sha256": "e04fb9f1933760fd6dfa484ea4a3adbc2fb02948aabaa1a3ad79678d44e77b5f",
+      "separador": ";"
+    }
+  ],
+  "perfil_altimetrico": [
+    {
+      "nombre": "intervalos",
+      "ruta": "data/silver/geografia/perfiles_altimetricos/tf21_pk16_pk32_pilot/sensibilidad/resumen_intervalos.csv",
+      "descripcion": "Comparación de intervalos de muestreo",
+      "sha256": "dee3e9096c66d9f4e3ab893e622be5f2c1dbea2e03e9c327fa4e647160009f5a",
+      "separador": ","
+    },
+    {
+      "nombre": "calidad",
+      "ruta": "data/silver/geografia/perfiles_altimetricos/tf21_pk16_pk32_pilot/sensibilidad/calidad_intervalos.csv",
+      "descripcion": "Calidad y cobertura de los perfiles",
+      "sha256": "64791d0d26348f1d5c06b36e93bdb5d90e2425cbdf91bf113757db982d82a251",
+      "separador": ","
+    },
+    {
+      "nombre": "robustez",
+      "ruta": "data/silver/geografia/perfiles_altimetricos/tf21_pk16_pk32_pilot/robustez_200m/resumen_configuraciones.csv",
+      "descripcion": "Configuraciones de contraste sobre el mismo soporte",
+      "sha256": "e7884316ab6821b9d8f3ecf0dc92317c79013a80aa055ab61705bcd3cb46914e",
+      "separador": ","
+    }
+  ],
+  "flota_vehiculos_teide": [
+    {
+      "nombre": "composicion",
+      "ruta": "data/silver/vehiculos/flota_teide/composicion_energia_2022_2025.csv",
+      "descripcion": "Composición territorial por energía",
+      "sha256": "8e58c85d78bb280110bd5e56fedd255741adf4a0e9602f60d883a9e6e8f99e28",
+      "separador": ";"
+    },
+    {
+      "nombre": "perfiles",
+      "ruta": "data/silver/vehiculos/ponderacion/perfiles_referencia.csv",
+      "descripcion": "Perfiles utilizados para ponderar el consumo",
+      "sha256": "c212633f982692264862d036d7cc60998864e56c103aeff2c3f9a390ac779ee5",
+      "separador": ";"
+    },
+    {
+      "nombre": "cobertura",
+      "ruta": "data/silver/vehiculos/flota_teide/revision_cobertura_turismos.csv",
+      "descripcion": "Cobertura y carencias de las referencias técnicas",
+      "sha256": "7e6aeea49a685561151716d8b80d97562b1fb7f9a06afac2bb142f62eab03544",
+      "separador": ";"
+    },
+    {
+      "nombre": "pendientes",
+      "ruta": "data/silver/vehiculos/flota_teide/pendientes_categorias_y_factores.csv",
+      "descripcion": "Categorías y factores pendientes",
+      "sha256": "e060d0ab835d8565dae32498d2f6aab157beda8287551544f0a812c36314f739",
+      "separador": ";"
+    }
+  ],
+  "consumo_energetico_copert": [
+    {
+      "nombre": "balance_anual",
+      "ruta": "data/gold/referencia_anual/balance_anual_politicas.csv",
+      "sha256": "b5ad25b896c62c3cb58225f1c273a8b0a1d6d0bf5ee82ca41122a498384e3fea",
+      "separador": ";"
+    }
+  ]
+}

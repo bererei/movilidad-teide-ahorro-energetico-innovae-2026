@@ -1,0 +1,19 @@
+{
+  "version_registro": "2.0",
+  "version_contenido": "v0.28",
+  "fecha_edicion_contenido": "2026-11-16",
+  "original_reproducible": {
+    "ruta": "docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16.pdf",
+    "sha256": "dadd4be5d2b1a64012c027958ed5571a657b4fed6907d432a722877b6194c0af",
+    "bytes": 1777762,
+    "paginas": 96
+  },
+  "copia_firmada": {
+    "ruta": "docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16_firmado.pdf",
+    "sha256": "f3f785e4115e61650c9fe08d140367f517436f677e6c769ce8df8a2a248060d4",
+    "bytes": 1834243,
+    "paginas": 96
+  },
+  "relacion": "Misma edición de contenido; el original identifica las fuentes reproducibles y la copia firmada tiene identidad de archivo propia.",
+  "documentacion": "docs/disponibilidad_documental.md#original-reproducible-y-copia-firmada"
+}

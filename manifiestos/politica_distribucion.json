@@ -1,0 +1,52 @@
+{
+  "version": "2.3",
+  "fecha": "2026-11-17",
+  "preferencia_explicita": "Todos los datos necesarios para el cálculo en la release; apoyos bibliográficos sin condición acreditada mediante referencias y enlaces, con originales en desarrollo.",
+  "seleccion_local": "Núcleo vigente compartido, cuadernos00–07 y antecedentes separados en desarrollo; sin rutas de compatibilidad.",
+  "datos_en_release": true,
+  "metadatos_comunes": [
+    "condiciones_fuentes.csv",
+    "atribuciones_por_archivo.csv",
+    "seleccion_entrega_publica.csv",
+    "condiciones_entrega_publica.csv"
+  ],
+  "licencia_global_de_datos_asignada": false,
+  "metadatos_sustituyen_permiso": false,
+  "publicacion_autorizada": false,
+  "criterio": "Conservar resultados propios y decisiones anteriores válidas. Documentar alcance de originales añadidos; resolver restricciones concretas antes de difundir. No solicitar autorización automáticamente por ausencia de etiqueta.",
+  "alternativas": "Se aplica la elección de referencias para seis copias de apoyo; no se elimina ninguna fuente numérica o interfaz leída por la preparación.",
+  "seleccion_preparada": "manifiestos/seleccion_entrega_publica.csv",
+  "condiciones_para_adoptar": "manifiestos/condiciones_entrega_publica.csv",
+  "selector_aplicado_por_preparador_actual": true,
+  "url_publica_adoptada": "https://github.com/bererei/movilidad-teide-ahorro-energetico-innovae-2026",
+  "clasificacion_vigencia": "manifiestos/uso_y_vigencia.csv",
+  "archivo_preparado": "manifiestos/archivo_preparado.csv",
+  "control_documental": ".gitignore",
+  "condiciones_pendientes": 0,
+  "seleccion_aplicada": true,
+  "ensayo_local_completo": false,
+  "referencias_sin_copia": "manifiestos/referencias_documentales.csv",
+  "ensayo_anterior": "manifiestos/comprobacion_entrega_final.json; corte 16/11/2026, anterior a esta selección bibliográfica",
+  "casos_cerrados_sin_copia": [
+    "html_componentes",
+    "html_copert",
+    "informe_fta",
+    "pagina_idae"
+  ],
+  "criterios_inclusion_institucional": [
+    "series_aforos",
+    "originales_visores",
+    "uso_marcas"
+  ],
+  "consulta_aforos": {
+    "realizada_por": "Beatriz",
+    "interlocutor": "Luis",
+    "objeto": "Datos y custodia",
+    "resultado_comunicado": true,
+    "titular_institucional": "Parque Nacional del Teide, área de Medio Ambiente del Cabildo de Tenerife",
+    "nombre": "Luis Gutiérrez Valido",
+    "cargo": "Director de Proyectos y Programas de Movilidad Sostenible del Parque Nacional del Teide",
+    "tipo_resultado": "Confirmación de titularidad comunicada por Beatriz; criterio de inclusión bajo el régimen general",
+    "autorizacion_escrita_nueva": false
+  }
+}

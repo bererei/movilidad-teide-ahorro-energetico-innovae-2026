@@ -1,0 +1,398 @@
+[
+  {
+    "referencia": "chio_boca_tauce",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_chio_boca_tauce/mdt05_chio_boca_tauce.tif",
+    "sha256": "a7a289a043e9cf3974f93dae77cae655a10b0e292bf9fffb3435a05ba54b5a59",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/mdt05_chio_boca_tauce.multipart",
+    "salida_relativa": "terrenos/chio_boca_tauce.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "la_esperanza_el_portillo",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_la_esperanza_el_portillo.tif",
+    "sha256": "61c8f0579e4409bd749d4af90729c06e9bec8a7c8005413cb153d23802098a9e",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_la_esperanza_el_portillo.multipart",
+    "salida_relativa": "terrenos/la_esperanza_el_portillo.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "vilaflor_boca_tauce",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_vilaflor_boca_tauce.tif",
+    "sha256": "f70c8065b81c82f454b2ffa8ee4760a42b4733d4f5703eabed4fe61409685941",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_vilaflor_boca_tauce.multipart",
+    "salida_relativa": "terrenos/vilaflor_boca_tauce.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "interior_boca_tauce_el_portillo",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_interior_20261024/mdt05_interior_boca_tauce_el_portillo.tif",
+    "sha256": "fce2c3070022bd6a3c367bf0a2183ad808f7b5df1dff190a38e4e4b647c703cc",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_interior_20261024/mdt05_interior_boca_tauce_el_portillo.multipart",
+    "salida_relativa": "terrenos/interior_boca_tauce_el_portillo.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "adeje_vilaflor",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_acceso_sur_20261025/mdt05_adeje_vilaflor_boca_tauce.tif",
+    "sha256": "3089d2bd7c33541c7f9e63a5f4c2097828c2277e47298f59e7916a40526a1c99",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_sur_20261025/mdt05_adeje_vilaflor_boca_tauce.multipart",
+    "salida_relativa": "terrenos/adeje_vilaflor.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "alcala_chio",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_acceso_oeste_20261025/mdt05_alcala_chio_boca_tauce.tif",
+    "sha256": "2e7fc2dc1651ca11cd808434da5596cecc92cc8f42ef73de0799b99b735277d3",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_oeste_20261025/mdt05_alcala_chio_boca_tauce.multipart",
+    "salida_relativa": "terrenos/alcala_chio.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "laguna_esperanza",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_acceso_este_20261025/mdt05_laguna_la_esperanza.tif",
+    "sha256": "c29b6ccdd722cec71a8246a77ac4cf98512c67f8dc655fbd59312645e69f8ef9",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_este_20261025/mdt05_laguna_la_esperanza.multipart",
+    "salida_relativa": "terrenos/laguna_esperanza.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "columbus_vilaflor/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_extension.tif",
+    "sha256": "b39cc1777b88703038c5db7aa598f904d4012f6a627fa83a4b18e644e123fa74",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_extension.multipart",
+    "salida_relativa": "terrenos/columbus_vilaflor_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "columbus_vilaflor",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_vilaflor_boca_tauce.tif",
+    "sha256": "13159413bcb3bf60f74ccc1880b8fe28e75cce5cac2c4398ebfc35968f707597",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_extension.multipart",
+    "salida_relativa": "terrenos/columbus_vilaflor.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "abona_vilaflor/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_extension.tif",
+    "sha256": "5884c2c154d07e79f1a6f77419a153de8b32b9d1278c69335bfae475e688d2c0",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_extension.multipart",
+    "salida_relativa": "terrenos/abona_vilaflor_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "abona_vilaflor",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_vilaflor_boca_tauce.tif",
+    "sha256": "80a1dd2eae23f9f68fc341b6ea28976912e2138331b91313e1ee480e605ec612",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_extension.multipart",
+    "salida_relativa": "terrenos/abona_vilaflor.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "santa_cruz_esperanza/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_extension.tif",
+    "sha256": "5cdc83186b9672dc1dc6a3fe01739c17302c6c3abbbf44724fdf6eb505db5912",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_extension.multipart",
+    "salida_relativa": "terrenos/santa_cruz_esperanza_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "santa_cruz_esperanza",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_la_esperanza.tif",
+    "sha256": "ffb89cf3d403d09d86cfbf51a76cf0ca3506eff7acfd380cf9257e7a2359c375",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_extension.multipart",
+    "salida_relativa": "terrenos/santa_cruz_esperanza.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "arico_vilaflor/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_extension.tif",
+    "sha256": "b930482a88a60be378f2a4d5adbefc245fc9bfca81a28b1f8dddd5f45561a034",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_extension.multipart",
+    "salida_relativa": "terrenos/arico_vilaflor_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "arico_vilaflor",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_vilaflor_boca_tauce.tif",
+    "sha256": "2007fcf7420e8b67da6ce8a686cb150edd4e481b6105ba89005bec55b17427d6",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_extension.multipart",
+    "salida_relativa": "terrenos/arico_vilaflor.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "masca_chio/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_extension.tif",
+    "sha256": "afa2d9e578a17ef191c485bcc1daa228cd4c955e9acaaf65d3b7363ad5460f37",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_extension.multipart",
+    "salida_relativa": "terrenos/masca_chio_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "masca_chio",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_chio_boca_tauce.tif",
+    "sha256": "caf696587e1f61b89801a9f566c95aff009d9ea5a301d4b75a51a27cb8079f81",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_extension.multipart",
+    "salida_relativa": "terrenos/masca_chio.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "candelaria_esperanza/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_extension.tif",
+    "sha256": "63527c5f5d4de77d63674110b121753d8f415408152339c0615e87e57f54e89c",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_extension.multipart",
+    "salida_relativa": "terrenos/candelaria_esperanza_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "candelaria_esperanza",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_la_esperanza.tif",
+    "sha256": "8c281fb78ad3d6f3ec38cb342fc9b0d212b89e5fb21e9dcccec9679b47c9a978",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_extension.multipart",
+    "salida_relativa": "terrenos/candelaria_esperanza.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "acentejo_esperanza/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_extension.tif",
+    "sha256": "8cd13661beefda53f6687222c9dc68a47d5adc81c51d5a2a6b1549417a25369d",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_extension.multipart",
+    "salida_relativa": "terrenos/acentejo_esperanza_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "acentejo_esperanza",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_la_esperanza.tif",
+    "sha256": "56a56a4acf7d19b3db953ee235d3da384bf03d71c3bd4f82b574ce844eb3e245",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_extension.multipart",
+    "salida_relativa": "terrenos/acentejo_esperanza.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "icod_chio/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_extension.tif",
+    "sha256": "4cb0090051046a5fc7525a92712782661db0ad84a96ba57a0f712f5899f62231",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_extension.multipart",
+    "salida_relativa": "terrenos/icod_chio_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "icod_chio",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_chio_boca_tauce.tif",
+    "sha256": "ac06028c4b03ad679279b9d5697a6074ca0571c6bb5298981fbd9b5716948bff",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_extension.multipart",
+    "salida_relativa": "terrenos/icod_chio.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "guancha_aguamansa",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_guancha_20261027/mdt05_guancha_aguamansa.tif",
+    "sha256": "96003b997779b0f7b590f942e8ec9875ac8c06b89786f92d03a99888e22b189b",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_guancha_20261027/mdt05_guancha_aguamansa.multipart",
+    "salida_relativa": "terrenos/guancha_aguamansa.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "costa_oeste_chio/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_extension.tif",
+    "sha256": "4c79b09d0569ef39b950859a9a1e9abe2217c52e10979e51ce279d4901721fd2",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_extension.multipart",
+    "salida_relativa": "terrenos/costa_oeste_chio_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "costa_oeste_chio",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_chio_boca_tauce.tif",
+    "sha256": "ced8370ef382a65dc97d51d7f8ae0136778ce7ef99046c71f1b432028facd586",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_extension.multipart",
+    "salida_relativa": "terrenos/costa_oeste_chio.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "metropolitana_esperanza/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_extension.tif",
+    "sha256": "504c8e95afd2da8f06eada33ca0a650d22e6c5d19bf13b03290c3af8077b087f",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_extension.multipart",
+    "salida_relativa": "terrenos/metropolitana_esperanza_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "metropolitana_esperanza",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_la_esperanza.tif",
+    "sha256": "0114e2c81f86e22f2c1ea2f4e2a3c9ed51ffeee130234c45c8cf14a524cfafab",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_extension.multipart",
+    "salida_relativa": "terrenos/metropolitana_esperanza.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "valle_norte_aguamansa",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_valle_norte_20261027/mdt05_valle_norte_aguamansa.tif",
+    "sha256": "5633b75d1b8cf166ffaab18eec07d31dcac8df244d03e4c53ec90079a9bc3638",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_valle_norte_20261027/mdt05_valle_norte_aguamansa.multipart",
+    "salida_relativa": "terrenos/valle_norte_aguamansa.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "san_miguel_vilaflor",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_san_miguel_20261027/mdt05_san_miguel_vilaflor.tif",
+    "sha256": "fe04db0b01ed840dd565352fc02cffa8f6796a1b6ce094fb3f1230b95e2bf130",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_san_miguel_20261027/mdt05_san_miguel_vilaflor.multipart",
+    "salida_relativa": "terrenos/san_miguel_vilaflor.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "medianias_arico_fasnia_vilaflor/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_extension.tif",
+    "sha256": "4917e6c1cad837b1aec81cba2b8d745e8690801ce65cf509f82cdcbe402bd280",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_extension.multipart",
+    "salida_relativa": "terrenos/medianias_arico_fasnia_vilaflor_extension.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "medianias_arico_fasnia_vilaflor",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_vilaflor_boca_tauce.tif",
+    "sha256": "7ec795886d34509bbdaf94b665e41f040110ff556e98d85f7a674af17fd8e5a5",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_extension.multipart",
+    "salida_relativa": "terrenos/medianias_arico_fasnia_vilaflor.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "valle_guimar_costero/extension",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_extension.tif",
+    "sha256": "51996345e34bb13385601df537681ade490762d8e36c7e873822ecdeb95f2c45",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_extension.multipart",
+    "salida_relativa": "terrenos/valle_guimar_costero_extension_nodata.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "valle_guimar_costero",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_la_esperanza.tif",
+    "sha256": "abed34b9b47c00e40330d9fb2ff7d7c1d714bb5ea8cff95b960f5e7a43627bd8",
+    "fuente": "data/bronze/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_extension.multipart",
+    "salida_relativa": "terrenos/valle_guimar_costero.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "ampliaciones/sur",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/sur.tif",
+    "sha256": "73ccb151e0a0e931421e04a2dd0323a7eba555aa2225d8538e48606e95127937",
+    "fuente": "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/sur.multipart",
+    "salida_relativa": "terrenos/ampliaciones_cabeceras_20261109_sur.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "ampliaciones/norte",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/norte.tif",
+    "sha256": "b3abfa9eef2e181cb57d8692752dbb224d8355cb603a2289c9ee9922c699c915",
+    "fuente": "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/norte.multipart",
+    "salida_relativa": "terrenos/ampliaciones_cabeceras_20261109_norte.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "ampliaciones/sur_soporte",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/sur_soporte.tif",
+    "sha256": "ce5de630d0d5434cb3bbac66b8770b8ebc036f213d6f656ad501b690514cee43",
+    "fuente": "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/sur_soporte.multipart",
+    "salida_relativa": "terrenos/ampliaciones_cabeceras_20261109_sur_soporte.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "ampliaciones/norte_soporte",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/ampliaciones_cabeceras_20261109/norte_soporte.tif",
+    "sha256": "40450647c236c54a4205dd79ad08fbda15ab289a7a7c7e7a3a6c1f9a6a2200f3",
+    "fuente": "data/bronze/geografia/mdt05/ampliaciones_cabeceras_20261109/norte_soporte.multipart",
+    "salida_relativa": "terrenos/ampliaciones_cabeceras_20261109_norte_soporte.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "refuerzos/parche_0",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_0.tif",
+    "sha256": "9d5ced39fdbc5dc7f7ef7e8229086a994ba57fcd2c60d2e0a741b6fa9d350992",
+    "fuente": "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_0.multipart",
+    "salida_relativa": "terrenos/refuerzos_cabeceras_20261109_parche_0.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "refuerzos/parche_1",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_1.tif",
+    "sha256": "62463b3834856103d7a0c41630395fec5b8973397dc8ff0d099b2d43b6fd89cb",
+    "fuente": "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_1.multipart",
+    "salida_relativa": "terrenos/refuerzos_cabeceras_20261109_parche_1.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "refuerzos/parche_2",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_2.tif",
+    "sha256": "0242a497e04d0c1f7278ae9f0538bbc5eed7735bd85df16c5c4329e5b7dd0a76",
+    "fuente": "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_2.multipart",
+    "salida_relativa": "terrenos/refuerzos_cabeceras_20261109_parche_2.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "refuerzos/parche_3",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/refuerzos_cabeceras_20261109/parche_3.tif",
+    "sha256": "47ee06d5c0c7cda84d8ebcffe9f8807fae5898286d87eaffa4b250e3bee214a5",
+    "fuente": "data/bronze/geografia/mdt05/refuerzos_cabeceras_20261109/parche_3.multipart",
+    "salida_relativa": "terrenos/refuerzos_cabeceras_20261109_parche_3.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": true
+  },
+  {
+    "referencia": "TITSA/mdt05_titsa_342",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/titsa_342_348/mdt05_titsa_342.tif",
+    "sha256": "f5a672e5ff6f3f8b1cf6ee56f408f1b60927cb954d2ced24307d92384c1a4272",
+    "fuente": "data/bronze/geografia/mdt05/20261110_titsa_342_348/mdt05_titsa_342.multipart",
+    "salida_relativa": "terrenos/mdt05_titsa_342.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  },
+  {
+    "referencia": "TITSA/mdt05_titsa_348",
+    "ruta_de_configuracion": "data/silver/geografia/mdt05/titsa_342_348/mdt05_titsa_348.tif",
+    "sha256": "d38f42963849ca05b3a7a1f698d896a7109810e38c04022b90630fb7bf77daa0",
+    "fuente": "data/bronze/geografia/mdt05/20261110_titsa_342_348/mdt05_titsa_348.multipart",
+    "salida_relativa": "terrenos/mdt05_titsa_348.tif",
+    "referencia_actual_disponible": true,
+    "nueva_en_el_nucleo": false
+  }
+]

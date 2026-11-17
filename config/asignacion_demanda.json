@@ -1,0 +1,656 @@
+{
+  "version": "1.8",
+  "descripcion": "Fuentes, asignación y dimensionamiento de Medianías; captación y oferta editables en el Excel. No presupone cambio modal ni demanda anual.",
+  "fuentes": {
+    "centroides": {
+      "ruta": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/centroides_calor_teide_media_57_matrices.csv",
+      "sha256": "534e0d6182b6ada76d7e263b26b7e0a1ce8edc7fe4dda84cec00b4f591762fb8"
+    },
+    "perfiles_corredor": {
+      "ruta": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/demanda_horaria_medianias_por_indice.csv",
+      "sha256": "c2048757d867e4d91890faff88b751ac0aea2f01fd4969f0ae7444cf469553a3"
+    },
+    "rutas_publicadas": {
+      "ruta": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/rutas_modelo_publicado.csv",
+      "sha256": "2413dded2f298d1e0958015f859bddcc5768eb022a51a7d46565823cdb637d07"
+    },
+    "referencias": {
+      "ruta": "data/silver/movilidad/odviewer/cartografia/20261016T142742Z_6e2eee61/referencias_zonas_2025.csv",
+      "sha256": "627e8eb1e4800dc8ebba816fa41f25a46c336248d410665406238cae18424606"
+    },
+    "zonas": {
+      "ruta": "data/silver/movilidad/odviewer/cartografia/20261016T142742Z_6e2eee61/zonas_y_perfil_teide_2025.gpkg",
+      "sha256": "25346631cae69b2bca6663c66b7c00a1ca823e3fddd2fb0203c9b3b7796e8fe9"
+    },
+    "perfiles_od": {
+      "ruta": "data/silver/movilidad/odviewer/cartografia/20261016T142742Z_6e2eee61/perfiles_zonas_identificados.csv",
+      "sha256": "7931711dd34a6cbbdabe5ae6c7516b9528726214a31cc90300f49f6bf3fe5066"
+    },
+    "aforos": {
+      "ruta": "data/silver/aforos_teide/resumen_anual.csv",
+      "sha256": "25c730a91acf96b289451492eec94711895d1c3f9b37b6994afe46b6e842acbc"
+    },
+    "carreteras": {
+      "ruta": "data/bronze/geografia/carreteras/vias-competencia-del-cabildo-de-tenerife.gpkg",
+      "sha256": "28fab8a59b3952e0064098460915d22b0c36cf64db2ce59e4c6983fd92693f80"
+    },
+    "perfil_config": {
+      "ruta": "config/perfil_altimetrico.json",
+      "sha256": "8ab569bf53dcc74857f2ddb544e4fa41ee9a387646d5473c8e29255327cf842f"
+    },
+    "mapa": {
+      "ruta": "data/bronze/documentacion/visor_teide/20261022_mapas_medianias/31_mapa_acceso_dominante_origen_medianias.png",
+      "sha256": "6fb04a4941c01976e12a6dd77ae53ffde4fe873a1a97f0515845f20e34d20673"
+    },
+    "rutas_titsa": {
+      "ruta": "data/silver/descargas_tenerife/rutas_341_342_348.gpkg",
+      "sha256": "fa8d6eea93943ea35131ae43edff1e6bb2ace8d7f4d83cf81bb7379552c18901"
+    },
+    "paradas_titsa": {
+      "ruta": "data/silver/descargas_tenerife/paradas_341_342_348.gpkg",
+      "sha256": "bacd3bddd16cea85be57c525022b5f43b192f6ca561144151c75b4d2b44247c7"
+    },
+    "metadatos_titsa": {
+      "ruta": "data/silver/descargas_tenerife/metadatos_titsa_341_342_348.json",
+      "sha256": "463008cbaeb5e9106a506c01a752565786d6ed40e53a6551deccef6583bd0942"
+    },
+    "catalogo_itinerarios": {
+      "ruta": "config/itinerarios.json",
+      "sha256": "40e30b884775783d73eae26be4dd12200bbf98a9081fdf20a0ae74e561faeba0"
+    },
+    "demanda_titsa": {
+      "ruta": "data/bronze/transporte_publico/pasajeros_titsa/2025/20261022T171917Z_f6db4cae/metadatos.json",
+      "sha256": "20fe1f021f66926291552a9757b08ea74494c01270e385b2f555553a182b56e0"
+    },
+    "perfiles_aforos": {
+      "ruta": "data/silver/aforos_teide/perfiles_horarios_2025.csv",
+      "sha256": "4c96df51934c9bb4831703e2e3f4e6b3fbf1b3da011942f45515aad2dcc84bfd"
+    },
+    "mensuales_aforos": {
+      "ruta": "data/silver/aforos_teide/resumen_mensual.csv",
+      "sha256": "ef6e1c4a14dafe548bf9877a8ff346424bad0c94328a343f170566137b99da6c"
+    },
+    "simulador_visor": {
+      "ruta": "data/bronze/documentacion/visor_teide/20261016T154507Z_a35edd7a/coeficientes_servicio_teide.js",
+      "sha256": "74403d3aca08c25d819fcb2792f9a9d4e576e0140abecf5a66ad6aa11664e938"
+    },
+    "parametros_visor": {
+      "ruta": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/parametros_publicados.json",
+      "sha256": "4dd80fade05b819f6e80ba1f868ea84d53a0c50cedff284297d7e2c55f208197"
+    },
+    "catalogo_matrices_visor": {
+      "ruta": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/tablas_publicadas/tab-base_01.csv",
+      "sha256": "9c9631a77c91ca24f3a8598725d7896614103f47e5c221104a467def6c8d7cf5"
+    },
+    "gtfs": {
+      "ruta": "data/bronze/transporte_publico/gtfs/20261016T093551Z_2d6681e8/001_fichero_zip_de_google_tr_9f291323.zip",
+      "sha256": "2046a7cff27746853275bab3de4367d0404ebcd1144479ecd2a91aa6e0a02cbb"
+    },
+    "cotas_origenes": {
+      "ruta": "data/bronze/geografia/mdt05/wcs_4083_5_referencias_origenes_20261025/metadata.json",
+      "sha256": "7a03b6c6a1da030d53775763315a6822db22a4a4ba307e23d945f6203ad1e357"
+    }
+  },
+  "mapa": {
+    "forma_imagen": [
+      1360,
+      1530
+    ],
+    "crs_georreferencia": "EPSG:4326",
+    "envolvente_pixeles": [
+      36,
+      145,
+      1503,
+      1220
+    ],
+    "leyenda_pixeles": [
+      0,
+      1080,
+      400,
+      1360
+    ],
+    "pureza_minima": 0.9,
+    "sensibilidad_desplazamiento_pixeles": 2,
+    "fundamento": "Georreferencia aproximada por envolventes de isla y zonificación. Pureza 90% y desplazamientos ±2 píxeles son controles técnicos exploratorios, no exactitud cartográfica ni intervalos estadísticos. No se ajusta para forzar las participaciones publicadas.",
+    "colores": [
+      {
+        "rgb": [
+          40,
+          120,
+          181
+        ],
+        "corredor": "TF21_Orotava_Portillo"
+      },
+      {
+        "rgb": [
+          86,
+          167,
+          91
+        ],
+        "corredor": "TF24_LaLaguna_Portillo"
+      },
+      {
+        "rgb": [
+          208,
+          122,
+          40
+        ],
+        "corredor": "TF38_Chio_BocaTauce"
+      },
+      {
+        "rgb": [
+          139,
+          95,
+          191
+        ],
+        "corredor": "TF21_BocaTauce_Granadilla"
+      },
+      {
+        "rgb": [
+          245,
+          232,
+          191
+        ],
+        "corredor": null
+      }
+    ]
+  },
+  "corredores": [
+    {
+      "corredor": "TF21_Orotava_Portillo",
+      "nombre": "Norte · Aguamansa",
+      "cabecera": "Aguamansa",
+      "terminal": "El Portillo",
+      "aforo": "OROTAVA",
+      "origin_anchor_id": "aguamansa_cabecera_tf21"
+    },
+    {
+      "corredor": "TF24_LaLaguna_Portillo",
+      "nombre": "Este · La Esperanza",
+      "cabecera": "La Esperanza TF24",
+      "terminal": "El Portillo",
+      "aforo": "LAGUNA",
+      "origin_anchor_id": "la_esperanza_cabecera_tf24"
+    },
+    {
+      "corredor": "TF38_Chio_BocaTauce",
+      "nombre": "Oeste · Chío",
+      "cabecera": "Chío",
+      "terminal": "Boca Tauce",
+      "aforo": "CHIO",
+      "origin_anchor_id": "chio_cabecera_tf38"
+    },
+    {
+      "corredor": "TF21_BocaTauce_Granadilla",
+      "nombre": "Sur · Vilaflor",
+      "cabecera": "Vilaflor",
+      "terminal": "Boca Tauce",
+      "aforo": "VILAFLOR",
+      "origin_anchor_id": "vilaflor_cabecera_tf21"
+    }
+  ],
+  "origenes_representativos": {
+    "agrupacion": "Subdividir los grupos macrozona/corredor por su municipio principal de referencia, sin distribuir demanda por superficie ni cambiar corredor",
+    "punto": "Parada real activa GTFS dentro de la zona de mayor demanda del subgrupo, más próxima a su centro ponderado por la demanda del Visor; pesos de cuatro colectivos y ambos sentidos",
+    "limites": "Propuesta geográfica para revisar trazados. No origen observado, hotel, aparcamiento o punto de concentración acreditado. No sustituir distancias de circulación por radios cartográficos ni aplicar sus pesos a demanda anual todavía sin justificar.",
+    "referencias_gtfs_por_extremo": 2,
+    "fundamento_referencias": "Examinar las dos paradas reales más próximas a cada extremo para incluir posibles pares de sentido. Es un cribado, no distancia peatonal admisible ni búsqueda completa de transbordos. Todas las separaciones quedan visibles.",
+    "referencia_tecnica_gtfs": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+    "asignacion_operativa_adoptada": false
+  },
+  "agrupacion_reducida": {
+    "decision": "D095",
+    "hypothesis": "H052",
+    "estado": "Propuesta, no adoptada para balance energético o asignación modal",
+    "criterio": "Familias territoriales explícitas con la misma cabecera candidata; proximidad, cotas de referencia y conexiones viarias por contrastar. No número obligatorio ni encaminamiento automático.",
+    "seleccion_referencia": "Punto GTFS existente que minimiza la separación cartográfica media ponderada entre referencias conocidas, usando demanda de cuatro colectivos y ambos sentidos. Sin pesos anuales ni objetivo energético.",
+    "fundamento": "D094 — simplificar sin perder demanda. Fuentes F035/F041/F045/F051/F078, con familias viales como hipótesis pendientes de trazado. Los radios y rangos no son error energético ni una tolerancia de aceptación.",
+    "grupos": [
+      {
+        "grupo_reducido_id": "norte_costa",
+        "nombre": "Puerto de la Cruz · costa",
+        "corredor_candidato": "TF21_Orotava_Portillo",
+        "origenes_id": [
+          "M6__TF21_Orotava_Portillo__MUN38028"
+        ],
+        "fundamento": "Conservar el acceso desde la costa separado del valle de mayor cota.",
+        "familia_vial_a_contrastar": "TF-5 y conexión a TF-21 por definir",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "norte_valle",
+        "nombre": "Valle de La Orotava y Acentejo próximo",
+        "corredor_candidato": "TF21_Orotava_Portillo",
+        "origenes_id": [
+          "M6__TF21_Orotava_Portillo__MUN38026",
+          "M6__TF21_Orotava_Portillo__MUN38031",
+          "M5__TF21_Orotava_Portillo__MUN38039",
+          "M5__TF21_Orotava_Portillo__MUN38051"
+        ],
+        "fundamento": "Puntos próximos del valle/Acentejo, cotas de 213–336 m; aproximación territorial al acceso norte.",
+        "familia_vial_a_contrastar": "Conexiones del valle y TF-21; pasos urbanos por revisar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "norte_noroeste",
+        "nombre": "Icod–La Guancha–San Juan de la Rambla",
+        "corredor_candidato": "TF21_Orotava_Portillo",
+        "origenes_id": [
+          "M7__TF21_Orotava_Portillo__MUN38022",
+          "M7__TF21_Orotava_Portillo__MUN38018",
+          "M7__TF21_Orotava_Portillo__MUN38034"
+        ],
+        "fundamento": "Territorio contiguo del noroeste; conservar separado del valle para no eliminar el acceso lateral.",
+        "familia_vial_a_contrastar": "TF-5 y conexiones TF-21; familia por contrastar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "norte_sudeste_revision",
+        "nombre": "Sudeste con cabecera norte · revisar asignación",
+        "corredor_candidato": "TF21_Orotava_Portillo",
+        "origenes_id": [
+          "M10__TF21_Orotava_Portillo__MUN38005",
+          "M10__TF21_Orotava_Portillo__MUN38012",
+          "M11__TF21_Orotava_Portillo__MUN38004",
+          "M11__TF21_Orotava_Portillo__MUN38020"
+        ],
+        "fundamento": "Agrupar para revisión los orígenes del sudeste con Aguamansa en el mapa; la agrupación no acredita esa cabecera ni evita el recorrido transversal.",
+        "familia_vial_a_contrastar": "Acceso a Aguamansa desde el sudeste pendiente; no trasladar a La Orotava",
+        "prioridad_revision": "Revisar cabecera candidata antes de usar recorrido"
+      },
+      {
+        "grupo_reducido_id": "oeste_costa",
+        "nombre": "Costa suroeste · Adeje–Alcalá–Los Gigantes",
+        "corredor_candidato": "TF38_Chio_BocaTauce",
+        "origenes_id": [
+          "M8__TF38_Chio_BocaTauce__MUN38001",
+          "M8__TF38_Chio_BocaTauce__MUN38019",
+          "M8__TF38_Chio_BocaTauce__MUN38040"
+        ],
+        "fundamento": "Puntos costeros de 25–45 m en la vertiente oeste; mantener el ascenso completo hasta Chío.",
+        "familia_vial_a_contrastar": "TF-47 y conexiones a Chío; enlaces distintos por contrastar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "oeste_noroeste_bajo",
+        "nombre": "Icod–Los Silos · referencias de menor cota",
+        "corredor_candidato": "TF38_Chio_BocaTauce",
+        "origenes_id": [
+          "M7__TF38_Chio_BocaTauce__MUN38022",
+          "M7__TF38_Chio_BocaTauce__MUN38042"
+        ],
+        "fundamento": "Separar referencias de 106–227 m de las medianías altas y de Masca, con accesos distintos.",
+        "familia_vial_a_contrastar": "TF-5/TF-82; trazado por confirmar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "oeste_noroeste_alto",
+        "nombre": "Garachico–El Tanque · referencias altas",
+        "corredor_candidato": "TF38_Chio_BocaTauce",
+        "origenes_id": [
+          "M7__TF38_Chio_BocaTauce__MUN38015",
+          "M7__TF38_Chio_BocaTauce__MUN38044"
+        ],
+        "fundamento": "Las referencias reales están a 484–729 m, no en el casco costero de Garachico. Separarlas del noroeste de menor cota.",
+        "familia_vial_a_contrastar": "TF-82 y conexiones a Chío por definir",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "oeste_teno",
+        "nombre": "Masca · Teno",
+        "corredor_candidato": "TF38_Chio_BocaTauce",
+        "origenes_id": [
+          "M7__TF38_Chio_BocaTauce__MUN38010"
+        ],
+        "fundamento": "Conservar Masca separado por su posición en Teno y acceso sinuoso; no representarlo desde la costa oeste.",
+        "familia_vial_a_contrastar": "TF-436 y conexión a Chío por contrastar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "este_santa_cruz",
+        "nombre": "Santa Cruz · referencia urbana de menor cota",
+        "corredor_candidato": "TF24_LaLaguna_Portillo",
+        "origenes_id": [
+          "M1__TF24_LaLaguna_Portillo__MUN38038"
+        ],
+        "fundamento": "Referencia a 22 m; conservar el ascenso desde Santa Cruz separado del área alta.",
+        "familia_vial_a_contrastar": "TF-5/TF-24 y acceso urbano por definir",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "este_metropolitana_alta",
+        "nombre": "La Laguna–El Rosario–Tegueste · área alta",
+        "corredor_candidato": "TF24_LaLaguna_Portillo",
+        "origenes_id": [
+          "M2__TF24_LaLaguna_Portillo__MUN38032",
+          "M2__TF24_LaLaguna_Portillo__MUN38038",
+          "M3__TF24_LaLaguna_Portillo__MUN38023",
+          "M4__TF24_LaLaguna_Portillo__MUN38023",
+          "M4__TF24_LaLaguna_Portillo__MUN38046"
+        ],
+        "fundamento": "Puntos del área metropolitana alta de 390–599 m; misma cabecera candidata, accesos urbanos y diferencias de distancia por contrastar.",
+        "familia_vial_a_contrastar": "Conexiones metropolitanas a TF-24 por definir",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "este_acentejo",
+        "nombre": "Tacoronte–El Sauzal–La Matanza y resto próximo",
+        "corredor_candidato": "TF24_LaLaguna_Portillo",
+        "origenes_id": [
+          "M5__TF24_LaLaguna_Portillo__MUN38025",
+          "M5__TF24_LaLaguna_Portillo__MUN38041",
+          "M5__TF24_LaLaguna_Portillo__MUN38043",
+          "M5__TF24_LaLaguna_Portillo__MUN38051"
+        ],
+        "fundamento": "Puntos conocidos de 399–477 m en Acentejo; La Victoria sin punto se conserva y limita la cobertura.",
+        "familia_vial_a_contrastar": "TF-5 y conexión a TF-24 por contrastar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "este_sudeste_costa",
+        "nombre": "Candelaria–Arafo–Güímar · costa",
+        "corredor_candidato": "TF24_LaLaguna_Portillo",
+        "origenes_id": [
+          "M11__TF24_LaLaguna_Portillo__MUN38004",
+          "M11__TF24_LaLaguna_Portillo__MUN38011",
+          "M11__TF24_LaLaguna_Portillo__MUN38020"
+        ],
+        "fundamento": "Referencias costeras de 8–36 m y cabecera este; conservar el ascenso, separado del sudeste con cabecera norte.",
+        "familia_vial_a_contrastar": "TF-1/TF-2 y conexión a TF-24 por contrastar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "sur_costa_occidental",
+        "nombre": "Adeje–Arona · referencias costeras",
+        "corredor_candidato": "TF21_BocaTauce_Granadilla",
+        "origenes_id": [
+          "M8__TF21_BocaTauce_Granadilla__MUN38001",
+          "M9__TF21_BocaTauce_Granadilla__MUN38006"
+        ],
+        "fundamento": "Referencias próximas a 22–41 m; aproximación para la costa turística occidental. Conservar dispersión interna de Arona.",
+        "familia_vial_a_contrastar": "TF-1/TF-51 y conexiones a Vilaflor por contrastar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "sur_costa_abona",
+        "nombre": "San Miguel–Granadilla · referencias costeras",
+        "corredor_candidato": "TF21_BocaTauce_Granadilla",
+        "origenes_id": [
+          "M9__TF21_BocaTauce_Granadilla__MUN38035",
+          "M9__TF21_BocaTauce_Granadilla__MUN38017"
+        ],
+        "fundamento": "Referencias próximas de 20–42 m; conservarlas separadas de la costa occidental por sus conexiones a Vilaflor.",
+        "familia_vial_a_contrastar": "TF-65/TF-64/TF-21; familia por contrastar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "sur_arico",
+        "nombre": "Arico · referencia costera BUENVIAJE",
+        "corredor_candidato": "TF21_BocaTauce_Granadilla",
+        "origenes_id": [
+          "M10__TF21_BocaTauce_Granadilla__MUN38005"
+        ],
+        "fundamento": "La referencia BUENVIAJE está a 9 m en la costa. Mantener separado el acceso oriental más largo; no tratar todo Arico como medianías.",
+        "familia_vial_a_contrastar": "TF-1 y acceso a Vilaflor por definir",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "sur_vilaflor",
+        "nombre": "Vilaflor · referencia de medianías altas",
+        "corredor_candidato": "TF21_BocaTauce_Granadilla",
+        "origenes_id": [
+          "M9__TF21_BocaTauce_Granadilla__MUN38052"
+        ],
+        "fundamento": "Conservar Vilaflor a 1427 m separado de los orígenes costeros; conexión local a cabecera pendiente.",
+        "familia_vial_a_contrastar": "Viario local de Vilaflor; no sustituir por origen costero",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      },
+      {
+        "grupo_reducido_id": "sin_cabecera",
+        "nombre": "Demanda sin cabecera candidata",
+        "corredor_candidato": "sin_asignar",
+        "origenes_id": [
+          "M1__sin_asignar__MUN38038",
+          "M9__sin_asignar__MUN38006"
+        ],
+        "fundamento": "Conservar las dos zonas sin cabecera ni punto; sin recorrido ficticio o energía cero.",
+        "familia_vial_a_contrastar": "Sin asignar",
+        "prioridad_revision": "Comprobar recorridos, dispersión territorial y representatividad antes del balance"
+      }
+    ],
+    "revision_trazados": {
+      "decision": "D100",
+      "hypothesis": "H056",
+      "criterio": "Reutilizar únicamente tramos documentados. La proyección cartográfica diagnostica separación/cota; no conecta puntos a carreteras, asigna rutas o acredita equivalencia energética.",
+      "priorizacion": "Ordenar puntos principales sin trazado por su demanda media publicada hacia el Teide, sin tratarla como peso anual o impacto energético. Revisar también los miembros de familias ya trazadas.",
+      "excepciones": {
+        "norte_sudeste_revision": {
+          "accion": "Revisar cabecera antes de trazar",
+          "motivo": "La asignación inferida lleva el sudeste a Aguamansa; conservar la demanda y revisar esa correspondencia antes de preparar un acceso transversal."
+        },
+        "sin_cabecera": {
+          "accion": "Conservar sin asignar",
+          "motivo": "Las dos zonas carecen de cabecera y punto; conservarlas sin recorrido ficticio, energía cero o reasignación automática."
+        }
+      }
+    }
+  },
+  "revision_cabeceras_estudio": {
+    "decision": "D121",
+    "hipotesis": "H074",
+    "estado": "Propuesta geográfica para preparar/contrastar recorridos; sin reasignar demanda operativa",
+    "criterio": "Conservar lectura fuente, pertenencias y demanda. Referenciar cabecera/terminal/perfil existente por id del catálogo, sin otra coordenada editable. Vías de contraste no son secuencia circulable validada.",
+    "casos": [
+      {
+        "origen_id": "M10__TF21_Orotava_Portillo__MUN38005",
+        "corredor_fuente_esperado": "TF21_Orotava_Portillo",
+        "tipo": "cabecera_propuesta",
+        "comparacion_referencia_id": "arico_vilaflor",
+        "vias_a_contrastar": [
+          "TF-28",
+          "TF-21"
+        ],
+        "fundamento": "Arico de medianías conserva su referencia GTFS 7895 junto a TF-28. El eje oficial TF-28 y el extremo TF-28 Granadilla de TF-21 fundamentan estudiar el corredor sur/Vilaflor. El HTML del Visor describe la ampliación sur/este de esa captación, aunque su PNG mantiene este origen en azul/Aguamansa.",
+        "limitaciones": "D125/H078: correspondencia geográfica integrada en la representación de estudio con perfil propio, conservando fuente y pesos. Pendientes representatividad, visita equivalente, captación, modos, actividad anual y consumo. No elección observada, ruta óptima o autorización operativa; rasante e instalaciones bajo H059.",
+        "alternativas_comparacion_ids": [
+          "la_orotava_aguamansa",
+          "candelaria_esperanza"
+        ]
+      },
+      {
+        "origen_id": "M10__TF21_Orotava_Portillo__MUN38012",
+        "corredor_fuente_esperado": "TF21_Orotava_Portillo",
+        "tipo": "cabecera_propuesta",
+        "comparacion_referencia_id": "arico_vilaflor",
+        "vias_a_contrastar": [
+          "TF-532",
+          "TF-28",
+          "TF-21"
+        ],
+        "fundamento": "Fasnia conserva su referencia GTFS 7546 en el entorno TF-532/TF-28. La continuidad territorial por TF-28 hacia Granadilla permite contrastar Vilaflor como cabecera sur. Es una elección de trabajo de medianías; se conserva también el contraste por el este.",
+        "limitaciones": "D125/H078: correspondencia geográfica integrada en la representación de estudio con perfil propio, conservando fuente y pesos. Pendientes representatividad, visita equivalente, captación, modos, actividad anual y consumo. No elección observada, ruta óptima o autorización operativa; rasante e instalaciones bajo H059.",
+        "alternativas_comparacion_ids": [
+          "la_orotava_aguamansa",
+          "candelaria_esperanza"
+        ]
+      },
+      {
+        "origen_id": "M11__TF21_Orotava_Portillo__MUN38004",
+        "corredor_fuente_esperado": "TF21_Orotava_Portillo",
+        "tipo": "cabecera_propuesta",
+        "comparacion_referencia_id": "candelaria_esperanza",
+        "vias_a_contrastar": [
+          "TF-245",
+          "TF-523",
+          "TF-24",
+          "TF-1"
+        ],
+        "fundamento": "Arafo conserva GTFS 7108 junto a TF-245. El inventario oficial identifica TF-523 desde TF-245 en Arafo hasta TF-24 en La Cumbre, lo que fundamenta estudiar el acceso este. La Esperanza es la cabecera potencial del este; debe compararse el alimentador a ella con el recorrido directo por TF-523, sin obligar al coche sin proyecto a pasar por cabecera.",
+        "limitaciones": "D125/H078: correspondencia geográfica integrada en la representación de estudio con perfil propio, conservando fuente y pesos. Pendientes representatividad, visita equivalente, captación, modos, actividad anual y consumo. No elección observada, ruta óptima o autorización operativa; rasante e instalaciones bajo H059.",
+        "alternativas_comparacion_ids": [
+          "la_orotava_aguamansa",
+          "arico_vilaflor"
+        ]
+      },
+      {
+        "origen_id": "M11__TF21_Orotava_Portillo__MUN38020",
+        "corredor_fuente_esperado": "TF21_Orotava_Portillo",
+        "tipo": "cabecera_propuesta",
+        "comparacion_referencia_id": "candelaria_esperanza",
+        "vias_a_contrastar": [
+          "TF-525",
+          "TF-245",
+          "TF-523",
+          "TF-24",
+          "TF-61",
+          "TF-1"
+        ],
+        "fundamento": "Güímar conserva GTFS 7073 y sus cinco zonas. TF-525 une Güímar y Arafo; TF-523 conecta ese entorno con TF-24. Se propone estudiar La Esperanza y comparar alimentación por la costa con la referencia directa de montaña. La cadena existente de Candelaria aporta solo el extremo/corredor de contraste; no representa el acceso desde Güímar.",
+        "limitaciones": "D125/H078: correspondencia geográfica integrada en la representación de estudio con perfil propio, conservando fuente y pesos. Pendientes representatividad, visita equivalente, captación, modos, actividad anual y consumo. No elección observada, ruta óptima o autorización operativa; rasante e instalaciones bajo H059.",
+        "alternativas_comparacion_ids": [
+          "la_orotava_aguamansa",
+          "arico_vilaflor"
+        ]
+      },
+      {
+        "origen_id": "M1__sin_asignar__MUN38038",
+        "corredor_fuente_esperado": "sin_asignar",
+        "tipo": "sin_demanda_positiva_media57",
+        "comparacion_referencia_id": "santa_cruz_esperanza",
+        "vias_a_contrastar": [
+          "TF-5",
+          "TF-24"
+        ],
+        "fundamento": "La zona 217 de Santa Cruz conserva un centroide y demanda publicada igual a cero en los cuatro colectivos y ambos sentidos. La Esperanza se identifica como cabecera de trabajo condicional por la referencia urbana existente de Santa Cruz. No necesito inventar punto o kilómetros para esa media nula.",
+        "limitaciones": "La media publicada nula no demuestra cada fecha, actividad anual nula o energía cero. Si la anualización u otra fuente aporta demanda positiva, habrá que fundamentar punto y recorrido antes de incorporarla; no excluir la zona.",
+        "alternativas_comparacion_ids": []
+      },
+      {
+        "origen_id": "M9__sin_asignar__MUN38006",
+        "corredor_fuente_esperado": "sin_asignar",
+        "tipo": "aproximacion_territorial",
+        "comparacion_referencia_id": "columbus_vilaflor",
+        "vias_a_contrastar": [
+          "TF-1",
+          "TF-28",
+          "TF-21"
+        ],
+        "fundamento": "La pequeña zona 231 se localiza en la costa urbana de Arona/Los Cristianos y conserva sus dos centroides positivos. No contiene parada GTFS activa. Propongo la referencia costera de Arona ya trazada hacia Vilaflor como aproximación territorial: mismo municipio y entorno costero, corredor sur documentado y demanda conservada por colectivo/sentido. La separación se calcula desde los centroides originales.",
+        "limitaciones": "La referencia aproximada está fuera de la zona 231 y no es el origen real, hotel, aparcamiento o modo observado. No equivale a perfil propio ni a acceso circulable confirmado; el diferencial local y su error energético siguen sin acotar. La aplicación al balance y su sensibilidad requieren justificación específica; no convierto la demanda de telefonía en coches.",
+        "alternativas_comparacion_ids": [
+          "alcala_chio"
+        ]
+      }
+    ]
+  },
+  "representacion_estudio": {
+    "decision": "D125",
+    "hipotesis": "H078",
+    "estado": "Integración geográfica adoptada para preparar el estudio; sin demanda anual, modos o consumo",
+    "criterio": "Conservar la fuente y sus pesos. Separar familias de estudio por cabecera y terminal, enlazando únicamente perfiles propios ya calculados. No modificar geometrías o incorporar el contraste nominal D122.",
+    "familias": [
+      {
+        "grupo_estudio_id": "estudio__sudeste_vilaflor",
+        "nombre": "Arico y Fasnia · medianías hacia Vilaflor",
+        "corredor_fuente_esperado": "TF21_Orotava_Portillo",
+        "corredor_estudio": "TF21_BocaTauce_Granadilla",
+        "fundamento": "D121/D124 y H077: referencias de medianías conservadas, TF-532/TF-28 hacia Granadilla y TF-21; cabecera potencial Vilaflor y perfiles propios ya contrastados. Geografía de estudio, no elección observada o ruta óptima.",
+        "referencias": [
+          {
+            "coleccion": "study_origin_access_comparisons",
+            "comparacion_id": "arico_medianias_vilaflor"
+          },
+          {
+            "coleccion": "study_origin_access_comparisons",
+            "comparacion_id": "fasnia_vilaflor"
+          }
+        ]
+      },
+      {
+        "grupo_estudio_id": "estudio__valle_guimar_esperanza",
+        "nombre": "Arafo y Güímar · medianías hacia La Esperanza",
+        "corredor_fuente_esperado": "TF21_Orotava_Portillo",
+        "corredor_estudio": "TF24_LaLaguna_Portillo",
+        "fundamento": "D121/D123 y H076: origen original, directa por TF-523 y alimentación costera propia por sentido hacia La Esperanza. Conservar el desvío de la cadena elegida; no mínimo, ahorro o captación observados.",
+        "referencias": [
+          {
+            "coleccion": "coastal_valley_comparisons",
+            "comparacion_id": "arafo"
+          },
+          {
+            "coleccion": "coastal_valley_comparisons",
+            "comparacion_id": "guimar"
+          }
+        ]
+      }
+    ]
+  },
+  "aproximaciones_geograficas_estudio": {
+    "decision": "D126",
+    "hipotesis": "H079",
+    "estado": "Representación simplificada para primer cálculo de estudio; error sin acotar y sensibilidad pendiente",
+    "criterio": "Conservar 31 perfiles propios y la demanda original. Ocho aproximaciones del representante de familia, Arona como referencia costera explícita y Santa Cruz condicional a demanda media nula. No atribuir perfiles propios, conexiones, modos o pesos anuales.",
+    "casos": [
+      {
+        "origen_id": "M7__TF21_Orotava_Portillo__MUN38022",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "guancha_aguamansa",
+        "fundamento": "H079: agrupación territorial D095/H052, Territorio contiguo del noroeste; conservar separado del valle para no eliminar el acceso lateral. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M7__TF21_Orotava_Portillo__MUN38034",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "guancha_aguamansa",
+        "fundamento": "H079: agrupación territorial D095/H052, Territorio contiguo del noroeste; conservar separado del valle para no eliminar el acceso lateral. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M7__TF38_Chio_BocaTauce__MUN38042",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "icod_chio",
+        "fundamento": "H079: agrupación territorial D095/H052, Separar referencias de 106–227 m de las medianías altas y de Masca, con accesos distintos. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M5__TF24_LaLaguna_Portillo__MUN38025",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "acentejo_esperanza",
+        "fundamento": "H079: agrupación territorial D095/H052, Puntos conocidos de 399–477 m en Acentejo; La Victoria sin punto se conserva y limita la cobertura. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M5__TF24_LaLaguna_Portillo__MUN38043",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "acentejo_esperanza",
+        "fundamento": "H079: agrupación territorial D095/H052, Puntos conocidos de 399–477 m en Acentejo; La Victoria sin punto se conserva y limita la cobertura. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M5__TF24_LaLaguna_Portillo__MUN38051",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "acentejo_esperanza",
+        "fundamento": "H079: agrupación territorial D095/H052, Puntos conocidos de 399–477 m en Acentejo; La Victoria sin punto se conserva y limita la cobertura. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M11__TF24_LaLaguna_Portillo__MUN38004",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "candelaria_esperanza",
+        "fundamento": "H079: agrupación territorial D095/H052, Referencias costeras de 8–36 m y cabecera este; conservar el ascenso, separado del sudeste con cabecera norte. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M11__TF24_LaLaguna_Portillo__MUN38020",
+        "tipo": "representante_familia",
+        "comparacion_referencia_id": "candelaria_esperanza",
+        "fundamento": "H079: agrupación territorial D095/H052, Referencias costeras de 8–36 m y cabecera este; conservar el ascenso, separado del sudeste con cabecera norte. Uso el recorrido ya calculado del representante de la misma familia/cabecera como aproximación de cálculo. Conservo la demanda del miembro, su punto original o su ausencia y el diagnóstico de separaciones/cotas; no añado un conector o un perfil propio."
+      },
+      {
+        "origen_id": "M1__sin_asignar__MUN38038",
+        "tipo": "condicional_media_nula",
+        "comparacion_referencia_id": "santa_cruz_esperanza",
+        "fundamento": "H079 / D121-H074: La zona 217 de Santa Cruz conserva un centroide y demanda publicada igual a cero en los cuatro colectivos y ambos sentidos. La Esperanza se identifica como cabecera de trabajo condicional por la referencia urbana existente de Santa Cruz. No necesito inventar punto o kilómetros para esa media nula."
+      },
+      {
+        "origen_id": "M9__sin_asignar__MUN38006",
+        "tipo": "territorial_explicita",
+        "comparacion_referencia_id": "columbus_vilaflor",
+        "fundamento": "H079 / D121-H074: La pequeña zona 231 se localiza en la costa urbana de Arona/Los Cristianos y conserva sus dos centroides positivos. No contiene parada GTFS activa. Propongo la referencia costera de Arona ya trazada hacia Vilaflor como aproximación territorial: mismo municipio y entorno costero, corredor sur documentado y demanda conservada por colectivo/sentido. La separación se calcula desde los centroides originales."
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "bloque": "Cierre de difusión de fuentes: referencias bibliográficas",
+  "fecha": "2026-11-17",
+  "estado": "Selección de fuentes documentada; sin casos pendientes del selector, paquetes finales aún por generar y comprobar",
+  "edicion_documental": "v0.28",
+  "commit_base": "c8a2b7a803d88e06784d14fc845d39831d81a346",
+  "visitas_sin_y_con": 2500000,
+  "condiciones": 31,
+  "copias_bibliograficas_retiradas_de_entrega": 6,
+  "originales_integros_preservados": true,
+  "casos_cerrados_por_referencia": [
+    "html_componentes",
+    "html_copert",
+    "informe_fta",
+    "pagina_idae"
+  ],
+  "casos_externos_pendientes": [],
+  "archivos_afectados_por_casos_pendientes": {
+    "completos": 0,
+    "proyeccion_publica_con_control_documental": 0
+  },
+  "referencias": "manifiestos/referencias_documentales.csv",
+  "registro_vigente": "data/silver/ejecuciones/referencia_2028_final_20261116",
+  "registro_reabierto_y_fuentes_cotejadas": true,
+  "fuentes_del_registro": 5875,
+  "archivos_protegidos_identicos_por_raiz": 11429,
+  "pruebas_dirigidas": [
+    {
+      "raiz": "desarrollo",
+      "pruebas": 62,
+      "fallos": 0,
+      "segundos": 23.53,
+      "archivos_de_prueba": [
+        "tests/test_seleccion_final.py",
+        "tests/test_entrega_publica.py",
+        "tests/test_reserva_documental.py",
+        "tests/test_registro_ejecucion.py"
+      ]
+    },
+    {
+      "raiz": "publicacion",
+      "pruebas": 62,
+      "fallos": 0,
+      "segundos": 23.66,
+      "archivos_de_prueba": [
+        "tests/test_seleccion_final.py",
+        "tests/test_entrega_publica.py",
+        "tests/test_reserva_documental.py",
+        "tests/test_registro_ejecucion.py"
+      ]
+    }
+  ],
+  "sesiones_cuadernos": [
+    {
+      "cuaderno": "notebooks/00_inicio_y_referencia.ipynb",
+      "sha256_entrada": "c36ca844fd5aa5e38102e190872df7e8afd4472743bf9275b65a4c9dbbb00de3",
+      "segundos": 7.991,
+      "kernel_nuevo": true,
+      "errores": 0,
+      "desarrollo_bloqueado_salvo_entorno": true,
+      "accion": "Consultar registro y comprobar; sin recalcular consumo ni ejecutar COPERT",
+      "copias_bibliograficas_ausentes": true
+    },
+    {
+      "cuaderno": "notebooks/07_comprobacion_e_informe.ipynb",
+      "sha256_entrada": "11a2dbd78187411691fb250537ca6cbf54316e329e72dfbb76e8f13ec9091ea5",
+      "segundos": 14.201,
+      "kernel_nuevo": true,
+      "errores": 0,
+      "desarrollo_bloqueado_salvo_entorno": true,
+      "accion": "Consultar registro y comprobar; sin recalcular consumo ni ejecutar COPERT",
+      "copias_bibliograficas_ausentes": true
+    }
+  ],
+  "trazabilidad": {
+    "productos_anuales": 16,
+    "anexos": 33,
+    "columnas": 392,
+    "tablas": 43,
+    "figuras": 20,
+    "fichas": 8,
+    "referencias_bibliograficas": 22
+  },
+  "columnas_de_procedencia_conservadas": true,
+  "informe_y_anexos_modificados": false,
+  "codigo_configuracion_y_datos_cientificos_modificados": false,
+  "gitignore_modificado": false,
+  "recálculo_energetico": false,
+  "motor_copert_nuevo": false,
+  "nueva_instalacion_desde_zip": false,
+  "paquetes_nuevos": false,
+  "prueba_autonoma_anterior": "manifiestos/comprobacion_entrega_final.json",
+  "alcance": "Comprobación de integridad, trazabilidad, lectura del registro científico y consulta de 00/07 desde publicación sin desarrollo salvo entorno. No es una nueva reproducción integral ni prueba de ZIP nuevos; el ensayo de 16/11 conserva su alcance anterior.",
+  "apta_para_difusion": true,
+  "contacto_realizado": true,
+  "publicacion_realizada": false,
+  "commits": false,
+  "criterios_de_inclusion_documentados": [
+    "series_aforos",
+    "originales_visores",
+    "uso_marcas"
+  ],
+  "fundamento_de_los_criterios": "Encargo del Cabildo y titularidad pública de aforos comunicada por Luis Gutiérrez Valido a Beatriz; régimen general de reutilización y condiciones particulares conservadas. Sin autorización escrita nueva o licencia global atribuida.",
+  "consulta_aforos": {
+    "realizada_por": "Beatriz",
+    "interlocutor": "Luis Gutiérrez Valido",
+    "cargo": "Director de Proyectos y Programas de Movilidad Sostenible del Parque Nacional del Teide",
+    "cargo_comunicado_por": "Beatriz",
+    "objeto": "Datos y custodia",
+    "resultado_comunicado": true,
+    "titular_institucional": "Parque Nacional del Teide, área de Medio Ambiente del Cabildo de Tenerife",
+    "alcance_respuesta": "Confirmación de titularidad, no permiso expreso de redistribución",
+    "criterio_inclusion": "Se adopta la inclusión de las series en la reproducción del estudio bajo el régimen general de reutilización del Cabildo, artículos49–52 de su Reglamento, con la titularidad pública comunicada y sin una restricción específica identificada. Conservar fuente, fechas, sentido de los datos y separación de series recibidas y correcciones del estudio. No asignar CC0 global ni una licencia propia a materiales ajenos."
+  },
+  "contacto_desde_asistente": false,
+  "commit_base_seguimiento": "f28e18880c87867a26cb8f33528c4b1af639a0fb",
+  "alcance_de_pruebas_y_sesiones_anteriores": "Las62 pruebas por raíz y las consultas00/07 identifican el cierre bibliográfico anterior del17/11. Este seguimiento no repite esas sesiones: comprueba integridad, trazabilidad, reapertura del registro y selector con los estados actualizados.",
+  "verificacion_cierre_aforos": {
+    "estado": "comprobada",
+    "fecha": "2026-11-17",
+    "archivos_comunes": 11516,
+    "archivos_protegidos_identicos_por_raiz": 11429,
+    "fuentes_cientificas_cotejadas_por_raiz": 5875,
+    "casos_pendientes": 0,
+    "selector_acepta_fuentes": true,
+    "resultado_comunicado_por": "Beatriz",
+    "nombre_y_cargo_comunicados_por": "Beatriz",
+    "contacto_del_asistente": false
+  },
+  "alcance_del_cierre_aforos": "Actualización documental de titularidad y régimen aplicable; sin recálculo, motor, nuevos ZIP o publicación. La aptitud del selector se comprueba por separado de los paquetes finales.",
+  "bloqueo_previo_con_aforos_pendientes_comprobado": true,
+  "verificacion_previa_antes_de_respuesta_aforos": {
+    "estado": "comprobada",
+    "fecha": "2026-11-17",
+    "archivos_comunes": 11516,
+    "archivos_protegidos_identicos_por_raiz": 11429,
+    "fuentes_cientificas_cotejadas_por_raiz": 5875,
+    "solo_aforos_pendientes": true,
+    "bloqueo_por_siete_aforos_comprobado": true,
+    "filas_y_columnas_de_procedencia_conservadas": true
+  },
+  "alcance_del_seguimiento_previo": "Actualización de condiciones y documentación; se comprueba conservación e integridad del núcleo y bloqueo por los siete aforos. Pruebas y sesiones del cierre bibliográfico anterior conservan su alcance; no se repite cálculo o motor.",
+  "commit_base_cierre_aforos": "f28e18880c87867a26cb8f33528c4b1af639a0fb",
+  "aptitud_referida_a": "Condiciones documentadas de la selección evaluada por el selector; no sustituye la generación y prueba de ZIP finales ni autoriza publicar.",
+  "paquetes_finales_de_este_corte_verificados": false
+}

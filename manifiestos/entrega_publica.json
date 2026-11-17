@@ -1,0 +1,123 @@
+{
+  "fecha": "2026-11-16",
+  "bloque": "7.2",
+  "estado": "Selección y prueba autónoma comprobadas; condiciones de difusión pendientes",
+  "base_git": "c9e46eda23cee06de6c4ad6c950b32c8e83e1a67",
+  "base_inventario_sha256": "9f3928926e15f93ba0ed89b831cc523435e5ca69ed1202879f016fb6ba33d76b",
+  "referencia_documental": "docs/informe_energetico/INFORME_ENERGETICO_v0.28_2026-11-16.pdf",
+  "visitas_sin_y_con": 2500000,
+  "condiciones_conservadas": 31,
+  "archivo_de_hipotesis": "config/parametros_modelo.xlsx",
+  "seleccion": "manifiestos/seleccion_entrega_publica.csv",
+  "atribuciones": "manifiestos/atribuciones_por_archivo.csv",
+  "condiciones": "manifiestos/condiciones_entrega_publica.csv",
+  "exclusiones": "manifiestos/exclusiones_entrega_publica.csv",
+  "cobertura": {
+    "filas": 11535,
+    "atribuciones": 11535,
+    "fuentes_catalogadas": 36
+  },
+  "decisiones": {
+    "incluir": 11269,
+    "incluir_condicionado_a_alcance_documentado": 97,
+    "verificar_con_edicion_publica_adoptada": 148,
+    "retirar_evidencia_anterior_tras_adoptar_entrega": 16,
+    "revisar_casos_de_regresion_antes_de_seleccionar": 5
+  },
+  "copia_actual": {
+    "retiradas": 14,
+    "informe_anexos_y_gold_modificados": true,
+    "codigo_cientifico_modificado": false,
+    "cuadernos_modificados": true,
+    "datos_numericos_modificados": false,
+    "referencias_documentales_actualizadas": true,
+    "cuadernos_originales_en_recorrido_activo": 0
+  },
+  "datos_en_release": true,
+  "publicacion_autorizada": false,
+  "lista_para_publicar": false,
+  "url_publica_verificada": "https://github.com/bererei/movilidad-teide-ahorro-energetico-innovae-2026",
+  "version_publica_adoptada": null,
+  "paquetes_finales_generados": false,
+  "selector_aplicado_por_preparador_actual": true,
+  "casos_externos": 7,
+  "nota_de_alcance": "Las decisiones de selección no conceden derechos; los datos fuente, fechas y condiciones se conservan. Los hashes del corte no sustituyen al inventario final y no se intenta calcular la huella propia de cada registro.",
+  "siguiente": "Documentar los siete casos de difusión pendientes o aprobar una alternativa reproducible; después adoptar y publicar la entrega autorizada.",
+  "revision_plan_20261114": {
+    "base_git": "42a7ee0c6b46b9968fcfc01964d8e4468daad81c",
+    "estado": "8.1.1 aplicado en el alcance compatible; cinco originales pendientes de referencias protegidas",
+    "criterio": "Solo material vigente en primera línea de desarrollo y publicación; antecedentes en desarrollo",
+    "seleccion_inicial_pendiente_de_revision": true,
+    "proveedor_de_series_originales_aforos": "Parque Nacional del Teide; aclaración de Beatriz en este chat",
+    "metadatos_de_procedencia_pendientes_de_armonizar": false,
+    "sigla_JRC": "Centro Común de Investigación de la Comisión Europea (JRC, por las siglas en inglés de Joint Research Centre)",
+    "fuente_definicion_JRC": "https://joint-research-centre.ec.europa.eu/about-us/mission-and-strategy_en",
+    "informe_y_anexos_modificados": false,
+    "traslados_aplicados": 14,
+    "paquetes_finales_generados": false,
+    "consulta_exploratoria_archivada": "data/bronze/documentacion/montana_turismos/ficha_publica_pendiente/noce_2020_ficha.html"
+  },
+  "revision_vigencia_8_1_1": {
+    "base_git": "42a7ee0c6b46b9968fcfc01964d8e4468daad81c",
+    "traslados_aplicados": 14,
+    "cuadernos_archivados": 6,
+    "cuadernos_pendientes": 5,
+    "documentos_internos_separados": 7,
+    "consultas_exploratorias_archivadas": 1,
+    "metadatos_procedencia_armonizados": true,
+    "datos_fuente_modificados": false,
+    "proveedor_series": "Parque Nacional del Teide",
+    "JRC": "Centro Común de Investigación de la Comisión Europea (JRC, por las siglas en inglés de Joint Research Centre)",
+    "informes_anexos_modificados": false,
+    "consulta_archivada_no_es_permiso_concedido": true
+  },
+  "corte_inicial_8_1": {
+    "base_git": "9027c0335ad0a4d5280a0a4d81c2cf6b6803e07e",
+    "base_inventario_sha256": "0f160dc68f692cd513ee0c734bd69430cb7cab126373490b330ad694d48cd917"
+  },
+  "alineacion_documental": {
+    "edicion": "0.26",
+    "contenido_aceptado_sin_correcciones": true,
+    "cuadernos_oficiales": 8,
+    "originales_pendientes": 0,
+    "registro": "data/silver/ejecuciones/referencia_2028_alineada_20261115",
+    "version_aceptada_preservada": true,
+    "datos_numericos_conservados": true
+  },
+  "conciliacion_editorial": {
+    "edicion": "0.28",
+    "contenido_aceptado_sin_correcciones": true,
+    "cuadernos_oficiales": 8,
+    "originales_pendientes": 0,
+    "registro": "data/silver/ejecuciones/referencia_2028_final_20261116",
+    "version_aceptada_preservada": true,
+    "datos_numericos_conservados": true
+  },
+  "bloque_actual": "8.2",
+  "reserva_documental": {
+    "control": ".gitignore",
+    "selector_y_paquetes_conectados": true,
+    "levantamiento": "Comentar las cuatro reglas o eliminar el bloque; preparar y publicar normalmente la entrega completa",
+    "datos_numericos_reservados": false,
+    "informe_y_anexos_sin_modificar_en_bloque_8_2_1": true
+  },
+  "lectura_final": {
+    "edicion": "0.28",
+    "fecha": "2026-11-16",
+    "comprobada": true,
+    "evidencia": "manifiestos/comprobacion_lectura_final.json"
+  },
+  "paquetes_ensayo_generados": true,
+  "prueba_autonoma_completada": true,
+  "cobertura_vigente": {
+    "archivos_inventariados": 11520,
+    "rutas_del_selector": 11521,
+    "capas": {
+      "codigo_documentacion": 526,
+      "bronze": 3591,
+      "gold": 55,
+      "silver": 7348
+    },
+    "edicion_documental": "0.28"
+  }
+}

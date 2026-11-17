@@ -1,0 +1,233 @@
+access_corridor|Nombre de corredor|Corredor de acceso de la fuente de demanda; no identifica un vehículo.
+aclaracion_vigente|Texto|Explicación actual de cómo se utiliza una referencia, separada de su motivo histórico.
+actividad_fija|Lógico|True: se conservan los recorridos y viajes en esta comprobación; False: no se afirma esa condición.
+ahorro_pct_ambito_representado|Porcentaje|Ahorro dividido entre consumo sin intervención del ámbito representado, multiplicado por cien.
+alcance|Texto|Condiciones y límites de la propuesta de circulación; no expresa una autorización.
+alcanza_60_en_construccion_condicionada|Lógico|True: el saldo calculado llega a 60 tep/año en la construcción examinada; no acredita cumplimiento institucional.
+alternativa_procedencia|Categoría|España no Tenerife: alquiler o particular. Solo cambia la asignación de ese grupo; se conserva el resto de demanda.
+aporte_neto_pendiente_tep_anio|tep/año|Corrección de pendiente de turismos sin intervención menos la corrección con intervención, dividida entre 11,63.
+cambio_de_energia_por_reserva_mwh_anio|MWh/año|Cambio de energía atribuido exclusivamente a variar la regla de sustitución, sin cambiar viajes.
+capacidad_referencia|Plazas por vehículo|Capacidad de planificación utilizada para comprobar la carga del tramo; no ocupación observada.
+caso|Categoría|Caso ordinario o punta seleccionado para revisar la operación, no fecha futura de activación.
+caso_pendiente|Categoría|Tratamiento de masa, conversión o descenso del cálculo conservado; Referencia del Excel es el tratamiento elegido en el libro.
+circulacion_30_reglas_propuestas_comprobada|Lógico|True: construcción comprobada con treinta vehículos, tres libres y excepciones de frecuencia propuestas; no aprobación del operador.
+colectivo|Categoría|Grupo de procedencia de la demanda fuente; no identifica por sí mismo modo de transporte o uso de alquiler.
+comerciales_ida|Viajes de un sentido al día|Expediciones de ida con servicio de pasajeros en el caso de estudio.
+comerciales_vuelta|Viajes de un sentido al día|Expediciones de regreso con servicio de pasajeros en el caso de estudio.
+componente|Categoría|En movimientos distingue comercial, reposicion_por_horario (vacío para continuar el servicio) y reposicion_cierre_diario (vacío de cierre de base). En el balance identifica el consumo sumado.
+comprobacion|Texto|Nombre de la perturbación aritmética con actividad fija; no una hipótesis central nueva.
+con_construccion_condicionada_mwh_anio|MWh/año|Consumo con intervención de los componentes representados y la construcción de oferta examinada.
+con_mwh_anio|MWh/año|Consumo del componente con intervención; la fila Total representado suma las demás filas de la misma asignación.
+cumplimiento_acreditado|Lógico|True exigiría acreditar cumplimiento; False conserva su condición no acreditada, aunque el saldo numérico alcance 60.
+demanda_real_otros_usuarios|Personas por tramo|Usuarios interiores ajenos a las cadenas modelizadas. Celda vacía: dato desconocido, no cero.
+demas_componentes_fijos|Lógico|True: el umbral se obtiene manteniendo fijos todos los consumos salvo el de las nuevas guaguas.
+destino|Nombre de lugar|Lugar donde termina el movimiento del vehículo.
+dias_calendario|Días|Referencia de días del perfil fuente. La anualización de los casos utiliza dias_equivalentes, no una multiplicación adicional por esta columna.
+dias_equivalentes|Días equivalentes al año|Peso de cada perfil en la suma anual de 2028: 260/3 para cada perfil laborable y 53/3 para cada sábado o domingo de los tres meses fuente. Los nueve pesos suman 366; el contraste p85 pesa cero.
+direccion|Categoría|Subida o bajada según la fuente de proyección; son viajes-persona por sentido.
+eleccion|Texto|Modo de resolución de la elección conservado del libro de escenarios.
+ensayo_id|Identificador técnico|Identificador histórico de ensayo de origen. No es un dato de demanda; su ausencia no se rellena con cero.
+es_contraste_del_central|Lógico|True: fila de contraste del tratamiento elegido como central.
+es_diseno_p85|Lógico|True: prueba de dimensionamiento en percentil 85, separada del balance anual de observaciones regulares.
+es_referencia_guagua_elegida|Lógico|True: la categoría de consumo de la fila coincide con la referencia de guagua elegida en el libro.
+es_resultado_central|Lógico|True: fila del tratamiento energético central elegido; no significa resultado validado en explotación.
+es_sensibilidad_fta|Lógico|True: fila del contraste externo que incrementa un 11,11 % el consumo de nuevas guaguas.
+espera_enlace_ida_min|Minutos de espera|Tiempo de enlace entre llegada de acceso y salida del interior de ida.
+espera_enlace_regreso_min|Minutos de espera|Tiempo de enlace entre llegada del interior y salida de regreso de acceso.
+estado_aplicacion|Categoría|Clasifica referencia activa, antecedente, opción no activada o pendiente; no altera valor ni elección del libro.
+estado_resultado|Texto|Condición y límites de interpretación del saldo energético calculado.
+factor_crecimiento_personas|Factor sin unidad|Multiplicador acumulado de personas entre 2025 y 2028; no porcentaje.
+guaguas_hot_mwh_anio|MWh/año|Consumo de nuevas guaguas con motor caliente, utilizado como base del umbral.
+guaguas_mwh_anio|MWh/año|Consumo anual de nuevas guaguas según el tratamiento de la fila, con comerciales y vacíos.
+hot_central_tep_anio|tep/año|Saldo central con la corrección propia de pendiente de turismos aplicada.
+hot_sin_ajuste_turismos_tep_anio|tep/año|Saldo separado algebraicamente sin esa corrección de turismos, con la misma oferta y los demás componentes fijos.
+id|Identificador técnico|Clave de una referencia del libro. El nombre legible se obtiene en parametro o nombre_parametro, enlazando el mismo id.
+id_interior_ida|Identificador de expedición|Expedición interior vinculada a la ida de la visita; no número de pasajeros.
+id_interior_regreso|Identificador de expedición|Expedición interior vinculada al regreso de la visita.
+id_regreso|Identificador de expedición|Expedición de acceso de vuelta vinculada a la misma visita.
+id_salida|Identificador de expedición|Clave de la expedición a la que pertenece el movimiento o la carga de tramo.
+id_subida|Identificador de expedición|Expedición de acceso de ida vinculada a la visita.
+incremento_consumo_guaguas_fraccion|Fracción sin unidad|Incremento aritmético del consumo de nuevas guaguas; 0,01 significa 1 %. No cambia actividad.
+incremento_consumo_guaguas_que_agota_margen_pct|Porcentaje|Aumento del consumo de nuevas guaguas que reduce el saldo a 60 tep/año, manteniendo lo demás fijo.
+interior_back_min|Minutos desde medianoche|Hora de salida del interior para regresar hacia la terminal de acceso.
+interior_up_min|Minutos desde medianoche|Hora de salida del interior vinculada a la ida.
+intervalo_confianza|Lógico|False: los rangos no son intervalos de confianza estadísticos. No se les asigna una cobertura probabilística.
+itinerary_id|Identificador de recorrido|Clave del trazado físico conservado; enlaza con la configuración de itinerarios, no identifica una persona.
+justificacion|Texto|Motivo original del libro. Sus códigos de archivo conservan trazabilidad: D identifica decisiones, H hipótesis, F fuentes y P pendientes; el plan documental explica sus antecedentes. Para la aplicación actual consultar estado_parametros.csv.
+km_por_recorrido|Kilómetros por movimiento|Longitud del movimiento de un vehículo en un sentido, incluidas las reposiciones cuando correspondan.
+llegada_destino_min|Minutos desde medianoche|Hora de llegada a la zona de visita elegida.
+llegada_local|Hora local|Hora de llegada del movimiento expresada como horas, minutos y segundos del horario propuesto.
+llegada_min|Minutos desde medianoche|Hora de llegada del movimiento, utilizada para comprobar la circulación.
+llegada_parque_min|Minutos desde medianoche|Hora de llegada de la lanzadera de acceso al Parque.
+longitud_tramo_km|Kilómetros por tramo|Distancia del tramo interior sobre el que se comprueba la carga compartida.
+margen_sobre_60_mwh_anio|MWh/año|Saldo central menos 697,8 MWh/año, energía equivalente a 60 tep/año.
+margen_sobre_60_tep_anio|tep/año|Saldo central menos el objetivo de 60 tep/año.
+matrix_index|Identificador de fuente|Índice de la matriz fuente. Es una clave de correspondencia, no fecha futura ni peso anual.
+max_carga_interior_tramo|Personas por vehículo y tramo|Máxima carga modelizada en un tramo interior del caso; no incluye usuarios sin dato.
+observacion|Identificador de perfil fuente|Clave de una combinación de mes y tipo de día de 2025, proyectada a 2028: por ejemplo, 30 es marzo laborable y 41, julio domingo. -85 identifica el diseño p85 adicional, sin peso anual; no son fechas de explotación futura.
+oferta_anual_30_reglas_vigentes_demostrada|Lógico|Se refiere a reglas anteriores, incluido intervalo ordinario. False no invalida la comprobación separada con reglas propuestas.
+orden_auditoria|Número de orden|Orden utilizado para seguir la identidad física entre perfiles comprobados; no calendario de 2028.
+origen|Nombre de lugar|Lugar donde comienza el movimiento del vehículo.
+otras_tecnologias_y_terminos_pendientes_resueltos|Lógico|False mantiene pendientes la corrección de otras tecnologías y los demás efectos no resueltos; no declara consumo nulo.
+papel_tratamiento|Texto|Indica si el tratamiento es central, sensibilidad o referencia de comparación.
+parada_desde_eje|Identificador de parada|Parada del eje interior donde comienza el tramo; se vincula al catálogo geográfico conservado.
+parada_destino|Identificador de parada|Parada correspondiente al destino representado de la visita.
+parada_entrada|Identificador de parada|Parada de entrada de la visita al eje interior.
+parada_hasta_eje|Identificador de parada|Parada del eje interior donde termina el tramo.
+parametro|Nombre legible|Nombre de la referencia o hipótesis en el libro; id es su clave de enlace.
+perfil_id|Identificador de perfil|Clave técnica del perfil de oferta del que procede la cadena; no una cifra de demanda.
+personas_acceso_asignadas|Visitas de personas al día|Visitas asignadas al acceso en el caso. La fila Interior queda vacía para evitar contarlas otra vez como nuevas visitas.
+personas_asignadas_dia_tipo|Visitas de personas al día|Personas estimadas de la cadena vinculada de ida y regreso; no suma de embarques de la misma visita.
+personas_asignadas_prueba_dia|Personas por vehículo y tramo|Carga modelizada de visitas en ese tramo interior del caso.
+plazas_restantes_prueba|Plazas por vehículo y tramo|Capacidad de planificación menos la carga asignada del tramo; no es disponibilidad comercial garantizada.
+plazas_vinculadas|Plazas por expedición|Capacidad vinculada de planificación; distinta de personas efectivamente asignadas.
+politica|Categoría|Regla de oferta: accesos e interior según reservas, o accesos modulados con interior regular. No son demandas distintas.
+probabilidad_asignada|Lógico|False: la comparación no tiene una probabilidad asignada.
+propuesta_adoptada|Lógico|Aceptación operativa o institucional. No confundir con la elección del tratamiento energético central del libro.
+punto|Código de servicio|CHIO: Chío; OROTAVA: Aguamansa; LAGUNA: La Esperanza; VILAFLOR: Vilaflor; INTERIOR: servicio interior. No obliga a interpretar el código como municipio de origen.
+rama|Categoría|antes: sin intervención. autorizados: coche al Parque. transferidos: coche hasta cabecera. alimentacion_otros: alimentación adicional de usuarios de otros modos. Las tres últimas son con intervención.
+recorridos_coche_anio|Trayectos equivalentes por sentido al año|Cantidad de recorridos modelizados de coches; no matrículas distintas. Los kilómetros incorporan el interior que corresponda una sola vez.
+reduccion_guaguas_mwh_anio|MWh/año|Reducción del consumo de nuevas guaguas respecto a la oferta de referencia anterior utilizada por el cálculo; no ahorro total del proyecto.
+referencia_id|Código de categoría|referencia_guagua_2: autocar diésel central; referencia_guagua_3: sustituto híbrido urbano; referencia_guagua_1: control diésel urbano.
+regla_de_reserva|Texto|Regla de vehículos libres para sustitución dentro de la flota total; no reserva de plazas de pasajeros.
+reserva_minima_vehiculos|Vehículos|Mínimo absoluto de unidades sin programar dentro de las treinta, no porcentaje que se añada por encima del total.
+saldo_construccion_condicionada_mwh_anio|MWh/año|Consumo sin intervención menos consumo con intervención en la construcción de oferta representada.
+saldo_construccion_condicionada_tep_anio|tep/año|El mismo saldo dividido entre 11,63 para convertir de MWh a tep.
+saldo_oferta_estudio_30_reglas_propuestas_mwh_anio|MWh/año|Saldo asociado a la propuesta comprobada de treinta unidades y excepciones de frecuencia; no validación institucional.
+saldo_oferta_viable_30_mwh_anio|MWh/año|Saldo bajo las reglas anteriores si estuviera demostrado. Celda vacía: no calculado o no demostrado en esas reglas, no cero.
+saldo_tep_anio|tep/año|Saldo de la comprobación aritmética con actividad fija; no implica probabilidad o adopción como central.
+salida_destino_min|Minutos desde medianoche|Hora de salida de la zona de visita para regresar.
+salida_local|Hora local|Hora de salida del movimiento expresada como horas, minutos y segundos del horario propuesto.
+salida_min|Minutos desde medianoche|Hora de salida del movimiento de vehículo.
+salida_regreso_min|Minutos desde medianoche|Hora de salida del acceso de vuelta vinculada a la visita.
+sentido|Categoría|En coches: hacia_teide o desde_teide. En guaguas: ida o vuelta del recorrido definido. Cada sentido es un viaje distinto.
+servicio|Nombre legible|Acceso, interior o nombre de la cabecera según el archivo; consultar la agrupación de cada tabla.
+sin_componentes_mwh_anio|MWh/año|Consumo sin intervención de los componentes representados; no inventario completo del Parque.
+sin_mwh_anio|MWh/año|Consumo del componente sin intervención; la fila Total representado suma las demás filas de la misma asignación.
+slot|Número de franja|Identificador de franja de enlace del algoritmo de asignación; no número de viajeros ni unidad temporal por sí mismo.
+tasa_anual_personas|Fracción por año|Variación anual comparable elegida; para porcentaje multiplicar por cien. Se aplica tres años a la referencia de personas.
+tiempo_recorrido_min|Minutos de duración|Tiempo propuesto para circular entre origen y destino del movimiento.
+tipo_dia|Categoría|Tipo de día de la fuente o etiqueta periodo del perfil. No es por sí solo una frecuencia anual.
+tipo_viaje|Categoría|Comercial: expedición para pasajeros. Vacío: movimiento sin servicio de pasajeros necesario para la circulación o cierre.
+tramo_orden|Número de orden|Posición del tramo dentro de la expedición interior.
+tratamiento_central_elegido_excel|Nombre de tratamiento|Tratamiento energético seleccionado en el libro; Hot COPERT es consumo con el motor caliente.
+tratamiento_operativo|Categoría|Hot COPERT: motor caliente. Hot con contraste operativo externo: mismo consumo de guaguas dividido entre 0,90 una vez, por el contraste FTA.
+umbral_consumo_guaguas_para_60_mwh_anio|MWh/año|Máximo consumo anual de nuevas guaguas compatible con 60 tep/año si lo demás se mantiene fijo.
+unidad_almacenamiento|Texto de unidad|Indica si el valor original se guarda como fracción, fracción por año u otra unidad.
+unidad_en_libro|Texto de unidad|Unidad declarada en el libro; el valor de presentación puede convertir fracción a porcentaje.
+unidad_fisica_id|Identificador de vehículo|Identidad de la misma guagua a través de movimientos y perfiles; no sumar códigos locales como unidades independientes.
+unidad_recorridos|Texto de unidad|Explica cómo leer la cantidad de trayectos y dónde se incorpora el interior en el archivo de actividad.
+unidades_con_movimientos|Vehículos distintos en el servicio|Número de identidades físicas presentes en los movimientos del servicio y caso. No sumar automáticamente entre servicios si comparten una unidad.
+valor_presentacion|Unidad declarada en la fila|Valor para lectura: convierte fracciones porcentuales a porcentaje, conservando el valor original en otra columna.
+valor_utilizado_en_libro|Unidad de almacenamiento de la fila|Valor resuelto del libro antes del formato de presentación; una ausencia permanece ausente.
+valor_y_motivo_originales|Referencia a archivo|Archivo y clave de enlace donde se conservan el valor y el motivo original.
+vehiculo_id|Identificador local|Código local de vehículo en la construcción del horario; la identidad física se sigue con unidad_fisica_id.
+vehiculos_km_anio|Vehículos-kilómetro al año|Suma de distancia recorrida por todos los vehículos, ponderada por los días equivalentes; no pasajeros-kilómetro.
+vehiculos_km_dia|Vehículos-kilómetro en el día de estudio|Suma de distancias de los movimientos del caso, incluidos los vacíos.
+ventana_en_destino_min|Minutos de duración|Tiempo entre llegada y salida de la zona de visita; distinto de estancia total desde llegada al Parque.
+viajes_anio|Viajes de un sentido al año|Expediciones de vehículos ponderadas por días equivalentes; ida y regreso son dos viajes.
+viajes_persona_anuales_referencia|Viajes de personas por sentido al año|Referencia anual de demanda del ámbito fuente antes de aplicar crecimiento; no personas únicas ni toda la demanda ya transformada en coches.
+viajes_persona_proyectados|Viajes de personas por sentido al año|Referencia multiplicada por el factor de crecimiento elegido, conservando la composición de la fuente.
+viajes_vacios|Viajes de un sentido en el día de estudio|Reposiciones por horario o cierre; no son guaguas físicas adicionales.
+nombre_parametro|Nombre legible|Nombre de la referencia del libro que corresponde a la clave id.
+etapa|Nombre de etapa|Paso del procedimiento al que se vinculan entradas, operación y salida.
+entrada_en_repositorio|Ruta relativa a la raíz del proyecto|Archivo o carpeta conservada que permite consultar entradas o ejecución de la etapa.
+operacion|Texto|Transformación o comprobación realizada para pasar de las entradas a las salidas de esa etapa.
+salida_informe|Nombre de archivo o ruta|Exportación de revisión o documento donde se presenta el resultado de la etapa.
+unidad_salida|Texto de unidad|Unidad o tipo de producto de la etapa, descrito con palabras.
+nombre_origen_informe|Nombre geográfico|Referencia territorial usada para explicar el origen modelizado; no identifica el establecimiento de procedencia de cada visitante.
+entradas_modelizadas_anio|Entradas equivalentes de coche/año|Entradas hacia el Parque de la rama privada sin intervención, con la demanda y ponderación anual centrales de 2028.
+cuota_entradas_modelizadas_pct|Porcentaje|Participación del origen en las entradas anuales modelizadas de coche sin intervención; no es aforo observado del punto representativo.
+alimentador_ida_km|km por trayecto de ida|Longitud de carretera desde el origen representativo hasta la cabecera del cálculo, sin sumar el regreso.
+vias_itinerario|Texto descriptivo|Cadena de carreteras conservada en la configuración de itinerarios; no es seguimiento observado de visitantes.
+ejemplo_cartografico|Indicador lógico|True indica que el origen se muestra en el mapa de ejemplos: seis primeros por entradas modelizadas y principal de cada corredor restante; False significa que no se dibuja.
+numero_en_mapa|Número de lectura|Número que conecta el mapa de ejemplos con la tabla de orígenes; cero identifica un origen no seleccionado para esa figura.
+recorrido_informe|Nombre geográfico|Eje de acceso o interior descrito en el informe; identifica extremos y no un número de línea en explotación.
+intervalo_pendiente|Porcentaje de pendiente con límites indicados|Clase de pendiente longitudinal firmada; los intervalos no se solapan. Los extremos agrupan pendientes inferiores a −6 % o superiores a 6 %.
+longitud_intervalo_km|km, suma de ida y regreso|Longitud de segmentos del perfil dentro de la clase de pendiente; no se pondera por número de viajes.
+porcentaje_longitud|Porcentaje|Cien veces la longitud en una clase dividida por la longitud del eje en ambos sentidos; cada recorrido suma 100 %.
+longitud_ida_regreso_km|km, suma de ida y regreso|Longitud geométrica de los dos perfiles del eje, sin multiplicar por expediciones ni días.
+longitud_fuera_rango_km|km, suma de ida y regreso|Longitud con valor absoluto de pendiente física superior al 6 %; para factores de pesados se utiliza el extremo de biblioteca correspondiente, conservando la pendiente física.
+sentido_perfil|Ida o regreso|Sentido del perfil altimétrico respecto al recorrido rotulado en el informe; no identifica viajes anuales.
+distancia_inicio_km|km|Distancia acumulada hasta el inicio del segmento desde el extremo de inicio de su propio sentido.
+cota_inicio_m|Metros|Elevación estimada del inicio del segmento a partir del perfil conservado; no es una medición de rasante de ingeniería.
+cota_fin_m|Metros|Elevación estimada del final del segmento con la misma fuente y limitaciones que la cota de inicio.
+pendiente_tramo_pct|Porcentaje firmado|Desnivel dividido por longitud del segmento y multiplicado por cien; positivo en subida y negativo en bajada según su sentido.
+fuera_rango_factor|Indicador lógico|True indica pendiente física absoluta superior al 6 %, fuera del intervalo consultado de factores de pesados; False indica que no lo supera. No mide el error energético.
+cabecera_calculo|Nombre geográfico|Cabecera usada para calcular el acceso de ese origen; es una localización propuesta del estudio.
+comparacion_calculo_id|Identificador de comparación geográfica|Clave del recorrido o de la aproximación territorial utilizada para enlazar origen, cabecera y terminal en la configuración.
+itinerario_referencia_id|Identificador de itinerario|Clave del trazado viario conservado para ese origen y sentido; permite consultar su geometría y perfil.
+origen_id|Identificador de origen|Clave que enlaza un subgrupo territorial de demanda con su origen representativo; no identifica una persona o un viaje observado.
+escenario_balance|Escenario sin o con intervención|Rama completa de movilidad comparada para 2028; no caso alternativo del libro de escenarios ni tecnología de vehículo.
+componente_balance|Tipo de movilidad|Desglose de energía en turismos particulares, turismos de alquiler, nuevas lanzaderas exteriores e interiores y servicios colectivos existentes estimados conjuntamente.
+energia_mwh_anio|MWh/año|Consumo anual de energía final Hot del componente representado, incluido el ajuste convencional de pendiente cuando corresponde a turismos.
+criterio_componente|Texto explicativo|Origen de la suma y alcance del componente; identifica consumos agregados y ausencia de nuevas lanzaderas sin intervención.
+hot_mwh_anio|MWh/año|Consumo con motor caliente de las lanzaderas, ponderado por los mismos días equivalentes y factores del cálculo central.
+turismos_sin_mwh_anio|MWh/año|Energía de las cadenas completas de turismos sin intervención, con ambos grupos de servicio y corrección de pendiente convencional.
+turismos_con_mwh_anio|MWh/año|Energía de autorizados, alimentación de transferidos y alimentación desde otros modos con intervención; no incluye lanzaderas ni servicios comunes.
+reduccion_turismos_mwh_anio|MWh/año|Consumo conjunto de turismos sin menos con intervención; ya descuenta la alimentación y conserva las cadenas representadas.
+comun_por_escenario_mwh_anio|MWh/año en cada escenario|Consumo estimado conjunto de TITSA y excursiones representadas; se conserva igual por hipótesis, sin reparto medido por línea o empresa.
+nuevas_lanzaderas_mwh_anio|MWh/año|Consumo de las nuevas lanzaderas de acceso e interiores, incluidos viajes comerciales y vacíos necesarios; se resta de la reducción de turismos.
+ahorro_mwh_anio|MWh/año|Diferencia entre los consumos totales representados sin y con intervención.
+ahorro_tep_anio|tep/año|Ahorro en MWh/año dividido entre 11,63; no intervalo estadístico o cumplimiento acreditado.
+reduccion_relativa_ahorro_fta_pct|Porcentaje del ahorro central|Pérdida de ahorro causada por el contraste FTA dividida por el ahorro central y multiplicada por cien; no porcentaje de aumento del consumo de todo el sistema.
+tipo_representacion_calculo|Categoría geográfica|perfil_propio: trazado del propio origen; representante_familia o territorial_explicita: referencia reutilizada; condicional_media_nula: representación que exige revisión si aparece demanda positiva.
+perfil_propio|Indicador lógico|True indica trazado y perfil del propio origen; False indica una aproximación territorial o caso condicional. No acredita rasante o recorrido observado.
+aproximacion_territorial|Indicador lógico|True indica que el origen reutiliza otra referencia territorial para el cálculo, sin inventar una conexión desde su punto real.
+directa_km|km por trayecto de un sentido|Longitud conservada entre origen de cálculo y terminal sin pasar necesariamente por cabecera; la visita interior se contabiliza aparte.
+alimentador_km|km por trayecto de un sentido|Longitud conservada del trayecto de coche desde el origen de cálculo hasta la cabecera.
+archivo_geometria|Ruta relativa a la raíz del repositorio|Archivo de cartografía que conserva las líneas utilizadas para representar el recorrido directo y el alimentador.
+capas_geometria|Nombre técnico y componente|Lectura de recorrido directo y componente origen-cabecera del archivo cartográfico o de los componentes directa_tf523/alimentador_costero del contraste del valle; el caso de media nula conserva ausencia de recorrido aplicado.
+target_id|Identificador de lugar|Clave del objetivo turístico o referencia del edificio; no identifica una parada aprobada o una fuente de demanda.
+lugar|Nombre geográfico|Nombre del lugar de interés o referencia de localización en el mapa interior.
+longitud|Grados de longitud|Coordenada geográfica de la referencia conservada; no longitud de recorrido.
+latitud|Grados de latitud|Coordenada geográfica de la referencia conservada.
+atencion_en_estudio|Texto explicativo|Modo propuesto de acceso desde el eje interior; no implica entrada de la lanzadera a recintos ni validación de embarque.
+limite_interpretacion|Texto explicativo|Condición de localización, parada, acceso a pie o conexión que evita interpretar un punto turístico como servicio directo validado.
+ficha_calculo|Identificador de lectura|Clave que enlaza desde el relato a una ficha del anexo de reproducción; no modifica el escenario.
+cuadernos_ejecucion|Rutas relativas al repositorio|Cuadernos que ejecutan o documentan la etapa del estudio.
+apartados_cuaderno|Título o sección de ejecución|Apartados que permiten localizar el cálculo sin depender del número físico de celda.
+codigo_calculo|Rutas relativas al repositorio|Módulos que implementan la operación y sus comprobaciones; el cuaderno los invoca.
+entrada_calculo|Ruta relativa al repositorio|Archivo de entrada o salida conservada para revisar la etapa reproducible.
+salida_revision|Archivo o explicación|Anexo de esta revisión o indicación del uso de contraste cuando la fuente no se suma como energía adicional.
+observacion_descripcion|texto|Mes y tipo de día que identifican el perfil fuente de demanda. No es un día concreto de 2028; el diseño p85 se comprueba por separado de los nueve perfiles anuales.
+flota_total|vehículos físicos|Inventario total de treinta unidades del estudio.
+vehiculos_programados|guaguas físicas|Vehículos distintos asignados a uno o más viajes durante la jornada simulada del perfil. Cada guagua puede realizar varios viajes; no es el número de expediciones ni de vehículos circulando simultáneamente.
+vehiculos_sin_programar|guaguas físicas|Vehículos del inventario de treinta sin viajes asignados en la jornada simulada, previstos para sustitución. No se añaden a la flota ni garantizan disponibilidad real o respuesta inmediata.
+minimo_sustitucion_propuesto|vehículos físicos|Mínimo propuesto de unidades sin programar dentro de las treinta.
+cumple_minimo_sustitucion|lógico|Comprueba la cantidad mínima propuesta; no acredita la respuesta ante una avería.
+cierre_de_bases_comprobado|lógico|El inventario final de cada base conserva la cantidad inicial.
+respuesta_ante_averias_validada|lógico|Indica validación real de respuesta a incidencias; no se deduce del encaje de la flota.
+cumple_intervalo_vigente|lógico|Comprueba el intervalo ordinario histórico; los refuerzos se identifican por separado.
+cumple_intervalos_propuestos|lógico|Comprueba 30 minutos ordinarios y 15 solo en los corredores/observaciones previstos.
+demanda_y_cadenas_completas_comprobadas|lógico|Indica conservación de la demanda modelizada y sus enlaces de ida, interior y regreso.
+colectivo_lectura|texto|Nombre legible del mismo colectivo de la fuente; no categoría nueva.
+visitas_fuente_anio|visitas-persona/año|Entradas de personas proyectadas de la fuente anual; cada visita tiene regreso emparejado, sin sumar ambos sentidos.
+personas_coche_sin_anio|visitas-persona/año|Visitas que viajan en coche sin intervención; actividad equivalente por ocupación elegida.
+personas_colectivo_sin_anio|visitas-persona/año|Visitas de transporte colectivo existente en la referencia, estimadas con el reparto modal elegido.
+personas_coche_autorizado_anio|visitas-persona/año|Personas en coches autorizados hasta el Parque con intervención.
+personas_transferidas_coche_anio|visitas-persona/año|Visitas que pasan del coche directo a las nuevas lanzaderas, conservando alimentación y regreso.
+personas_lanzadera_desde_otros_anio|visitas-persona/año|Visitas que pasan de otros modos a las nuevas lanzaderas; no coches retirados adicionales.
+personas_lanzadera_anio|visitas-persona/año|Visitas de nuevas lanzaderas, desde coche y otros modos; embarques de acceso e interior no se suman como nuevas visitas.
+personas_colectivo_permanecen_anio|visitas-persona/año|Visitas que permanecen en otros modos, tras separar las captadas por las nuevas lanzaderas.
+personas_con_anio|visitas-persona/año|Suma de coches autorizados, lanzaderas y otros modos que permanecen; concilia con la fuente.
+conservacion_visitas_comprobada|lógico|Comprueba igualdad por colectivo de fuente y visitas sin/con; no prueba uso observado ni cobertura de movilidad ajena al modelo.
+componente_cobertura|texto|Componente o límite del balance representado.
+sin_intervencion|texto|Representación del componente sin intervención; ausencia de servicio nuevo no equivale a dato perdido.
+con_intervencion|texto|Representación del mismo componente con intervención.
+estado_cobertura|texto|Distingue estimación, agregación, exclusión y efecto sin estimar; no consumo físico nulo.
+prueba_cierre|texto|Prueba algebraica de tensión; sus porcentajes son exploratorios, sin calibración ni probabilidad.
+asignacion_cierre|A o B|A asigna España no Tenerife a alquiler; B a particular. Ambas incluyen todos los colectivos.
+delta_coche_sin|fracción|Variación relativa del consumo conjunto de turismos sin intervención.
+delta_coche_con|fracción|Variación relativa de turismos autorizados y alimentadores con intervención.
+delta_lanzaderas|fracción|Variación de todas las nuevas lanzaderas, con comerciales y vacíos.
+delta_comun|fracción|Variación idéntica de los servicios comunes en ambas ramas; no produce ahorro diferencial.
+sin_cierre_mwh_anio|MWh/año|Consumo sin intervención tras la perturbación explícita; actividad de referencia fija.
+con_cierre_mwh_anio|MWh/año|Consumo con intervención tras la perturbación explícita; actividad de referencia fija.
+ahorro_cierre_mwh_anio|MWh/año|Sin menos con en la prueba de cierre, sin reemplazar el resultado central.
+ahorro_cierre_tep_anio|tep/año|Ahorro de la prueba dividido entre 11,63 MWh/tep.
+variacion_visitas_cierre|fracción|Prueba de variación de visitas con intervención respecto a la demanda central; no previsión.
+incremento_visitas_cierre|visitas-persona/año|Diferencia hipotética de visitas; negativa indica menor afluencia, sin ahorro calculado automáticamente.
+visitas_con_cierre|visitas-persona/año|Volumen hipotético con intervención; no capacidad de explotación validada.
+margen_cierre_mwh_anio|MWh/año|Margen Hot de referencia respecto a 60 tep/año, con los demás términos fijos.
+limite_kwh_visita_adicional|kWh/visita adicional|Margen dividido entre visitas adicionales. Umbral del consumo neto adicional de todo el sistema; ausente para reducciones de visitas.

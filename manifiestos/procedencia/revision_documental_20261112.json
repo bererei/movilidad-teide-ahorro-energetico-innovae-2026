@@ -1,0 +1,11 @@
+{
+  "fecha": "2026-11-12",
+  "referencia": "v0.25",
+  "visitas_sin_y_con": 2500000,
+  "manifiesto_previo_sha256": "c31a03916677fdba49470aabd3f3d5c0547547dcc22124e747e4bf92d28d2da8",
+  "predecesor_local": "Candidata 20261112_medallion_701de68, preservada sin cambios",
+  "alcance": "Matrices, guías y fuentes de respaldo; informe, anexos, libro y código científico intactos",
+  "datos_reincorporados": "manifiestos/fuentes_reincorporadas.csv",
+  "cambios_cientificos": false,
+  "regeneracion_integral_desde_bruto_certificada": false
+}

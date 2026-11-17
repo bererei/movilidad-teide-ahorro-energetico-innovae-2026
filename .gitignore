@@ -1,0 +1,62 @@
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Entorno local y secretos
+.env
+.env.*
+!.env.example
+
+# Datos originales y derivados
+data/bronze/
+data/silver/
+data/gold/
+
+# Resultados generados
+outputs/**
+
+# Temporales LaTeX del informe; fuente, figuras, anexos y PDF de revisión sí se conservan
+/docs/informe_energetico/compilacion/
+/docs/informe_energetico/*.aux
+/docs/informe_energetico/*.log
+/docs/informe_energetico/*.out
+/docs/informe_energetico/*.toc
+/docs/informe_energetico/*.synctex.gz
+/docs/informe_energetico/*.fls
+/docs/informe_energetico/*.fdb_latexmk
+/docs/informe_energetico/main.pdf
+
+# Capturas verificadas de antecedentes, fuera del núcleo publicable
+/desarrollo/antecedentes/
+
+# === RESERVA_DOCUMENTAL_TEMPORAL: INICIO ===
+# Esta reserva afecta a los documentos de entrega. Los cálculos y sus resultados
+# pueden publicarse. El desarrollo privado conserva el informe y sus antecedentes.
+#
+# CUANDO SE RESUELVA LA SOLICITUD DE SUBVENCIÓN:
+# 1. Comenta con # las CUATRO reglas activas de este bloque, o elimina este bloque.
+# 2. Revisa la selección; realiza el commit y push de la documentación liberada.
+# 3. Regenera y publica los paquetes documentales de la misma versión en una release.
+#    El PDF completo se ofrece como descarga independiente enlazada desde README.
+#
+# No elimines las reglas generales de data/: los datos y anexos se distribuyen
+# mediante releases. Quitar esta reserva no sube por sí solo archivos a GitHub.
+#
+# El selector y los cuatro ZIP aplican estas mismas reglas, incluidas las copias
+# de documentos en Silver. La verificación pública comprueba el cálculo sin exigir
+# el PDF o los anexos reservados. Al levantar la reserva exige también los documentos.
+# Antes de publicar, verifica la entrega y las condiciones aplicables a sus fuentes.
+#
+# CUATRO REGLAS QUE DESACTIVARÁS AL LEVANTAR LA RESERVA:
+/docs/informe_energetico/
+/data/gold/anexos/
+/data/gold/ANEXOS_ENERGETICOS_2028_v*.zip
+/data/silver/ejecuciones/recursos_*/
+# === RESERVA_DOCUMENTAL_TEMPORAL: FIN ===

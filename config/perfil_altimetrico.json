@@ -1,0 +1,932 @@
+{
+  "schema_version": "1.1",
+  "itinerary_id": "tf21_pk16_pk32_pilot",
+  "dem_path": "data/bronze/geografia/mdt05/cobertura_1/PNOA_MDT05_REGCAN95_HU28_1092_LID.tif",
+  "expected_dem_sha256": "680c04e71667cf00fe0b42a4641546ac628596979d98d4e099356d08b2636f8d",
+  "assumed_raster_crs": "EPSG:4083",
+  "crs_decision": "Hipótesis provisional autorizada: interpretar las coordenadas UTM del MDT como REGCAN95 / UTM 28N, sin alterar el TIFF ni declarar equivalencia con EPSG:25828. Consulta al CNIG pendiente.",
+  "validation_status": "provisional_pending_cnig_crs_confirmation_and_road_grade_validation",
+  "sample_intervals_m": [
+    100.0,
+    200.0,
+    500.0
+  ],
+  "baseline_interval_m": 200.0,
+  "length_tolerance_m": 1e-06,
+  "descriptive_absolute_slope_edges_pct": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "descriptive_bin_convention": "Magnitud (a,b]; negativos reflejados [-b,-a); cero separado; colas abiertas |p|>10. No son clases COPERT.",
+  "slope_reference_pct": 6.0,
+  "anomaly_alert_abs_slope_pct": 20.0,
+  "local_chord_residual_alert_m": 5.0,
+  "cell_neighborhood_radius_pixels": 1,
+  "extreme_segment_count": 10,
+  "map_padding_m": 500.0,
+  "parameter_basis": "Intervalos solicitados por la usuaria. Clases de 2 puntos porcentuales: propuesta descriptiva. ±6 %: umbral de localización solicitado, no error. ±20 %: control previo. Residuo local >5 m: selección exploratoria para revisión, no exactitud del MDT. Vecindad 3×3: diagnóstico de selección de celda, no corrección.",
+  "method": "rasterio.sample banda 1, celda que contiene la coordenada, sin interpolación altimétrica ni suavizado; extremo final exacto; sentido inverso sobre las mismas muestras y tramos físicos",
+  "source_url": "https://centrodedescargas.cnig.es/CentroDescargas/modelo-digital-terreno-mdt05-primera-cobertura",
+  "robustness": {
+    "interval_m": 200.0,
+    "configurations": [
+      {
+        "id": "A_cell_phase0",
+        "method": "cell",
+        "station_offset_m": 0.0
+      },
+      {
+        "id": "B_bilinear_phase0",
+        "method": "bilinear",
+        "station_offset_m": 0.0
+      },
+      {
+        "id": "C_cell_phase100",
+        "method": "cell",
+        "station_offset_m": 100.0
+      },
+      {
+        "id": "D_bilinear_phase100",
+        "method": "bilinear",
+        "station_offset_m": 100.0
+      }
+    ],
+    "comparisons": [
+      {
+        "reference": "A_cell_phase0",
+        "candidate": "B_bilinear_phase0",
+        "kind": "method"
+      },
+      {
+        "reference": "C_cell_phase100",
+        "candidate": "D_bilinear_phase100",
+        "kind": "method"
+      },
+      {
+        "reference": "A_cell_phase0",
+        "candidate": "C_cell_phase100",
+        "kind": "phase"
+      },
+      {
+        "reference": "B_bilinear_phase0",
+        "candidate": "D_bilinear_phase100",
+        "kind": "phase"
+      }
+    ],
+    "mandatory_review_distances_m": [
+      200.0
+    ],
+    "neighborhood_range_alert_m": 8.0,
+    "top_elevation_difference_count": 5,
+    "top_phase_interval_count": 3,
+    "top_method_interval_count": 3,
+    "cross_offsets_m": [
+      -10,
+      -5,
+      0,
+      5,
+      10
+    ],
+    "tangent_half_window_m": 5.0,
+    "parameter_basis": "Intervalo 200 m y fase 100 m solicitados. Selección exploratoria: 5 diferencias de cota mayores por pareja de métodos, 3 diferencias de pendiente mayores por pareja (método o fase), vecindades con rango >8 m y estación 200 m obligatoria. Son reglas de priorización, no errores ni incertidumbres estadísticas. Sondeos transversales ±10 m cada 5 m y tangente local ±5 m: diagnóstico sobre terreno, no anchura de calzada asumida.",
+    "station_convention": "Extremos geométricos exactos 0 y L más fase+k*200 para estaciones interiores; las cotas extremas se obtienen con cada método, sin forzar igualdad entre métodos.",
+    "bilinear_convention": "Inversa de dataset.transform -> columna/fila de esquina; restar 0.5 para índices de centros. GDAL ya interpreta PixelIsPoint; no aplicar otro desplazamiento. Pesos (1-u)(1-v),u(1-v),(1-u)v,uv sobre centros originales. Sin reproyectar ni remuestrear el TIFF.",
+    "nodata_policy": "Rechazar si cualquier contribuyente de peso positivo es NoData, no finito o exterior. No renormalizar ni usar método alternativo. Contribuyentes de peso cero no afectan al resultado.",
+    "comparison_convention": "Diferencias de cota solo en estaciones coincidentes. Pendientes sobre partición común de límites: cada subintervalo hereda la pendiente de su tramo padre, sin crear nuevas mediciones ni comparar índices de segmentos con límites distintos.",
+    "coordinate_references": [
+      "https://gdal.org/en/stable/tutorials/geotransforms_tut.html",
+      "https://gdal.org/en/stable/development/rfc/rfc33_gtiff_pixelispoint.html",
+      "https://rasterio.readthedocs.io/en/stable/topics/transforms.html"
+    ]
+  },
+  "operational_profiles": {
+    "chio_boca_tauce": {
+      "label": "Chío ↔ Boca Tauce · propuesta de trazado para revisión",
+      "itinerary_ids": [
+        "chio_boca_tauce_ida_propuesta",
+        "chio_boca_tauce_vuelta_propuesta"
+      ],
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_chio_boca_tauce/mdt05_chio_boca_tauce.tif",
+      "expected_dem_sha256": "a7a289a043e9cf3974f93dae77cae655a10b0e292bf9fffb3435a05ba54b5a59",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/mdt05_chio_boca_tauce.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_chio_boca_tauce/metadata.json",
+      "expected_metadata_sha256": "a1b2edb8586431c28c91b05c10bbf385b6728a02c5e8108943123a49190ccc21",
+      "native_crs": "EPSG:4083",
+      "sampling_method": "bilinear",
+      "sampling_reference_anchor_id": "boca_tauce_union_tf38_tf21",
+      "interval_reference": "baseline_interval_m de esta configuración, 200 m en esta revisión",
+      "shared_axis": {
+        "source_id": "cabildo_road_axes",
+        "feature_filters": {
+          "via_nombre": "TF-38",
+          "tramo_inicio": "BOCA TAUCE",
+          "tramo_final": "CHÍO"
+        },
+        "component_index": 0
+      },
+      "validation_status": "potential_luis_head_provisional_terminal_pending_access_traffic_manoeuvres_and_road_grade_validation",
+      "endpoint_decision": "Ubicación potencial de Chío propuesta por Luis, recibida el 24/10/2026. Mantengo la secuencia cartográfica propuesta y la unión TF-38/TF-21 como extremo provisional elegido por mí el 22/10/2026. No incluye acceso físico a cabecera ni maniobras; no fija parada definitiva ni confirma el trazado.",
+      "dem_origin": "wcs_arcgrid",
+      "cabecera_name": "Chío",
+      "terminal_name": "Boca Tauce",
+      "map_scale_m": 5000,
+      "local_bounds_offsets_m": [
+        -350,
+        -100,
+        250,
+        650
+      ],
+      "shared_chainage_column": "distancia_tf38_m",
+      "coherence_filename": "coherencia_tf38.csv",
+      "published_distance_reference": {
+        "path": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/rutas_modelo_publicado.csv",
+        "sha256": "2413dded2f298d1e0958015f859bddcc5768eb022a51a7d46565823cdb637d07",
+        "filters": {
+          "arquitectura": "medianias",
+          "corredor": "TF38_Chio_BocaTauce"
+        },
+        "source": "F035 · Visor Teide, distancias del modelo publicado",
+        "limitation": "No se ha acreditado equivalencia de extremos ni trazados. Comparación de referencias, sin sustituir el visor ni el Excel."
+      }
+    },
+    "aguamansa_el_portillo": {
+      "label": "Aguamansa ↔ El Portillo · cabecera potencial de Luis y terminal provisional TITSA",
+      "itinerary_ids": [
+        "aguamansa_portillo_ida_propuesta",
+        "aguamansa_portillo_vuelta_propuesta"
+      ],
+      "dem_origin": "existing_raster",
+      "dem_path": "data/bronze/geografia/mdt05/cobertura_1/PNOA_MDT05_REGCAN95_HU28_1092_LID.tif",
+      "expected_dem_sha256": "680c04e71667cf00fe0b42a4641546ac628596979d98d4e099356d08b2636f8d",
+      "assumed_raster_crs": "EPSG:4083",
+      "crs_decision": "Hipótesis provisional autorizada: interpretar las coordenadas UTM del MDT como REGCAN95 / UTM 28N, sin alterar el TIFF ni declarar equivalencia con EPSG:25828. Consulta al CNIG pendiente.",
+      "sampling_method": "bilinear",
+      "sampling_reference_anchor_id": "el_portillo_eje_tf21",
+      "shared_axis": {
+        "source_id": "cabildo_road_axes",
+        "feature_filters": {
+          "via_nombre": "TF-21",
+          "tramo_inicio": "TF-217 LA OROTAVA",
+          "tramo_final": "TF-28 GRANADILLA"
+        },
+        "component_index": 1,
+        "clip_start_anchor_id": "el_portillo_eje_tf21",
+        "clip_end_anchor_id": "aguamansa_retorno_eje_tf21"
+      },
+      "shared_chainage_column": "distancia_eje_m",
+      "coherence_filename": "coherencia_tramo_comun.csv",
+      "cabecera_name": "Aguamansa",
+      "terminal_name": "El Portillo",
+      "map_scale_m": 2000,
+      "local_bounds_offsets_m": [
+        -350,
+        -300,
+        350,
+        300
+      ],
+      "source_point_checks": [
+        {
+          "anchor_id": "aguamansa_ida_titsa",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "4252"
+          }
+        },
+        {
+          "anchor_id": "aguamansa_retorno_titsa",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "4254"
+          }
+        },
+        {
+          "anchor_id": "el_portillo_referencia_titsa",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "7690"
+          }
+        }
+      ],
+      "validation_status": "potential_luis_head_provisional_terminal_pending_access_traffic_manoeuvres_and_road_grade_validation",
+      "endpoint_decision": "Ubicación potencial de Aguamansa propuesta por Luis, recibida el 24/10/2026. Ida y regreso se recortan en la proyección del mismo punto sobre TF-21, sin conexión física inventada. Las paradas 4252/4254 se conservan como contexto actual. El Portillo 7690 sigue siendo referencia provisional; Luis no ha confirmado aquí el destino.",
+      "published_distance_reference": {
+        "path": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/rutas_modelo_publicado.csv",
+        "sha256": "2413dded2f298d1e0958015f859bddcc5768eb022a51a7d46565823cdb637d07",
+        "filters": {
+          "arquitectura": "medianias",
+          "corredor": "TF21_Orotava_Portillo"
+        },
+        "source": "F035 · Visor Teide, distancias del modelo publicado",
+        "limitation": "No se ha acreditado equivalencia de extremos ni trazados. Comparación de referencias, sin sustituir el visor ni el Excel."
+      }
+    },
+    "la_esperanza_el_portillo": {
+      "label": "La Esperanza ↔ El Portillo · cabecera potencial y destino provisional",
+      "itinerary_ids": [
+        "la_esperanza_el_portillo_ida_propuesta",
+        "la_esperanza_el_portillo_vuelta_propuesta"
+      ],
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_la_esperanza_el_portillo.tif",
+      "expected_dem_sha256": "61c8f0579e4409bd749d4af90729c06e9bec8a7c8005413cb153d23802098a9e",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_la_esperanza_el_portillo.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/metadata.json",
+      "expected_metadata_sha256": "fb71ad3d63263305d268c5be15660a25e6d650d7e7ac1179b27061c91c8a46ee",
+      "native_crs": "EPSG:4083",
+      "sampling_method": "bilinear",
+      "sampling_reference_anchor_id": "el_portillo_eje_tf24",
+      "interval_reference": "baseline_interval_m de esta configuración, 200 m en esta revisión",
+      "shared_axis": {
+        "source_id": "cabildo_road_axes",
+        "feature_filters": {
+          "via_nombre": "TF-24",
+          "tramo_inicio": "LA LAGUNA",
+          "tramo_final": "EL PORTILLO"
+        },
+        "component_index": 0,
+        "clip_start_anchor_id": "el_portillo_eje_tf24",
+        "clip_end_anchor_id": "la_esperanza_eje_tf24"
+      },
+      "validation_status": "potential_luis_head_provisional_terminal_pending_access_traffic_manoeuvres_and_road_grade_validation",
+      "endpoint_decision": "D083: propuesta de eje desde la proyección de la cabecera potencial de La Esperanza aportada por Luis (F065). El Portillo mantiene la parada TITSA 7690 como referencia provisional, proyectada sobre TF-24; no se une el hueco cartográfico de 10.123 m con TF-21 ni se inventa conexión a la parada. Misma referencia al regresar, sin accesos físicos ni maniobras. No confirma instalaciones, aptitud, trazado operativo ni tiempos del Visor.",
+      "dem_origin": "wcs_arcgrid",
+      "cabecera_name": "La Esperanza",
+      "terminal_name": "El Portillo",
+      "map_scale_m": 5000,
+      "local_bounds_offsets_m": [
+        -400,
+        -350,
+        400,
+        350
+      ],
+      "shared_chainage_column": "distancia_eje_m",
+      "coherence_filename": "coherencia_tramo_comun.csv",
+      "published_distance_reference": {
+        "path": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/rutas_modelo_publicado.csv",
+        "sha256": "2413dded2f298d1e0958015f859bddcc5768eb022a51a7d46565823cdb637d07",
+        "filters": {
+          "arquitectura": "medianias",
+          "corredor": "TF24_LaLaguna_Portillo"
+        },
+        "source": "F035 · Visor Teide, distancias del modelo publicado",
+        "limitation": "No se ha acreditado equivalencia de extremos ni trazados. Comparación de referencias, sin sustituir el visor ni el Excel."
+      },
+      "dem_source_reference": "F066 — MDT05 IGN, primera cobertura, recorte nativo EPSG:4083 del 24/10/2026",
+      "source_point_checks": [
+        {
+          "anchor_id": "el_portillo_referencia_titsa",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "7690"
+          }
+        }
+      ]
+    },
+    "vilaflor_boca_tauce": {
+      "label": "Vilaflor ↔ Boca Tauce · cabecera potencial y destino provisional",
+      "itinerary_ids": [
+        "vilaflor_boca_tauce_ida_propuesta",
+        "vilaflor_boca_tauce_vuelta_propuesta"
+      ],
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_vilaflor_boca_tauce.tif",
+      "expected_dem_sha256": "f70c8065b81c82f454b2ffa8ee4760a42b4733d4f5703eabed4fe61409685941",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/mdt05_vilaflor_boca_tauce.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_accesos_este_sur_20261024/metadata.json",
+      "expected_metadata_sha256": "fb71ad3d63263305d268c5be15660a25e6d650d7e7ac1179b27061c91c8a46ee",
+      "native_crs": "EPSG:4083",
+      "sampling_method": "bilinear",
+      "sampling_reference_anchor_id": "boca_tauce_union_tf38_tf21",
+      "interval_reference": "baseline_interval_m de esta configuración, 200 m en esta revisión",
+      "shared_axis": {
+        "source_id": "cabildo_road_axes",
+        "feature_filters": {
+          "via_nombre": "TF-21",
+          "tramo_inicio": "TF-217 LA OROTAVA",
+          "tramo_final": "TF-28 GRANADILLA"
+        },
+        "component_index": 0,
+        "clip_start_anchor_id": "boca_tauce_union_tf38_tf21",
+        "clip_end_anchor_id": "vilaflor_eje_tf21"
+      },
+      "validation_status": "potential_luis_head_provisional_terminal_pending_access_traffic_manoeuvres_and_road_grade_validation",
+      "endpoint_decision": "D083: propuesta de eje desde la proyección de la cabecera potencial de Vilaflor aportada por Luis (F065). Boca Tauce mantiene la unión TF-38/TF-21 como referencia provisional; coincide exactamente con el extremo del componente sur TF-21. Misma referencia al regresar, sin accesos físicos ni maniobras. No confirma instalaciones, aptitud, trazado operativo ni tiempos del Visor.",
+      "dem_origin": "wcs_arcgrid",
+      "cabecera_name": "Vilaflor",
+      "terminal_name": "Boca Tauce",
+      "map_scale_m": 2000,
+      "local_bounds_offsets_m": [
+        -400,
+        -350,
+        400,
+        350
+      ],
+      "shared_chainage_column": "distancia_eje_m",
+      "coherence_filename": "coherencia_tramo_comun.csv",
+      "published_distance_reference": {
+        "path": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/rutas_modelo_publicado.csv",
+        "sha256": "2413dded2f298d1e0958015f859bddcc5768eb022a51a7d46565823cdb637d07",
+        "filters": {
+          "arquitectura": "medianias",
+          "corredor": "TF21_BocaTauce_Granadilla"
+        },
+        "source": "F035 · Visor Teide, distancias del modelo publicado",
+        "limitation": "No se ha acreditado equivalencia de extremos ni trazados. Comparación de referencias, sin sustituir el visor ni el Excel."
+      },
+      "dem_source_reference": "F066 — MDT05 IGN, primera cobertura, recorte nativo EPSG:4083 del 24/10/2026"
+    },
+    "interior_boca_tauce_el_portillo": {
+      "label": "Boca Tauce ↔ El Portillo · carretera principal, sin entrar en recintos",
+      "itinerary_ids": [
+        "interior_boca_tauce_el_portillo_ida_propuesta",
+        "interior_boca_tauce_el_portillo_vuelta_propuesta"
+      ],
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_interior_20261024/mdt05_interior_boca_tauce_el_portillo.tif",
+      "expected_dem_sha256": "fce2c3070022bd6a3c367bf0a2183ad808f7b5df1dff190a38e4e4b647c703cc",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_interior_20261024/mdt05_interior_boca_tauce_el_portillo.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_interior_20261024/metadata.json",
+      "expected_metadata_sha256": "a1504789b5dd8d5e3ab6cf2c84bb5e1c8f013cedd79c3ef6dbee851f550bb4d5",
+      "native_crs": "EPSG:4083",
+      "sampling_method": "bilinear",
+      "sampling_reference_anchor_id": "interior_portillo_eje_principal",
+      "interval_reference": "baseline_interval_m de esta configuración, 200 m en esta revisión",
+      "shared_axis": {
+        "source_id": "osm_main_road",
+        "feature_filters": {
+          "osm_way_id": "25709644"
+        },
+        "component_index": 0,
+        "itinerary_id": "interior_boca_tauce_el_portillo_ida_propuesta"
+      },
+      "validation_status": "main_road_and_entrance_stops_adopted_for_study_operation_and_grade_pending",
+      "endpoint_decision": "D091: mantengo Boca Tauce–El Portillo y excluyo la entrada de la lanzadera en Parador y Teleférico. Uso carretera principal y paradas en entradas para el estudio; detalle operativo pendiente.",
+      "dem_origin": "wcs_arcgrid",
+      "cabecera_name": "Boca Tauce",
+      "terminal_name": "El Portillo",
+      "map_scale_m": 5000,
+      "local_bounds_offsets_m": [
+        -250,
+        -220,
+        250,
+        220
+      ],
+      "shared_chainage_column": "distancia_sobre_eje_interior_m",
+      "coherence_filename": "coherencia_tramo_comun.csv",
+      "published_distance_reference": {
+        "path": "data/silver/movilidad/visor_teide/20261016T154509Z_f7cda5fc/parametros_publicados.json",
+        "sha256": "4dd80fade05b819f6e80ba1f868ea84d53a0c50cedff284297d7e2c55f208197",
+        "value_path": [
+          "operacion_costes_publicados",
+          "shuttle",
+          "kmOneWay"
+        ],
+        "source": "F035 — Visor Teide, parámetro publicado del servicio interior",
+        "limitation": "Los 29 km publicados no tienen equivalencia geométrica acreditada con el eje principal propuesto; no se sustituyen ni se trasladan sus tiempos automáticamente."
+      },
+      "dem_source_reference": "F067 — MDT05 IGN, primera cobertura, recorte nativo interior del 24/10/2026",
+      "source_point_checks": [
+        {
+          "anchor_id": "parador_referencia_titsa",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "7684"
+          }
+        },
+        {
+          "anchor_id": "teleferico_referencia_titsa",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "7685"
+          }
+        },
+        {
+          "anchor_id": "boca_tauce_parada_titsa_ida",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "7682"
+          }
+        },
+        {
+          "anchor_id": "boca_tauce_parada_titsa_regreso",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "7683"
+          }
+        },
+        {
+          "anchor_id": "el_portillo_referencia_titsa",
+          "source_id": "titsa_stop_references",
+          "filters": {
+            "stop_id": "7690"
+          }
+        }
+      ],
+      "profile_scope": "interior",
+      "sampling_reference_anchor_ids": {
+        "interior_boca_tauce_el_portillo_ida_propuesta": "interior_portillo_eje_principal",
+        "interior_boca_tauce_el_portillo_vuelta_propuesta": "interior_portillo_eje_principal"
+      },
+      "origin_reference_anchor_id": "boca_tauce_union_tf38_tf21",
+      "terminal_reference_anchor_id": "el_portillo_referencia_titsa",
+      "direction_comparison_mode": "common_axis",
+      "road_label": "Carretera principal del Parque · eje OSM",
+      "reference_attribution": "D091: mi aclaración de carretera principal y entradas. F075: © OpenStreetMap contributors (ODbL). Extremos nominales: Luis/F074.",
+      "tourism_coverage": {
+        "metadata_path": "data/bronze/documentacion/diseno_interior/20261024/metadata.json",
+        "expected_metadata_sha256": "e8e4c39904f178a658d7ab4a5c143adba5ea828dabaeaf9705987555bde26277",
+        "requirement": "Revisar lugares y accesos dentro del corredor confirmado Boca Tauce–El Portillo. El catálogo turístico no obliga a ampliar el servicio a los lugares excluidos por Luis.",
+        "requirement_status": "Ámbito confirmado por Luis (D088) y paradas/accesos adoptados por mí para el estudio (D089); detalle de embarque y operación por concretar",
+        "reference_design_status": "Carretera principal y paradas de entrada adoptadas para el estudio (D091); sin entrar a recintos, detalle operativo pendiente",
+        "coverage_operationally_validated": false,
+        "map_filename": "mapa_puntos_interes.kml",
+        "page_filename": "parque_nacional.html",
+        "note_filename": "aportacion_billete_y_diseno.json",
+        "targets": [
+          {
+            "target_id": "roques_garcia",
+            "name": "Roques de García / La Ruleta",
+            "source_map_name": "Roques de García",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "Definir parada del entorno y enlace peatonal; el marcador natural no es una parada."
+          },
+          {
+            "target_id": "centro_portillo",
+            "name": "Centro de Visitantes El Portillo",
+            "source_map_name": "Centro de Visitantes El Portillo",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "Contrastar la parada actual Centro de Visitantes y la conexión al edificio; no confundir con la terminal 7690."
+          },
+          {
+            "target_id": "arenas_negras",
+            "name": "Arenas Negras · acceso al sendero",
+            "source_map_name": "Centro de Visitantes El Portillo",
+            "review_type": "acceso_sendero_por_definir",
+            "review_note": "El centro es referencia de acceso citada, no coordenada comprobada del comienzo del sendero."
+          },
+          {
+            "target_id": "teleferico",
+            "name": "Teleférico y su Centro de Visitantes",
+            "source_map_name": "Teleférico del Teide",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "Mantener la estación base como objetivo, con parada, acceso y horarios de reserva por revisar."
+          },
+          {
+            "target_id": "zapatilla_reina",
+            "name": "Mirador Zapatilla de la Reina",
+            "source_map_name": "Zapato de La Reina",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "La traza pasa cerca; revisar punto seguro de parada y acceso al mirador."
+          },
+          {
+            "target_id": "boca_tauce",
+            "name": "Mirador de Boca Tauce",
+            "source_map_name": "Boca Tauce",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "Marcador turístico distinto del anclaje provisional de unión; no lo desplaza."
+          },
+          {
+            "target_id": "pico_viejo",
+            "name": "Mirador de Pico Viejo · alta montaña",
+            "source_map_name": "Pico Viejo Vantage Point",
+            "review_type": "teleferico_y_sendero",
+            "review_note": "Se atiende desde la estación base mediante Teleférico y sendero; no mediante una carretera de guaguas."
+          },
+          {
+            "target_id": "llano_ucanca",
+            "name": "Mirador del Llano de Ucanca",
+            "source_map_name": "Llano de Ucanca",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "Afinar la localización del mirador y la parada; el marcador identifica un lugar, no una instalación aprobada."
+          },
+          {
+            "target_id": "tabonal_negro",
+            "name": "Mirador de Tabonal Negro",
+            "source_map_name": "Mirador El Tabonal Negro",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "Revisar parada y acceso; paso junto al lugar no acredita servicio."
+          },
+          {
+            "target_id": "minas_san_jose",
+            "name": "Minas de San José",
+            "source_map_name": "Minas de San Jose",
+            "review_type": "revisar_parada_y_acceso_peatonal",
+            "review_note": "Contrastar la parada actual y el acceso; mapa y enlace de la página tienen pequeñas diferencias de posición."
+          }
+        ],
+        "confirmed_scope_source_id": "luis_interior_scope",
+        "excluded_map_markers": [
+          "Parque Nacional del Teide",
+          "Mirador de las Narices del Teide",
+          "Observatorio Astronómico del Teide"
+        ],
+        "stop_review": {
+          "status": "Paradas y accesos adoptados como válidos para el estudio; no son diez paradas independientes",
+          "target_assignments": [
+            {
+              "target_id": "roques_garcia",
+              "section": "Carretera principal · entrada del acceso",
+              "reference": "Entrada al acceso de Parador/Cañada Blanca desde la carretera principal",
+              "next_check": "Concretar embarque y recorrido peatonal desde la entrada; la lanzadera no entra al recinto. Conexión a Cañada Blanca/Roques por revisar.",
+              "anchor_id": "entrada_parador_tf21",
+              "alignment_decision": "D091"
+            },
+            {
+              "target_id": "centro_portillo",
+              "section": "Eje central",
+              "stop_id": "5242",
+              "reference": "Centro de Visitantes, parada actual distinta de terminal 7690",
+              "next_check": "Contrastar subida/bajada, acceso al edificio y disponibilidad de parada futura."
+            },
+            {
+              "target_id": "arenas_negras",
+              "section": "Acceso a pie desde eje central",
+              "stop_id": "5242",
+              "reference": "Centro de Visitantes como referencia de acceso al sendero",
+              "next_check": "Localizar inicio real del sendero, enlace a pie y duración compatible con regreso."
+            },
+            {
+              "target_id": "teleferico",
+              "section": "Carretera principal · entrada del acceso",
+              "reference": "Entrada del acceso al Teleférico desde la carretera principal",
+              "next_check": "Concretar embarque y recorrido peatonal desde la entrada; la lanzadera no entra al recinto. Coordinar acceso a pie, reserva del Teleférico y regreso; Pico Viejo continúa mediante Teleférico y sendero.",
+              "anchor_id": "entrada_teleferico_tf21",
+              "alignment_decision": "D091"
+            },
+            {
+              "target_id": "zapatilla_reina",
+              "section": "Eje central",
+              "reference": "Zona del mirador, ubicación de parada por definir",
+              "next_check": "Comprobar espacio de detención/retorno y enlace peatonal; no parar sobre el eje por una proyección geométrica."
+            },
+            {
+              "target_id": "boca_tauce",
+              "section": "Eje central / enlace oeste",
+              "stop_id": "7682",
+              "reference": "Boca Tauce, referencia de parada actual; 7683 para regreso",
+              "next_check": "Elegir terminal y parada por sentido, conexión con mirador/Museo Juan Évora y maniobras."
+            },
+            {
+              "target_id": "pico_viejo",
+              "section": "Carretera principal · entrada del acceso",
+              "reference": "Entrada del acceso al Teleférico desde la carretera principal",
+              "next_check": "Concretar embarque y recorrido peatonal desde la entrada; la lanzadera no entra al recinto. Coordinar acceso a pie, reserva del Teleférico y regreso; Pico Viejo continúa mediante Teleférico y sendero.",
+              "anchor_id": "entrada_teleferico_tf21",
+              "alignment_decision": "D091"
+            },
+            {
+              "target_id": "llano_ucanca",
+              "section": "Eje central",
+              "reference": "Zona del mirador, ubicación de parada por definir",
+              "next_check": "Confirmar localización del mirador, lugar seguro de embarque y enlace peatonal."
+            },
+            {
+              "target_id": "tabonal_negro",
+              "section": "Eje central",
+              "reference": "Zona del mirador, ubicación de parada por definir",
+              "next_check": "Comprobar espacio de detención y enlace a pie; la parada Montaña Blanca más cercana no acredita acceso adecuado."
+            },
+            {
+              "target_id": "minas_san_jose",
+              "section": "Eje central",
+              "stop_id": "5244",
+              "reference": "Minas de San José, parada actual",
+              "next_check": "Contrastar parada por sentido y acceso peatonal, conservando diferencia entre marcador y enlace de la página."
+            }
+          ],
+          "adopted_for_study": true,
+          "decision_id": "D089",
+          "decision_date": "2026-10-24",
+          "decision_basis": "Mi indicación: «Vamos a mantener como válidas las paradas propuestas dentro del servicio interior.»",
+          "operational_validation_performed": false,
+          "alignment_decision": "D091"
+        }
+      },
+      "alignment_decision_source_id": "interior_main_road_note",
+      "main_road_reference_checks": {
+        "source_id": "osm_main_road",
+        "way_ids": [
+          "25709644",
+          "549239959",
+          "104155670",
+          "166437389",
+          "104156821",
+          "176016591",
+          "166437388"
+        ],
+        "stop_node_anchors": [
+          "entrada_parador_tf21",
+          "entrada_teleferico_tf21"
+        ],
+        "building_anchor_id": "parador_edificio_referencia",
+        "building_way_id": "1380345622",
+        "excluded_access_way_ids": [
+          "334168426",
+          "334168427",
+          "10714317",
+          "173728415",
+          "842374271"
+        ],
+        "attribution": "© OpenStreetMap contributors · ODbL 1.0 · openstreetmap.org/copyright"
+      }
+    }
+  },
+  "default_operational_profile": "interior_boca_tauce_el_portillo",
+  "origin_access_profiles": {
+    "adeje_vilaflor": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_acceso_sur_20261025/mdt05_adeje_vilaflor_boca_tauce.tif",
+      "expected_dem_sha256": "3089d2bd7c33541c7f9e63a5f4c2097828c2277e47298f59e7916a40526a1c99",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_sur_20261025/mdt05_adeje_vilaflor_boca_tauce.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_sur_20261025/metadata.json",
+      "expected_metadata_sha256": "fe7105008dd778fa26f2671363ae583c884c4b3357b62ed0e86269053e82f5aa",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083, sin reproyección o remuestreo; cotas del terreno, rasante pendiente. No resuelve el CRS del TIFF norte.",
+      "dem_source_reference": "F080 — MDT05 IGN, recorte nativo del 25/10/2026"
+    },
+    "alcala_chio": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_acceso_oeste_20261025/mdt05_alcala_chio_boca_tauce.tif",
+      "expected_dem_sha256": "2e7fc2dc1651ca11cd808434da5596cecc92cc8f42ef73de0799b99b735277d3",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_oeste_20261025/mdt05_alcala_chio_boca_tauce.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_oeste_20261025/metadata.json",
+      "expected_metadata_sha256": "ff41d4e1b119d1388ae42b001d648944db42fa6dc50da9ca8c91b36894d2270b",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083, sin reproyección ni remuestreo; terreno, no rasante. El recorte no resuelve el CRS del TIFF norte.",
+      "dem_source_reference": "F082 — IGN MDT05, recorte nativo del 25/10/2026",
+      "mountain_sampling_reference_anchor_id": "boca_tauce_eje_oeste_osm",
+      "shared_mountain_start_anchor_id": "tf38_inicio_comun_osm",
+      "coherence_basis": "Malla desde Boca Tauce para la montaña compartida; ramales de Chío distintos y conservados. Origen–cabecera conserva referencia desde Chío."
+    },
+    "laguna_esperanza": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_acceso_este_20261025/mdt05_laguna_la_esperanza.tif",
+      "expected_dem_sha256": "c29b6ccdd722cec71a8246a77ac4cf98512c67f8dc655fbd59312645e69f8ef9",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_este_20261025/mdt05_laguna_la_esperanza.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_acceso_este_20261025/metadata.json",
+      "expected_metadata_sha256": "d6839fa25ab16f96b548092ecb9ca241bce39370fda7d83037a9021594bea7c4",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083, sin reproyección ni remuestreo; terreno, no rasante. No resuelve el CRS del TIFF norte.",
+      "dem_source_reference": "F084 — IGN MDT05 para La Laguna–La Esperanza; montaña reutilizada F066",
+      "component_dem_profile_references": {
+        "cabecera_teide": "la_esperanza_el_portillo"
+      },
+      "mountain_sampling_reference_anchor_id": "portillo_eje_este_osm",
+      "shared_mountain_start_anchor_id": "tf24_inicio_comun_osm",
+      "shared_mountain_road_reference": "TF-24",
+      "coherence_basis": "Montaña desde El Portillo; contraste del eje común después de las calzadas separadas. Origen–cabecera desde la proyección propia de cada sentido en La Esperanza."
+    },
+    "columbus_vilaflor": {
+      "dem_origin": "native_extension",
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_vilaflor_boca_tauce.tif",
+      "expected_dem_sha256": "13159413bcb3bf60f74ccc1880b8fe28e75cce5cac2c4398ebfc35968f707597",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_columbus_20261025/metadata.json",
+      "expected_metadata_sha256": "4d98b5a4fe0ebd4ddf6ef2fa30c7b8b315facc5c9d5353d732bb39f22b513922",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_columbus_20261025/mdt05_columbus_extension.tif",
+      "expected_extension_dem_sha256": "b39cc1777b88703038c5db7aa598f904d4012f6a627fa83a4b18e644e123fa74",
+      "base_dem_profile_reference": "adeje_vilaflor",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083; ampliación por copia exacta de celdas alineadas. Base F080 íntegra, huecos nuevos como NoData; sin reproyección, remuestreo o relleno. Terreno, no rasante; no resuelve el CRS norte.",
+      "dem_source_reference": "F086 — ampliación urbana IGN MDT05; base F080 reutilizada íntegramente"
+    },
+    "abona_vilaflor": {
+      "dem_origin": "native_extension",
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_vilaflor_boca_tauce.tif",
+      "expected_dem_sha256": "80a1dd2eae23f9f68fc341b6ea28976912e2138331b91313e1ee480e605ec612",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_abona_20261026/metadata.json",
+      "expected_metadata_sha256": "f3debdb29d7303570aab256fb16e51be536d7093b6c49d3ea4dae4adf5c6c274",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_abona_20261026/mdt05_abona_extension.tif",
+      "expected_extension_dem_sha256": "5884c2c154d07e79f1a6f77419a153de8b32b9d1278c69335bfae475e688d2c0",
+      "base_dem_profile_reference": "adeje_vilaflor",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083; ampliación por copia exacta de celdas alineadas. Base F080 íntegra, huecos nuevos como NoData; sin reproyección, remuestreo o relleno. Terreno, no rasante; no resuelve el CRS norte.",
+      "dem_source_reference": "F089 — extensión nativa IGN MDT05 para Los Abrigos–Vilaflor; base F080 íntegra"
+    },
+    "santa_cruz_esperanza": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_la_esperanza.tif",
+      "expected_dem_sha256": "ffb89cf3d403d09d86cfbf51a76cf0ca3506eff7acfd380cf9257e7a2359c375",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/metadata.json",
+      "expected_metadata_sha256": "ab34f68706d11347b27217d3e1773003ae42797c9761b6df244f47ad41d4a774",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083: extensión del alimentador por copia exacta de celdas alineadas. Base F084 íntegra, huecos como NoData; montaña F066 separada. Terreno, no rasante; sin reproyección o remuestreo y sin resolver el CRS norte.",
+      "dem_source_reference": "F091 — extensión nativa IGN MDT05 Santa Cruz; base F084 y montaña F066 reutilizadas",
+      "component_dem_profile_references": {
+        "cabecera_teide": "la_esperanza_el_portillo"
+      },
+      "mountain_sampling_reference_anchor_id": "portillo_eje_este_osm",
+      "shared_mountain_start_anchor_id": "tf24_inicio_comun_osm",
+      "shared_mountain_road_reference": "TF-24",
+      "coherence_basis": "Montaña desde El Portillo; contraste del eje común después de las calzadas separadas. Origen–cabecera desde la proyección propia de cada sentido en La Esperanza.",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_santa_cruz_20261026/mdt05_santa_cruz_extension.tif",
+      "expected_extension_dem_sha256": "5cdc83186b9672dc1dc6a3fe01739c17302c6c3abbbf44724fdf6eb505db5912",
+      "base_dem_profile_reference": "laguna_esperanza"
+    },
+    "arico_vilaflor": {
+      "dem_origin": "native_extension",
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_vilaflor_boca_tauce.tif",
+      "expected_dem_sha256": "2007fcf7420e8b67da6ce8a686cb150edd4e481b6105ba89005bec55b17427d6",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_arico_20261026/metadata.json",
+      "expected_metadata_sha256": "20a96d03862b79b8e127adaca7f2f7d7b21f15d4e2c9fa186849081eb1de91dc",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_arico_20261026/mdt05_arico_extension.tif",
+      "expected_extension_dem_sha256": "b930482a88a60be378f2a4d5adbefc245fc9bfca81a28b1f8dddd5f45561a034",
+      "base_dem_profile_reference": "adeje_vilaflor",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083: extensión por copia exacta de celdas alineadas. Base F080 íntegra, huecos como NoData; terreno, no rasante. Sin reproyección o remuestreo y sin resolver el CRS norte.",
+      "dem_source_reference": "F093 — extensión nativa IGN MDT05 para Arico–Vilaflor; base F080 íntegra"
+    },
+    "masca_chio": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_chio_boca_tauce.tif",
+      "expected_dem_sha256": "caf696587e1f61b89801a9f566c95aff009d9ea5a301d4b75a51a27cb8079f81",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_masca_20261026/metadata.json",
+      "expected_metadata_sha256": "9057addc01cac80958b7cd10483ff0e9659445c046aa3fc9780714f2f97e0cfd",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083: ampliación por copia exacta de celdas alineadas. Base F082 íntegra, huecos como NoData; terreno, no rasante. Sin reproyección o remuestreo, sin resolver CRS norte.",
+      "dem_source_reference": "F095 — extensión nativa IGN MDT05 para Masca–Chío; base F082 íntegra",
+      "mountain_sampling_reference_anchor_id": "boca_tauce_eje_oeste_osm",
+      "shared_mountain_start_anchor_id": "tf38_inicio_comun_osm",
+      "coherence_basis": "Malla desde Boca Tauce para la montaña compartida; ramales de Chío distintos y conservados. Origen–cabecera conserva referencia desde Chío.",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_masca_20261026/mdt05_masca_extension.tif",
+      "expected_extension_dem_sha256": "afa2d9e578a17ef191c485bcc1daa228cd4c955e9acaaf65d3b7363ad5460f37",
+      "base_dem_profile_reference": "alcala_chio"
+    },
+    "candelaria_esperanza": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_la_esperanza.tif",
+      "expected_dem_sha256": "8c281fb78ad3d6f3ec38cb342fc9b0d212b89e5fb21e9dcccec9679b47c9a978",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_candelaria_20261026/metadata.json",
+      "expected_metadata_sha256": "2cadd85c7b713fa96837a1041040278001031679e5e5d2c256fc67860ecb31a3",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083: extensión del original F084 por copia exacta de celdas alineadas, sin rellenar ausencias o remuestrear. Montaña F066 separada; terreno, no rasante de túnel/puente ni resolución del CRS norte.",
+      "dem_source_reference": "F097 — extensión nativa IGN MDT05 Candelaria; base F084 y montaña F066 reutilizadas",
+      "component_dem_profile_references": {
+        "cabecera_teide": "la_esperanza_el_portillo"
+      },
+      "mountain_sampling_reference_anchor_id": "portillo_eje_este_osm",
+      "shared_mountain_start_anchor_id": "tf24_inicio_comun_osm",
+      "shared_mountain_road_reference": "TF-24",
+      "coherence_basis": "Montaña desde El Portillo; contraste del eje común después de las calzadas separadas. Origen–cabecera desde la proyección propia de cada sentido en La Esperanza.",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_candelaria_20261026/mdt05_candelaria_extension.tif",
+      "expected_extension_dem_sha256": "63527c5f5d4de77d63674110b121753d8f415408152339c0615e87e57f54e89c",
+      "base_dem_profile_reference": "laguna_esperanza"
+    },
+    "acentejo_esperanza": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_la_esperanza.tif",
+      "expected_dem_sha256": "56a56a4acf7d19b3db953ee235d3da384bf03d71c3bd4f82b574ce844eb3e245",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_acentejo_20261026/metadata.json",
+      "expected_metadata_sha256": "b425a023ef5dff36df2a64f018e4a8c049122d8ad6702464f9e6daff039df2c8",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083: extensión de F084 por copia exacta de celdas alineadas, sin remuestreo o relleno. Montaña F066 separada; terreno, no rasante ni resolución del CRS norte.",
+      "dem_source_reference": "F099 — extensión nativa IGN MDT05 Acentejo; base F084 y montaña F066 reutilizadas",
+      "component_dem_profile_references": {
+        "cabecera_teide": "la_esperanza_el_portillo"
+      },
+      "mountain_sampling_reference_anchor_id": "portillo_eje_este_osm",
+      "shared_mountain_start_anchor_id": "tf24_inicio_comun_osm",
+      "shared_mountain_road_reference": "TF-24",
+      "coherence_basis": "Montaña desde El Portillo; contraste del eje común después de las calzadas separadas. Origen–cabecera desde la proyección propia de cada sentido en La Esperanza.",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_acentejo_20261026/mdt05_acentejo_extension.tif",
+      "expected_extension_dem_sha256": "8cd13661beefda53f6687222c9dc68a47d5adc81c51d5a2a6b1549417a25369d",
+      "base_dem_profile_reference": "laguna_esperanza"
+    },
+    "icod_chio": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_chio_boca_tauce.tif",
+      "expected_dem_sha256": "ac06028c4b03ad679279b9d5697a6074ca0571c6bb5298981fbd9b5716948bff",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_icod_20261026/metadata.json",
+      "expected_metadata_sha256": "a6328ff2735292208befa47b1b9fbd74ee8156ae35a43dad7c24c8c2503e8731",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083: extensión por copia exacta de celdas alineadas. Base F082 íntegra y huecos como NoData; terreno, no rasante ni resolución del CRS norte. Sin reproyección, remuestreo o relleno.",
+      "dem_source_reference": "F101 — extensión nativa IGN MDT05 Icod–Chío; base F082 reutilizada",
+      "mountain_sampling_reference_anchor_id": "boca_tauce_eje_oeste_osm",
+      "shared_mountain_start_anchor_id": "tf38_inicio_comun_osm",
+      "coherence_basis": "Malla desde Boca Tauce para la montaña compartida; ramales de Chío distintos y conservados. Origen–cabecera conserva referencia desde Chío.",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_icod_20261026/mdt05_icod_extension.tif",
+      "expected_extension_dem_sha256": "4cb0090051046a5fc7525a92712782661db0ad84a96ba57a0f712f5899f62231",
+      "base_dem_profile_reference": "alcala_chio"
+    },
+    "guancha_aguamansa": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_guancha_20261027/mdt05_guancha_aguamansa.tif",
+      "expected_dem_sha256": "96003b997779b0f7b590f942e8ec9875ac8c06b89786f92d03a99888e22b189b",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_guancha_20261027/mdt05_guancha_aguamansa.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_guancha_20261027/metadata.json",
+      "expected_metadata_sha256": "b12e394c6636fbc0d1fe2bf81e9f6d75cb1db8d2db32a9c8dec5d5715934fada",
+      "dem_origin": "wcs_arcgrid",
+      "native_crs": "EPSG:4083",
+      "sampling_method": "bilinear",
+      "crs_decision": "Recorte nativo del alimentador EPSG:4083. Montaña y TIFF norte conservados aparte bajo interpretación provisional: no declaro equivalencia CRS ni resuelvo P032. Terreno, no rasante; sin reproyección, remuestreo, relleno o suavizado.",
+      "dem_source_reference": "F103 — IGN MDT05 nativo La Guancha–Aguamansa",
+      "component_dem_profile_references": {
+        "cabecera_teide": "aguamansa_el_portillo"
+      }
+    },
+    "costa_oeste_chio": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_chio_boca_tauce.tif",
+      "expected_dem_sha256": "ced8370ef382a65dc97d51d7f8ae0136778ce7ef99046c71f1b432028facd586",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/metadata.json",
+      "expected_metadata_sha256": "001f02c9a9bfc0eef667f4404f2cf2858cad75009de3041aa6257aebea292462",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083, ampliado por copia exacta de celdas alineadas. Base F082 íntegra; huecos nuevos como NoData, sin remuestreo, relleno o suavizado. Terreno, no rasante ni resolución del CRS norte.",
+      "dem_source_reference": "F105 — IGN MDT05: ampliación nativa compartida Adeje costa oeste/Los Gigantes; base F082 íntegra",
+      "mountain_sampling_reference_anchor_id": "boca_tauce_eje_oeste_osm",
+      "shared_mountain_start_anchor_id": "tf38_inicio_comun_osm",
+      "coherence_basis": "Malla desde Boca Tauce para la montaña compartida; ramales de Chío distintos y conservados. Origen–cabecera conserva referencia desde Chío.",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_costa_oeste_20261027/mdt05_costa_oeste_extension.tif",
+      "expected_extension_dem_sha256": "4c79b09d0569ef39b950859a9a1e9abe2217c52e10979e51ce279d4901721fd2",
+      "base_dem_profile_reference": "alcala_chio"
+    },
+    "metropolitana_esperanza": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_la_esperanza.tif",
+      "expected_dem_sha256": "0114e2c81f86e22f2c1ea2f4e2a3c9ed51ffeee130234c45c8cf14a524cfafab",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_metropolitana_20261027/metadata.json",
+      "expected_metadata_sha256": "35a2099434167e113ca0630a2b682d2325173d7f194dd720a0426cd86648419c",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083 por copia exacta de celdas alineadas. F084 íntegro, sin remuestreo, relleno o suavizado; montaña F066 separada. Terreno, no rasante ni resolución del CRS norte.",
+      "dem_source_reference": "F107 — IGN MDT05: ampliación nativa compartida de cuatro conexiones metropolitanas; base F084 íntegra y montaña F066 reutilizada",
+      "component_dem_profile_references": {
+        "cabecera_teide": "la_esperanza_el_portillo"
+      },
+      "mountain_sampling_reference_anchor_id": "portillo_eje_este_osm",
+      "shared_mountain_start_anchor_id": "tf24_inicio_comun_osm",
+      "shared_mountain_road_reference": "TF-24",
+      "coherence_basis": "Montaña desde El Portillo; contraste del eje común después de las calzadas separadas. Origen–cabecera desde la proyección propia de cada sentido en La Esperanza.",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_metropolitana_20261027/mdt05_metropolitana_extension.tif",
+      "expected_extension_dem_sha256": "504c8e95afd2da8f06eada33ca0a650d22e6c5d19bf13b03290c3af8077b087f",
+      "base_dem_profile_reference": "laguna_esperanza"
+    },
+    "valle_norte_aguamansa": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_valle_norte_20261027/mdt05_valle_norte_aguamansa.tif",
+      "expected_dem_sha256": "5633b75d1b8cf166ffaab18eec07d31dcac8df244d03e4c53ec90079a9bc3638",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_valle_norte_20261027/mdt05_valle_norte_aguamansa.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_valle_norte_20261027/metadata.json",
+      "expected_metadata_sha256": "26857ec2acee17e1b2fddda5165d91136b0536b5766b52db2fb22b6b1764d447",
+      "dem_origin": "wcs_arcgrid",
+      "native_crs": "EPSG:4083",
+      "sampling_method": "bilinear",
+      "crs_decision": "Alimentador nativo EPSG:4083; montaña y TIFF norte conservados aparte bajo interpretación provisional, sin declarar equivalencia CRS o resolver P032. Terreno, no rasante; sin reproyección, remuestreo, relleno o suavizado.",
+      "dem_source_reference": "F109 — IGN MDT05 nativo para Santa Úrsula/La Victoria–Aguamansa",
+      "component_dem_profile_references": {
+        "cabecera_teide": "aguamansa_el_portillo"
+      }
+    },
+    "san_miguel_vilaflor": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_san_miguel_20261027/mdt05_san_miguel_vilaflor.tif",
+      "expected_dem_sha256": "fe04db0b01ed840dd565352fc02cffa8f6796a1b6ce094fb3f1230b95e2bf130",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_san_miguel_20261027/mdt05_san_miguel_vilaflor.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_san_miguel_20261027/metadata.json",
+      "expected_metadata_sha256": "c8580c6d3811ddad917cbbf135fa5d1f6b955beb10f0be2efbbda25fb8f890b7",
+      "dem_origin": "wcs_arcgrid",
+      "native_crs": "EPSG:4083",
+      "sampling_method": "bilinear",
+      "crs_decision": "Alimentador y montaña nativos EPSG:4083, conservados como componentes separados; sin extender o modificar los rasters previos. Terreno, no rasante; sin reproyección, remuestreo, relleno o suavizado.",
+      "dem_source_reference": "F110 — IGN MDT05 nativo para San Miguel costa–Vilaflor",
+      "component_dem_profile_references": {
+        "cabecera_teide": "vilaflor_boca_tauce"
+      }
+    },
+    "valle_guimar_costero": {
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_la_esperanza.tif",
+      "expected_dem_sha256": "abed34b9b47c00e40330d9fb2ff7d7c1d714bb5ea8cff95b960f5e7a43627bd8",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/metadata.json",
+      "expected_metadata_sha256": "5c3281d9629df654675e52eada1dd88c0d9409f8e827ad233ca06c8ed6221022",
+      "native_crs": "EPSG:4083",
+      "dem_origin": "native_extension",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_valle_guimar_20261028/mdt05_valle_extension.tif",
+      "expected_extension_dem_sha256": "51996345e34bb13385601df537681ade490762d8e36c7e873822ecdeb95f2c45",
+      "base_dem_profile_reference": "candelaria_esperanza",
+      "crs_decision": "MDT05 nativo EPSG:4083; base F097 preservada, extensión F112 sin alterar cotas. Terreno, no rasante o resolución del CRS norte.",
+      "dem_source_reference": "F112 — IGN MDT05 valle de Güímar; base F097 y montaña F066 reutilizadas",
+      "component_dem_profile_references": {
+        "cabecera_teide": "la_esperanza_el_portillo"
+      },
+      "mountain_sampling_reference_anchor_id": "portillo_eje_este_osm"
+    },
+    "medianias_arico_fasnia_vilaflor": {
+      "dem_origin": "native_extension",
+      "dem_path": "data/silver/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_vilaflor_boca_tauce.tif",
+      "expected_dem_sha256": "7ec795886d34509bbdaf94b665e41f040110ff556e98d85f7a674af17fd8e5a5",
+      "raw_dem_path": "data/bronze/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_extension.multipart",
+      "metadata_path": "data/bronze/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/metadata.json",
+      "expected_metadata_sha256": "2923d773039f6af34431cd4710b2b3901b869706080fab8978d01132e92b108a",
+      "extension_dem_path": "data/silver/geografia/mdt05/wcs_4083_5_medianias_sur_20261028/mdt05_medianias_extension.tif",
+      "expected_extension_dem_sha256": "4917e6c1cad837b1aec81cba2b8d745e8690801ce65cf509f82cdcbe402bd280",
+      "base_dem_profile_reference": "adeje_vilaflor",
+      "native_crs": "EPSG:4083",
+      "crs_decision": "MDT05 nativo EPSG:4083: base F080 íntegra y extensión F114 para TF-28/TF-532. Sin modificar cotas, remuestrear o rellenar ausencias. Terreno, no rasante o resolución del CRS norte.",
+      "dem_source_reference": "F114 — extensión nativa IGN MDT05 de medianías; base F080 y perfiles previos conservados"
+    }
+  }
+}
